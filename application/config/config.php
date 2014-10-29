@@ -13,7 +13,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://www.primax.com.ec/';
+$config['base_url']	= 'http://www.primax.com.ec/s';
 
 /*
 |--------------------------------------------------------------------------
