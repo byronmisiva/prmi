@@ -51,10 +51,11 @@ $active_record = TRUE;
 //$db['default']['username'] = 'root';
 //$db['default']['password'] = 'jrortiz';
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'rans1hyoc';
-$db['default']['database'] = 'primax_2013';
+$db['default']['hostname'] = "69.64.85.197";
+$db['default']['username'] = "externo";
+$db['default']['password'] = "feadmin06";
+$db['default']['database'] = "primax";
+
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

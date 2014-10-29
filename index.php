@@ -1,8 +1,8 @@
 <?php
-if(substr($_SERVER['SERVER_NAME'],0,3)!="www"){
+/*if(substr($_SERVER['SERVER_NAME'],0,3)!="www"){
     header("HTTP/1.1 301 Moved Permanently");
     header("Location: http://www.primax.com.ec/".$_SERVER['REQUEST_URI']);
-}else{
+}else{*/
     //the current contents of your file
 
 /*
@@ -209,4 +209,4 @@ require_once BASEPATH.'core/CodeIgniter'.EXT;
 /* End of file index.php */
 /* Location: ./index.php */
 
-}
+//}
