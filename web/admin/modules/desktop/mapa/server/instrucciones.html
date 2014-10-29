@@ -1,0 +1,683 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES">
+<head profile="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>  phpDataClass: clase PHP para manejo de bases de datos MySQL, clase PHP para MySQL, persistencia bases de datos PHP : lewebmonster.com</title>
+
+    <link rel="stylesheet" href="http://www.lewebmonster.com/wp-content/themes/Carmen/style.css" type="text/css" media="screen" />
+
+    <link rel="alternate" type="application/rss+xml" title="lewebmonster.com RSS Feed" href="http://www.lewebmonster.com/feed/" />
+    <link rel="alternate" type="application/atom+xml" title="lewebmonster.com Atom Feed" href="http://www.lewebmonster.com/feed/atom/" />
+    <link rel="pingback" href="http://www.lewebmonster.com/xmlrpc.php" />
+
+
+
+    <link rel='archives' title='febrero 2013' href='http://www.lewebmonster.com/2013/02/' />
+    <link rel='archives' title='enero 2013' href='http://www.lewebmonster.com/2013/01/' />
+    <link rel='archives' title='diciembre 2012' href='http://www.lewebmonster.com/2012/12/' />
+    <link rel='archives' title='noviembre 2012' href='http://www.lewebmonster.com/2012/11/' />
+    <link rel='archives' title='octubre 2012' href='http://www.lewebmonster.com/2012/10/' />
+    <link rel='archives' title='septiembre 2012' href='http://www.lewebmonster.com/2012/09/' />
+    <link rel='archives' title='agosto 2012' href='http://www.lewebmonster.com/2012/08/' />
+    <link rel='archives' title='julio 2012' href='http://www.lewebmonster.com/2012/07/' />
+    <link rel='archives' title='junio 2012' href='http://www.lewebmonster.com/2012/06/' />
+    <link rel='archives' title='mayo 2012' href='http://www.lewebmonster.com/2012/05/' />
+    <link rel='archives' title='abril 2012' href='http://www.lewebmonster.com/2012/04/' />
+
+    <link rel='stylesheet' id='thickbox-css'  href='http://www.lewebmonster.com/wp-includes/js/thickbox/thickbox.css?ver=20121105' type='text/css' media='all' />
+    <link rel='stylesheet' id='colorbox-theme7-css'  href='http://www.lewebmonster.com/wp-content/plugins/jquery-colorbox/themes/theme7/colorbox.css?ver=4.6' type='text/css' media='screen' />
+    <link rel='stylesheet' id='gdsr_style_main-css'  href='http://www.lewebmonster.com/wp-content/plugins/gd-star-rating/css/gdsr.css.php?t=1356298816&#038;s=a05i05m20k20c05r05%23121620243046%23121620243240%23s1pchristmas%23s1pcrystal%23s1pdarkness%23s1poxygen%23s1goxygen_gif%23s1pplain%23s1ppumpkin%23s1psoft%23s1pstarrating%23s1pstarscape%23t1pclassical%23t1pstarrating%23t1gstarrating_gif%23lsgflower&#038;o=off&#038;ver=1.9.22' type='text/css' media='all' />
+    <link rel='stylesheet' id='gdsr_style_xtra-css'  href='http://www.lewebmonster.com/wp-content/gd-star-rating/css/rating.css?ver=1.9.22' type='text/css' media='all' />
+    <link rel='stylesheet' id='cfblbcss-css'  href='http://www.lewebmonster.com/wp-content/plugins/cardoza-facebook-like-box/cardozafacebook.css?ver=3.5.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='custom-style-css'  href='http://www.lewebmonster.com/wp-content/plugins/dt-author-box/css/style.php?ver=20120418' type='text/css' media='all' />
+    <link rel='stylesheet' id='rps-style-css'  href='http://www.lewebmonster.com/wp-content/plugins/recent-posts-slider/css/style.css?ver=3.5.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='shCore-css'  href='http://www.lewebmonster.com/wp-content/plugins/syntax-highlighter/3.0.83/css/shCore.css?ver=3.0.83' type='text/css' media='all' />
+    <link rel='stylesheet' id='shCoreDefault-css'  href='http://www.lewebmonster.com/wp-content/plugins/syntax-highlighter/3.0.83/css/shCoreDefault.css?ver=3.0.83' type='text/css' media='all' />
+    <link rel='stylesheet' id='shThemeDefault-css'  href='http://www.lewebmonster.com/wp-content/plugins/syntax-highlighter/3.0.83/css/shThemeDefault.css?ver=3.0.83' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-paginate-css'  href='http://www.lewebmonster.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+    <link rel='stylesheet' id='wp_greet_box_style-css'  href='http://www.lewebmonster.com/wp-content/plugins/wp-greet-box/css/style.css?ver=3.5.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='counterize_stylesheet-css'  href='http://www.lewebmonster.com/wp-content/plugins/counterize/counterize.css.php?ver=3.5.1' type='text/css' media='all' />
+
+
+    <link rel='prev' title='Capacitaciones y cursos de jQuery en Costa Rica' href='http://www.lewebmonster.com/servicios/capacitaciones/' />
+    <meta name="generator" content="WordPress 3.5.1" />
+    <link rel='canonical' href='http://www.lewebmonster.com/proyectos/phpdataclass/' />
+
+    <meta http-equiv="imagetoolbar" content="no">
+
+
+    <!--[if IE]><style type="text/css">.ratemulti .starsbar .gdcurrent { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70); }</style><![endif]-->
+    <!-- HeadSpace SEO 3.6.41 by John Godley - urbangiraffe.com -->
+    <meta name="description" content="phpDataClass es una clase que permite la manipulación de bases de datos MySQL por medio de PHP, con un nivel de sencillez bastante amplio." />
+    <meta name="keywords" content="persistencia php mysql, clase php mysql, clase php para mysql, clase mysql php, manejar bases de datos php, clase para bases de datos mysql, clase php para usar con mysql" />
+    <!-- HeadSpace -->
+    <style type="text/css" media="screen">#rps .slider div .col{
+        border: none;
+        background:#FDFCFB;
+        box-shadow: 0 0 10px #ccc;
+    }
+    #rps{border:none;}
+    #rps .col p.post-title span{font-size:11px;}
+
+    #rps .col p.post-title a:hover span{text-decoration:underline;}</style>
+    <style type="text/css">
+        .vasaio-qr-code { margin:10px;}
+    </style>
+
+    <!-- Start WP Socializer | Social Buttons CSS File -->
+    <link rel="stylesheet" type="text/css" media="all" href="http://www.lewebmonster.com/wp-content/plugins/wp-socializer/public/css/wp-socializer-buttons-css.css?v=2.4.8" />
+    <!-- End WP Socializer | Social Buttons CSS File -->
+
+    <!--WP Socializer v2.4.8 - Scripts Loader-->
+    <script type="text/javascript">
+        var wu=["http://platform.twitter.com/widgets.js","http://connect.facebook.net/en_US/all.js#xfbml=1","https://apis.google.com/js/plusone.js","http://platform.linkedin.com/in.js","http://platform.stumbleupon.com/1/widgets.js"],wc=5;
+        function wpsrload(){ for(var i=0;i<wc;i++){wpsrasync(wu[i]);} }
+        function wpsrasync(u){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=u;var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(a,s);} wpsrload();
+    </script>
+    <!--End WP Socializer - Scripts Loader-->
+
+    <script type="text/javascript">
+        window.___gcfg = {lang: 'es'};
+        (function()
+        {var po = document.createElement("script");
+            po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(po, s);
+        })();</script>
+
+</head>
+<body>
+
+<div id="wrapper">  <!-- wrapper begin -->
+
+<div id="masthead"><!-- masthead begin -->
+
+    <div id="top">
+
+        <a href="http://www.lewebmonster.com"><div id="blogname"></div></a>
+
+        <div class="topbar">
+            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Flewebmonster&send=false&layout=standard&width=470&show_faces=true&action=like&colorscheme=light&font=tahoma&height=62&appId=171135699609445" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:470px; height:62px; background:#fff;" allowTransparency="true"></iframe></div>
+
+    </div>
+
+    <div id="botmenu">
+        <div id="submenu" class="menu-principal-container"><ul id="menu-principal" class="sfmenu"><li id="menu-item-46" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="/">Inicio</a></li>
+            <li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28"><a href="/curriculum">Acerca de mí</a></li>
+            <li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a>Categorías</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-1173" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1173"><a href="http://www.lewebmonster.com/category/php/">PHP</a></li>
+                    <li id="menu-item-12" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12"><a href="http://www.lewebmonster.com/category/jquery/">jQuery</a></li>
+                    <li id="menu-item-11" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="http://www.lewebmonster.com/category/javascript/">JavaScript</a></li>
+                    <li id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13"><a href="http://www.lewebmonster.com/category/linux/">Linux</a></li>
+                    <li id="menu-item-1174" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1174"><a href="http://www.lewebmonster.com/category/mysql/">MySQL</a></li>
+                    <li id="menu-item-1175" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1175"><a href="http://www.lewebmonster.com/category/html5/">HTML5</a></li>
+                    <li id="menu-item-1470" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1470"><a href="http://www.lewebmonster.com/category/css/">CSS</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-1179" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-1179"><a>Proyectos</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-1180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1180"><a href="/jsnotifications-una-clase-javascript-para-mostrar-notificaciones/">jsNotifications</a></li>
+                    <li id="menu-item-1181" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1181"><a href="/juploadphp-una-clase-php-para-subir-archivos-al-servidor/">jUploadPHP</a></li>
+                    <li id="menu-item-2070" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2070"><a href="http://www.lewebmonster.com/proyectos/webmonstertooltip/">webmonsterTooltip</a></li>
+                    <li id="menu-item-2159" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2126 current_page_item menu-item-2159"><a href="http://www.lewebmonster.com/proyectos/phpdataclass/">phpDataClass para MySQL</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-596" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-596"><a href="/wp-login.php?action=login">Usuarios</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-597" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-597"><a href="/wp-login.php?action=login">Ingresar</a></li>
+                    <li id="menu-item-598" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-598"><a href="/wp-login.php?action=register">Registro</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-1182" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1182"><a>Sígame</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-1183" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1183"><a href="https://www.twitter.com/lewebmonster">Twitter</a></li>
+                    <li id="menu-item-1184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1184"><a href="http://www.facebook.com/lewebmonster">Facebook</a></li>
+                    <li id="menu-item-1185" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1185"><a href="https://plus.google.com/115053037171549695470/">Google+</a></li>
+                    <li id="menu-item-1249" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1249"><a href="http://www.youtube.com/user/lewebmonster">YouTube</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="http://www.lewebmonster.com/contacto/">Contacto</a></li>
+        </ul></div>	<div id="search">
+        <form method="get" id="searchform" action="http://www.lewebmonster.com" >
+            <input id="s"  type="text" name="s" onfocus="if(this.value=='buscar en lewebmonster.com'){this.value=''};" onblur="if(this.value==''){this.value='buscar en lewebmonster.com'};" value="" />
+
+        </form>
+    </div>
+        <div class='clear'></div>
+
+    </div>
+
+</div><!--end masthead-->
+
+<div id="casing"><div class="homewidget">
+    <ul class="breadcrumbs clearfix"><li><a href="http://www.lewebmonster.com"> Inicio </a> </li><li> / <a href="http://www.lewebmonster.com/proyectos/">Proyectos</a></li><li> / phpDataClass: una clase para interactuar de forma sencilla con MySQL</li></ul></div>
+
+
+<div id="homecontent" >
+
+
+<div class="fullpost" id="post-2126">
+    <div class="title">
+        <h2><a href="http://www.lewebmonster.com/proyectos/phpdataclass/" rel="bookmark" title="Permanent Link to phpDataClass: una clase para interactuar de forma sencilla con MySQL">phpDataClass: una clase para interactuar de forma sencilla con MySQL</a></h2>
+    </div>
+    <div class="entry">
+
+        <div class="wp-socializer-buttons clearfix">
+	<span class="wpsr-btn">
+<!-- Start WP Socializer Plugin - Facebook Button -->
+<div class="fb-like" data-href="http://www.lewebmonster.com/proyectos/phpdataclass/" data-send="false" data-layout="button_count" data-width="120" data-show-faces="0" data-action="like" data-font="tahoma" data-colorscheme="light"></div>
+<!-- End WP Socializer Plugin - Facebook Button -->
+</span>
+	<span class="wpsr-btn">
+<!-- Start WP Socializer Plugin - Retweet Button -->
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal"  data-lang="en"  data-url="http://www.lewebmonster.com/proyectos/phpdataclass/" data-text="phpDataClass: una clase para interactuar de forma sencilla con MySQL - "></a>
+<!-- End WP Socializer Plugin - Retweet Button -->
+</span>
+	<span class="wpsr-btn">
+<!-- Start WP Socializer Plugin - +1 Button -->
+<g:plusone size="medium" href="http://www.lewebmonster.com/proyectos/phpdataclass/" ></g:plusone>
+<!-- End WP Socializer Plugin - +1 Button -->
+</span>
+	<span class="wpsr-btn">
+<!-- Start WP Socializer Plugin - LinkedIn Button -->
+<script type="IN/Share" data-url="http://www.lewebmonster.com/proyectos/phpdataclass/" data-counter="right"></script>
+<!-- End WP Socializer Plugin - LinkedIn Button -->
+</span>
+	<span class="wpsr-btn">
+<!-- Start WP Socializer Plugin - StumbleUpon Button -->
+<su:badge layout="1"></su:badge>
+<!-- End WP Socializer Plugin - StumbleUpon Button -->
+</span>
+        </div><span class="wpsr_floatbts_anchor" data-offset="25" ></span><div style="display: none">VN:F [1.9.22_1171]</div><div class="ratingblock "><div class="ratingheader "></div><div class="ratingstars "><div id="article_rater_2126" class="ratepost gdsr-plain gdsr-size-24"><div class="starsbar gdsr-size-24"><div class="gdouter gdheight"><div id="gdr_vote_a2126" style="width: 120px;" class="gdinner gdheight"></div><div id="gdr_stars_a2126" class="gdsr_rating_as"><a id="gdsrX2126X5X0XaXarticle_rater_2126Xarticle_loader_2126X10X24" title="5 / 5" class="s5" rel="nofollow"></a><a id="gdsrX2126X4X0XaXarticle_rater_2126Xarticle_loader_2126X10X24" title="4 / 5" class="s4" rel="nofollow"></a><a id="gdsrX2126X3X0XaXarticle_rater_2126Xarticle_loader_2126X10X24" title="3 / 5" class="s3" rel="nofollow"></a><a id="gdsrX2126X2X0XaXarticle_rater_2126Xarticle_loader_2126X10X24" title="2 / 5" class="s2" rel="nofollow"></a><a id="gdsrX2126X1X0XaXarticle_rater_2126Xarticle_loader_2126X10X24" title="1 / 5" class="s1" rel="nofollow"></a></div></div></div></div><div id="article_loader_2126" style="display: none; width: 120px " class="ratingloaderarticle"><div class="loader flower " style="height: 24px"><div class="loaderinner" style="padding-top: 2px">Por favor, espere...</div></div></div></div><div class="ratingtext "><div id="gdr_text_a2126">Rating: 5.0/<strong>5</strong> (1 vote cast)</div></div></div><h2>¿Qué es phpDataClass?</h2>
+        <p>phpDataClass es una <strong>clase PHP para manejo de bases de datos MySQL</strong>. La idea principal de este proyecto es evitar repetirnos una y otra vez a la hora de <strong>interactuar con una base de datos MySQL</strong>. La clase cuenta con pocos métodos, pero son los que de momento me parecieron necesarios y suficientes para lo que normalmente se hace.</p>
+        <div class="clsBotonera">
+            <a href="/descarga-protegida" class="clsBoton clsBotonColor">Descargar la clase phpDataClass</a></p>
+            <div class="clear"></div>
+        </div>
+        <p>La clase la he venido probando desde hace algún tiempo en varios proyectos y se le han hecho algunas mejoras. Cualquier error que ustedes encuentren o si tienen alguna sugerencia la pueden enviar por medio del <a href="/contacto/">formulario de contacto</a>.</p>
+        <h2>Métodos de la clase phpDataClass para bases de datos MySQL</h2>
+        <p>Los siguientes son los <strong>métodos de la clase phpDataClass</strong> que permiten <strong>interactuar con bases de datos MySQL</strong>:</p>
+        <table>
+            <thead>
+            <tr>
+                <th>Método</th>
+                <th>Descripción</th>
+                <th>Ejemplo</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><strong><em>constructor(servidor, usuario, contraseña, base de datos)</em></strong></td>
+                <td>Es la llamada inicial que hacemos al instanciar la clase. Todos los parámetros son requeridos. Los parámetros que se envían son utilizados para conectar a la base de datos MySQL.</td>
+                <td style="max-width:400px;">
+                    <pre class="brush: php; auto-links: false;">$clsDataClass=new phpDataClass('localhost','root','micontrasena','basededatos');</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>executeQuery(consulta SQL)</strong></td>
+                <td>Mediante este método podemos insertar, actualizar y eliminar datos de una tabla. El mismo método se utiliza para esas tres acciones.</td>
+                <td style="max-width:400px;">
+<pre class="brush: php; auto-links: false;">if($clsDataClass->executeQuery("INSERT INTO empleados VALUES(NULL,'Cali','Rojas')")){
+	echo 'Empleado agregado correctamente';
+}else{
+	echo 'Error al agregar el empleado';
+}</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>lastID()</strong></td>
+                <td>Obtiene el ID único del último registro insertado en la base de datos. Es útil, por ejemplo, para cuando estamos utilizando campos con AUTOINCREMENT.</td>
+                <td style="max-width:400px;">
+<pre class="brush: php; auto-links: false;">if($clsDataClass->executeQuery("INSERT INTO empleados VALUES(NULL,'Cali','Rojas')")){
+	echo 'Empleado agregado correctamente. El ID asignado es '.$clsDataClass->lastID();
+}else{
+	echo 'Error al agregar el empleado';
+}</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>affectedRows()</strong></td>
+                <td>Retorna la cantidad de registros afectados por una consulta. Por ejemplo, al eliminar o actualizar datos de una tabla.</td>
+                <td style="max-width:400px;">
+<pre class="brush: php; auto-links: false;">if($clsDataClass->executeQuery("DELETE FROM empleados WHERE EmpleadoID>10")){
+	echo 'Registros eliminados correctamente. Filas afectadas: '.$clsDataClass->affectedRows();
+}else{
+	echo 'Error al eliminar los registros';
+}</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>lastError()</strong></td>
+                <td>Por medio de este método podemos obtener el último error de una consulta MySQL que hayamos ejecutado anteriormente.</td>
+                <td style="max-width:400px;">
+<pre class="brush: php; auto-links: false;">if($clsDataClass->executeQuery("DELETE FROM empleados WHERE EmpleadoID!!!!10")){
+	echo 'Empleado eliminado correctamente. Filas afectadas: '.$clsDataClass->affectedRows();
+}else{
+	echo 'Error detectado: '.$clsDataClass->lastError();
+}</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>rowCount(consulta SQL)</strong></td>
+                <td>Obtiene la cantidad de registros devueltos por la consulta que le pasamos.</td>
+                <td style="max-width:400px;">
+                    <pre class="brush: php; auto-links: false;">echo 'Empleados registrados: '.$clsDataClass->rowCount('SELECT * FROM empleados');</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>uniqueValue(consulta SQL)</strong></td>
+                <td>Sirve para obtener el primer registro o un único campo devuelto por la consulta que le pasemos.</td>
+                <td style="max-width:400px;">
+                    <pre class="brush: php; auto-links: false;">echo 'El usuario con ID 10 se llama: '.$clsDataClass->uniqueValue("SELECT Nombre + ' ' + Apellidos FROM empleados WHERE EmpleadoID=10");</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>getConnection()</strong></td>
+                <td>Esta clase maneja la conexión a la base de datos de forma automatizada, al realizar la primer consulta SQL se conecta a la base de datos utilizando los credenciales que se le pasaron al constructor al instanciarse. En algunos casos necesitamos usar una conexión abierta para algo, o para otro script PHP. No es necesario crear una nueva conexión, ya que con el método getConnection() podemos reutilizar la conexión que la clase estableció.</td>
+                <td style="max-width:400px;">
+<pre class="brush: php; auto-links: false;">if(mysql_query("SELECT * FROM tabla",$clsDataClass->getConnection())){
+	//lo que sea
+}else{
+	//error
+}</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>recordsList(consulta SQL)</strong></td>
+                <td>Este método sirve para consultar varios registros a la vez o para consultar una línea que contenga más de un campo de la base de datos, como por ejemplo, traer todos los registros almacenados en una tabla. El método devuelve un Array asociativo y a los elementos se accede por medio del nombre del campo.</td>
+                <td style="max-width:400px;">
+<pre class="brush: php; auto-links: false;">if($objDatos=$clsDataClass-&gt;recordsList(&#039;SELECT EmpleadoID,Nombre,Apellidos FROM empleados&#039;)){
+	if(count($objDatos)&gt;0){
+		foreach($objDatos as $objEmpleado){
+			echo &#039;ID del empleado: &#039;.$objEmpleado[&#039;EmpleadoID&#039;].&#039;&lt;br&gt;&#039;;
+			echo &#039;Nombre: &#039;.$objEmpleado[&#039;Nombre&#039;].&#039;&lt;br&gt;&#039;;
+			echo &#039;Apellidos: &#039;.$objEmpleado[&#039;Apellidos&#039;];
+			echo &#039;&lt;hr&gt;&#039;;
+		}
+	}else{
+		echo &#039;No se encontraron empleados&#039;;
+	}
+}else{
+	echo $clsDataClass-&gt;lastError();
+}</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>closeConnection()</strong></td>
+                <td>Cierra la conexión a la base de datos establecida por la clase phpDataClass. El método raramente se utiliza, pero está disponible por si fuera necesario cerrar la conexión en algún momento para ahorrar recursos. Es importante mencionar que cuando se destruye la instancia de la clase, ésta cierra la conexión a la base de datos automáticamente ;)</td>
+                <td style="max-width:400px;">
+                    <pre class="brush: php; auto-links: false;">$clsDataClass->closeConnection();</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>sanitizeIn(cadena)</strong></td>
+                <td>Método para realizar una limpieza básica de las cadenas que se envían a la base de datos, para evitar errores y posibles inyecciones.</td>
+                <td style="max-width:400px;">
+<pre class="brush: php; auto-links: false;">$strNombreMarca=$clsDataClass->sanitizeIn("Pepito's brand");
+if($clsClass->executeQuery("INSERT INTO marcas VALUES(NULL,'$strNombreMarca')")){
+	echo 'Marca insertada correctamente';
+}else{
+	echo $clsClass->lastError();
+}</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>sanitizeOut(cadena)</strong></td>
+                <td>Invierte lo que hizo el método sanitizeIn(). Es decir, nos devuelve la cadena original que el usuario insertó <em>(sin las modificaciones que realizó sanitizeIn())</em>.</p>
+                    <p>Aquí también vemos un ejemplo de cómo utilizar el método recordsList().</td>
+                <td style="max-width:400px;">
+<pre class="brush: php; auto-links: false;">if($objMarca=$clsDataClass-&gt;recordsList(&#039;SELECT Nombre,Estado FROM marcas WHERE MarcaID=24&#039;)){
+	if(count($objMarca)&gt;0){
+		echo &#039;Nombre de la marca: &#039;.$clsDataClass-&gt;sanitizeOut($objMarca[&#039;Nombre&#039;]).&#039;&lt;br&gt;&#039;;
+		echo &#039;Estado actual: &#039;.$clsDataClass-&gt;sanitizeOut($objMarca[&#039;Estado&#039;]);
+	}else{
+		echo &#039;La marca no existe!&#039;;
+	}
+}else{
+	echo $clsDataClass-&gt;lastError();
+}</pre>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <h2>Descargar la clase PHP para bases de datos MySQL</h2>
+        <p>Los usuarios registrados <a href="/descarga-protegida">pueden descargar</a> la <strong>clase phpDataClass</strong> para el manejo de sus bases de datos MySQL. Para iniciar la descarga <a href="">haga clic en este enlace</a>.</p>
+        <div class="clsBotonera">
+            <a href="/descarga-protegida" class="clsBoton clsBotonColor">Descargar la clase phpDataClass</a></p>
+            <div class="clear"></div>
+        </div>
+        <h2>Ejemplos de uso de la clase phpDataClass</h2>
+        <p>Los siguientes son algunos artículos que se han publicado en el blog y en los que se utilizó la clase <strong>phpDataClass</strong>. Ciertos artículos contienen ejemplos que se pueden descargar.</p>
+        ul>
+        <li><a href="/como-utilizar-la-clase-phpdataclass-para-interactuar-con-mysql/">¿Cómo utilizar la clase phpDataClass para interactuar con MySQL?</a></li>
+        </ul>
+        <div style="display: none">VN:F [1.9.22_1171]</div><div class="ratingblock "><div class="ratingheader "></div><div class="ratingstars "><div id="article_rater_2126" class="ratepost gdsr-plain gdsr-size-24"><div class="starsbar gdsr-size-24"><div class="gdouter gdheight"><div id="gdr_vote_a2126" style="width: 120px;" class="gdinner gdheight"></div><div id="gdr_stars_a2126" class="gdsr_rating_as"><a id="gdsrX2126X5X0XaXarticle_rater_2126Xarticle_loader_2126X10X24" title="5 / 5" class="s5" rel="nofollow"></a><a id="gdsrX2126X4X0XaXarticle_rater_2126Xarticle_loader_2126X10X24" title="4 / 5" class="s4" rel="nofollow"></a><a id="gdsrX2126X3X0XaXarticle_rater_2126Xarticle_loader_2126X10X24" title="3 / 5" class="s3" rel="nofollow"></a><a id="gdsrX2126X2X0XaXarticle_rater_2126Xarticle_loader_2126X10X24" title="2 / 5" class="s2" rel="nofollow"></a><a id="gdsrX2126X1X0XaXarticle_rater_2126Xarticle_loader_2126X10X24" title="1 / 5" class="s1" rel="nofollow"></a></div></div></div></div><div id="article_loader_2126" style="display: none; width: 120px " class="ratingloaderarticle"><div class="loader flower " style="height: 24px"><div class="loaderinner" style="padding-top: 2px">Por favor, espere...</div></div></div></div><div class="ratingtext "><div id="gdr_text_a2126">Rating: 5.0/<strong>5</strong> (1 vote cast)</div></div></div><div style="display: none">VN:F [1.9.22_1171]</div><div class="thumblock "><div id="gdsr_thumb_2126_a_up" class="gdt-size-20 gdthumb gdup"><a id="gdsrX2126XupXaX25X20XY" class="gdt-starrating" rel="nofollow"></a></div><div id="gdsr_thumb_2126_a_loader_up" style="display: none; width: 20px " class="ratingloader loadup"><div class="loader flower thumb" style="width: 20px; height: 20px;"></div></div><div id="gdsr_thumb_2126_a_dw" class="gdt-size-20 gdthumb gddw"><a id="gdsrX2126XdwXaX25X20XY" class="gdt-starrating" rel="nofollow"></a></div><div id="gdsr_thumb_2126_a_loader_dw" style="display: none; width: 20px " class="ratingloader loaddw"><div class="loader flower thumb" style="width: 20px; height: 20px;"></div></div><div class="ratingtext "><div id="gdsr_thumb_text_2126_a" class="gdt-size-20 gdthumbtext">Rating: <strong>+1</strong> (from 1 vote)</div></div><div class="raterclear"></div></div><span class="hreview-aggregate"><span class="item"><span class="fn">phpDataClass: una clase para interactuar de forma sencilla con MySQL</span></span>, <span class="rating"><span class="average">5.0</span> out of <span class="best">5</span> based on <span class="votes">1</span> rating <span class="summary"></span></span></span></div>
+</div>
+
+</div>
+
+
+<div class="clear"></div>
+</div>
+
+<div id="footer">
+<div class="clear"></div>
+<div class="clsCenter" style="margin-bottom:10px;">
+    <!--
+        <a href="http://secure.hostgator.com/~affiliat/cgi-bin/affiliates/clickthru.cgi?id=lewebmonster-">
+            <img src="http://tracking.hostgator.com/img/Shared/728x90.gif" border="0">
+        </a>
+    -->
+</div>
+<div class="clear">&nbsp;</div>
+<div class="clear">&nbsp;</div>
+<div class="fcred" style="color:#000">
+
+</div>
+<div>
+    <!--Automatic Image Slider w/ CSS & jQuery with some customization--><script type="text/javascript">
+    $j = jQuery.noConflict();
+    $j(document).ready(function() {$j("#rps .paging").show();$j("#rps .paging a:first").addClass("active");
+
+        $j(".slide").css({"width" : 1000});
+        $j("#rps .window").css({"width" : 1000});
+        $j("#rps .window").css({"height" : 100});
+
+        $j("#rps .col").css({"width" : 331.333333333});
+        $j("#rps .col").css({"height" : 96});
+        $j("#rps .col p.post-title span").css({"color" : "#DB1139"});
+        $j("#rps .post-date").css({"top" : 80});
+        $j("#rps .post-date").css({"width" : 321.333333333});var imageWidth = $j("#rps .window").width();
+        //var imageSum = $j("#rps .slider div").size();
+        var imageReelWidth = imageWidth * 29.3333333333;
+
+        //Adjust the image reel to its new size
+        $j("#rps .slider").css({"width" : imageReelWidth});
+
+        //Paging + Slider Function
+        rotate = function(){
+            var triggerID = $active.attr("rel") - 1; //Get number of times to slide
+            //alert(triggerID);
+            var sliderPosition = triggerID * imageWidth; //Determines the distance the image reel needs to slide
+
+            $j("#rps .paging a").removeClass("active");
+            $active.addClass("active");
+
+            //Slider Animation
+            $j("#rps .slider").stop(true,false).animate({
+                left: -sliderPosition
+            }, 500 );
+        };
+        var play;
+        //Rotation + Timing Event
+        rotateSwitch = function(){
+            play = setInterval(function(){ //Set timer - this will repeat itself every 3 seconds
+                $active = $j("#rps .paging a.active").next();
+                if ( $active.length === 0) { //If paging reaches the end...
+                    $active = $j("#rps .paging a:first"); //go back to first
+                }
+                rotate(); //Trigger the paging and slider function
+            }, 7000);
+        };
+
+        rotateSwitch(); //Run function on launch
+
+        //On Hover
+        $j("#rps .slider a").hover(function() {
+            clearInterval(play); //Stop the rotation
+        }, function() {
+            rotateSwitch(); //Resume rotation
+        });
+
+        //On Click
+        $j("#rps .paging a").click(function() {
+            $active = $j(this); //Activate the clicked paging
+            //Reset Timer
+            clearInterval(play); //Stop the rotation
+            rotate(); //Trigger rotation immediately
+            rotateSwitch(); // Resume rotation
+            return false; //Prevent browser jump to link anchor
+        });
+    });
+
+</script><div id="rps">
+    <div class="window">
+        <div class="slider"><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-crear-un-sitio-web-basico-para-dispositivos-moviles-con-jquery-mobile/"><span>¿Cómo crear un sitio web básico para dispositivos móviles con jQuery Mobile?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-crear-un-sitio-web-basico-para-dispositivos-moviles-con-jquery-mobile/"><img src="/wp-content/uploads/2013/02/jquery-mobile-destacada-140x46.png" alt="¿Cómo crear un sitio web básico para dispositivos móviles con jQuery Mobile?" align="left" /></a>¿Qué es jQuery Mobile?
+
+            Según su sitio web oficial: <a href="http://www.lewebmonster.com/como-crear-un-sitio-web-basico-para-dispositivos-moviles-con-jquery-mobile/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/respaldar-y-restaurar-bases-de-datos-mysql-server-desde-la-consola/"><span>Respaldar y restaurar bases de datos MySQL Server desde la consola</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/respaldar-y-restaurar-bases-de-datos-mysql-server-desde-la-consola/"><img src="/wp-content/uploads/2013/01/respaldar-mysql-140x46.png" alt="Respaldar y restaurar bases de datos MySQL Server desde la consola" align="left" /></a>
+            En este artículo voy a exponer varias formas de respaldar <a href="http://www.lewebmonster.com/respaldar-y-restaurar-bases-de-datos-mysql-server-desde-la-consola/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-utilizar-los-triggers-o-disparadores-en-mysql-server/"><span>¿Cómo utilizar los triggers o disparadores en MySQL Server?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-utilizar-los-triggers-o-disparadores-en-mysql-server/"><img src="/wp-content/uploads/2013/01/triggersmysql-140x46.png" alt="¿Cómo utilizar los triggers o disparadores en MySQL Server?" align="left" /></a>
+            ¿Qué son los triggers en MySQL Server?
+            Los triggers o <a href="http://www.lewebmonster.com/como-utilizar-los-triggers-o-disparadores-en-mysql-server/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/utilizacion-de-tablas-federadas-o-federated-en-mysql-server/"><span>Utilización de tablas federadas o FEDERATED en MySQL Server</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/utilizacion-de-tablas-federadas-o-federated-en-mysql-server/"><img src="/wp-content/uploads/2013/01/tablas-federadas-destacada-140x46.png" alt="Utilización de tablas federadas o FEDERATED en MySQL Server" align="left" /></a>¿Qué son las tablas federadas?
+            Las tablas federadas (o <a href="http://www.lewebmonster.com/utilizacion-de-tablas-federadas-o-federated-en-mysql-server/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-usar-mysql-desde-la-consola-o-linea-de-comandos-parte-2/"><span>¿Cómo usar MySQL desde la consola o línea de comandos? Parte 2</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-usar-mysql-desde-la-consola-o-linea-de-comandos-parte-2/"><img src="/wp-content/uploads/2013/01/mysql-consola2-140x46.jpg" alt="¿Cómo usar MySQL desde la consola o línea de comandos? Parte 2" align="left" /></a>
+            Continuando lo que había hecho meses atrás, en este <a href="http://www.lewebmonster.com/como-usar-mysql-desde-la-consola-o-linea-de-comandos-parte-2/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/ejemplo-para-crear-una-agenda-de-contactos-con-localstorage-de-html5/"><span>Ejemplo para crear una agenda de contactos con localStorage de HTML5</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/ejemplo-para-crear-una-agenda-de-contactos-con-localstorage-de-html5/"><img src="/wp-content/uploads/2012/12/agenda-html5-jquery-140x46.jpg" alt="Ejemplo para crear una agenda de contactos con localStorage de HTML5" align="left" /></a>Ya vimos cómo almacenar datos en el navegador con <a href="http://www.lewebmonster.com/ejemplo-para-crear-una-agenda-de-contactos-con-localstorage-de-html5/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/expandir-y-contraer-contenido-con-la-etiqueta-details-de-html5/"><span>Expandir y contraer contenido con la etiqueta "details" de HTML5</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/expandir-y-contraer-contenido-con-la-etiqueta-details-de-html5/"><img src="/wp-content/uploads/2012/12/etiquetas-summary-details-html5-140x46.jpg" alt="Expandir y contraer contenido con la etiqueta "details" de HTML5" align="left" /></a>Los elementos colapsables son una buena alternativa a la hora <a href="http://www.lewebmonster.com/expandir-y-contraer-contenido-con-la-etiqueta-details-de-html5/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-hacer-que-el-usuario-confirme-el-cierre-de-una-pagina-o-ventana/"><span>¿Cómo hacer que el usuario confirme el cierre de una página o ventana?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-hacer-que-el-usuario-confirme-el-cierre-de-una-pagina-o-ventana/"><img src="/wp-content/uploads/2012/12/beforeunload-javascript2-140x46.jpg" alt="¿Cómo hacer que el usuario confirme el cierre de una página o ventana?" align="left" /></a>Antes de cerrarse una pestaña o ventana del navegador, se <a href="http://www.lewebmonster.com/como-hacer-que-el-usuario-confirme-el-cierre-de-una-pagina-o-ventana/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-crear-una-tarjeta-animada-para-navidad-con-jquery/"><span>¿Cómo crear una tarjeta animada (para Navidad) con jQuery?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-crear-una-tarjeta-animada-para-navidad-con-jquery/"><img src="/wp-content/uploads/2012/12/tarjeta-animada-jquery-140x46.jpg" alt="¿Cómo crear una tarjeta animada (para Navidad) con jQuery?" align="left" /></a>Pués bien, aquí estamos otra vez para hacer una nueva <a href="http://www.lewebmonster.com/como-crear-una-tarjeta-animada-para-navidad-con-jquery/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/almacenar-datos-en-el-navegador-utilizando-localstorage-de-html5/"><span>Almacenar datos en el navegador utilizando localStorage de HTML5</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/almacenar-datos-en-el-navegador-utilizando-localstorage-de-html5/"><img src="/wp-content/uploads/2012/12/html5-localstorage-140x46.jpg" alt="Almacenar datos en el navegador utilizando localStorage de HTML5" align="left" /></a>
+            Local Storage es parte del API Web Storage de HTML5 (el <a href="http://www.lewebmonster.com/almacenar-datos-en-el-navegador-utilizando-localstorage-de-html5/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-crear-un-efecto-de-caida-de-nieve-con-jquery-y-el-plugin-snowfall/"><span>¿Cómo crear un efecto de caída de nieve con jQuery y el plugin Snowfall?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-crear-un-efecto-de-caida-de-nieve-con-jquery-y-el-plugin-snowfall/"><img src="/wp-content/uploads/2012/12/efecto-caida-de-nieve-140x46.jpg" alt="¿Cómo crear un efecto de caída de nieve con jQuery y el plugin Snowfall?" align="left" /></a>Parece que algunos bloggers se toman la navidad muy en serio <a href="http://www.lewebmonster.com/como-crear-un-efecto-de-caida-de-nieve-con-jquery-y-el-plugin-snowfall/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/elementos-html-editables-con-el-atributo-contenteditable-de-html5/"><span>Elementos HTML editables con el atributo "contenteditable" de HTML5</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/elementos-html-editables-con-el-atributo-contenteditable-de-html5/"><img src="/wp-content/uploads/2012/12/content-editable-140x46.jpg" alt="Elementos HTML editables con el atributo "contenteditable" de HTML5" align="left" /></a>Probablemente todos en algún momento hemos tenido la <a href="http://www.lewebmonster.com/elementos-html-editables-con-el-atributo-contenteditable-de-html5/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/usando-el-control-range-de-html5/"><span>Usando el control “range” de HTML5</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/usando-el-control-range-de-html5/"><img src="/wp-content/uploads/2012/11/destacada-range-html5-140x46.jpg" alt="Usando el control “range” de HTML5" align="left" /></a>Continuando con los nuevos controles HTML5 para formularios, <a href="http://www.lewebmonster.com/usando-el-control-range-de-html5/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-utilizar-el-control-color-de-html5/"><span>¿Cómo utilizar el control "color" de HTML5?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-utilizar-el-control-color-de-html5/"><img src="/wp-content/uploads/2012/11/el-control-color-de-html5-140x46.jpg" alt="¿Cómo utilizar el control "color" de HTML5?" align="left" /></a>Con HTML5 se incluye una serie de nuevos controles para <a href="http://www.lewebmonster.com/como-utilizar-el-control-color-de-html5/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/buscar-en-una-tabla-con-jquery-y-el-control-search-de-html5-sin-plugins/"><span>Buscar en una tabla con jQuery y el control search de HTML5 (sin plugins)</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/buscar-en-una-tabla-con-jquery-y-el-control-search-de-html5-sin-plugins/"><img src="/wp-content/uploads/2012/11/buscar-en-tablas-jquery-140x46.jpg" alt="Buscar en una tabla con jQuery y el control search de HTML5 (sin plugins)" align="left" /></a>
+
+            En tiempos anteriores para filtrar datos en tablas <a href="http://www.lewebmonster.com/buscar-en-una-tabla-con-jquery-y-el-control-search-de-html5-sin-plugins/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-usar-mysql-desde-la-consola-o-linea-de-comandos-parte-1/"><span>¿Cómo usar MySQL desde la consola o línea de comandos? Parte 1</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-usar-mysql-desde-la-consola-o-linea-de-comandos-parte-1/"><img src="/wp-content/uploads/2012/11/consola-mysql-1-140x46.jpg" alt="¿Cómo usar MySQL desde la consola o línea de comandos? Parte 1" align="left" /></a>
+
+            MySQL es un RDBMS (Relational Database Management System) <a href="http://www.lewebmonster.com/como-usar-mysql-desde-la-consola-o-linea-de-comandos-parte-1/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/agregar-varios-fondos-a-una-pagina-con-css3-sin-usar-capas-anidadas/"><span>Agregar varios fondos a una página con CSS3 (sin usar capas anidadas)</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/agregar-varios-fondos-a-una-pagina-con-css3-sin-usar-capas-anidadas/"><img src="/wp-content/uploads/2012/11/multiples-fondos-css3-140x46.jpg" alt="Agregar varios fondos a una página con CSS3 (sin usar capas anidadas)" align="left" /></a>Anteriormente cuando se quería o necesitaba poner varias <a href="http://www.lewebmonster.com/agregar-varios-fondos-a-una-pagina-con-css3-sin-usar-capas-anidadas/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-leer-xml-haciendo-uso-de-php-y-la-extension-simplexml/"><span>¿Cómo leer XML haciendo uso de PHP y la extensión SimpleXML?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-leer-xml-haciendo-uso-de-php-y-la-extension-simplexml/"><img src="/wp-content/uploads/2012/11/simplexml-140x46.jpg" alt="¿Cómo leer XML haciendo uso de PHP y la extensión SimpleXML?" align="left" /></a>
+            XML o  eXtensible Markup Language es un lenguaje muy <a href="http://www.lewebmonster.com/como-leer-xml-haciendo-uso-de-php-y-la-extension-simplexml/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-crear-una-capa-o-div-flotante-con-movimiento-usando-jquery/"><span>¿Cómo crear una capa o DIV flotante con movimiento usando jQuery?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-crear-una-capa-o-div-flotante-con-movimiento-usando-jquery/"><img src="/wp-content/uploads/2012/10/capa-flotante-animada-jquery-140x46.jpg" alt="¿Cómo crear una capa o DIV flotante con movimiento usando jQuery?" align="left" /></a>Las capas o DIVs flotantes son algo muy común en estos <a href="http://www.lewebmonster.com/como-crear-una-capa-o-div-flotante-con-movimiento-usando-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/agregar-y-eliminar-columnas-de-una-tabla-html-con-la-libreria-jquery/"><span>Agregar y eliminar columnas de una tabla HTML con la librería jQuery</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/agregar-y-eliminar-columnas-de-una-tabla-html-con-la-libreria-jquery/"><img src="/wp-content/uploads/2012/10/eliminar-agregar-columnas-140x46.jpg" alt="Agregar y eliminar columnas de una tabla HTML con la librería jQuery" align="left" /></a>En un artículo anterior habíamos visto cómo manipular las <a href="http://www.lewebmonster.com/agregar-y-eliminar-columnas-de-una-tabla-html-con-la-libreria-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-usar-cookies-en-javascript/"><span>¿Cómo usar cookies en JavaScript? Parte 1</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-usar-cookies-en-javascript/"><img src="/wp-content/uploads/2012/10/cookies-javascript-140x46.jpg" alt="¿Cómo usar cookies en JavaScript? Parte 1" align="left" /></a>
+
+            ¿Qué son las cookies?
+            En palabras bastante cristianas, <a href="http://www.lewebmonster.com/como-usar-cookies-en-javascript/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-utilizar-la-clase-phpdataclass-para-interactuar-con-mysql/"><span>¿Cómo utilizar la clase phpDataClass para interactuar con MySQL?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-utilizar-la-clase-phpdataclass-para-interactuar-con-mysql/"><img src="/wp-content/uploads/2012/09/phpdataclass-140x46.jpg" alt="¿Cómo utilizar la clase phpDataClass para interactuar con MySQL?" align="left" /></a>
+            En la vida real delegar funciones es algo que si se sabe <a href="http://www.lewebmonster.com/como-utilizar-la-clase-phpdataclass-para-interactuar-con-mysql/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/agregar-tooltips-a-una-imagen-con-jquery-y-el-plugin-webmonstertooltip/"><span>Agregar tooltips a una imagen con jQuery y el plugin webmonsterTooltip</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/agregar-tooltips-a-una-imagen-con-jquery-y-el-plugin-webmonstertooltip/"><img src="/wp-content/uploads/2012/09/imagen-interactiva-jquery-140x46.jpg" alt="Agregar tooltips a una imagen con jQuery y el plugin webmonsterTooltip" align="left" /></a>No hace mucho desarrollé mi primer plugin para jQuery, y lo <a href="http://www.lewebmonster.com/agregar-tooltips-a-una-imagen-con-jquery-y-el-plugin-webmonstertooltip/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/imagenes-con-descripcion-animada-usando-transformaciones-de-css3/"><span>Imágenes con descripción animada usando transformaciones de CSS3</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/imagenes-con-descripcion-animada-usando-transformaciones-de-css3/"><img src="/wp-content/uploads/2012/09/descripciones-animadas-css3-140x46.jpg" alt="Imágenes con descripción animada usando transformaciones de CSS3" align="left" /></a>En uno de los primeros artículos que publiqué en este blog <a href="http://www.lewebmonster.com/imagenes-con-descripcion-animada-usando-transformaciones-de-css3/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/uso-de-transformaciones-transform-css3-para-rotar-elementos/"><span>Uso de transformaciones (transform) CSS3 para rotar elementos</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/uso-de-transformaciones-transform-css3-para-rotar-elementos/"><img src="/wp-content/uploads/2012/09/rotacion-css3-140x46.jpg" alt="Uso de transformaciones (transform) CSS3 para rotar elementos" align="left" /></a>
+            Hasta el momento hemos visto varios ejemplos del uso que le <a href="http://www.lewebmonster.com/uso-de-transformaciones-transform-css3-para-rotar-elementos/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/cambiar-la-posicion-de-los-elementos-usando-transiciones-de-css3/"><span>Cambiar la posición de los elementos usando transiciones de CSS3</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/cambiar-la-posicion-de-los-elementos-usando-transiciones-de-css3/"><img src="/wp-content/uploads/2012/09/animar-posicion-css3-140x46.jpg" alt="Cambiar la posición de los elementos usando transiciones de CSS3" align="left" /></a>
+            Hoy de pronto se me ocurrió hacer una pequeña animación <a href="http://www.lewebmonster.com/cambiar-la-posicion-de-los-elementos-usando-transiciones-de-css3/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/efectos-de-fondo-cambiar-color-y-dar-movimiento-con-transiciones-de-css3/"><span>Efectos de fondo (cambiar color y dar movimiento) con transiciones de CSS3</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/efectos-de-fondo-cambiar-color-y-dar-movimiento-con-transiciones-de-css3/"><img src="/wp-content/uploads/2012/09/transiciones-fondo-css3-140x46.jpg" alt="Efectos de fondo (cambiar color y dar movimiento) con transiciones de CSS3" align="left" /></a>
+            Parece que últimamente ando bastante emocionado con esto <a href="http://www.lewebmonster.com/efectos-de-fondo-cambiar-color-y-dar-movimiento-con-transiciones-de-css3/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/crear-paneles-o-capas-deslizantes-con-transicion-utilizando-css3/"><span>Crear paneles o capas deslizantes con transición utilizando CSS3</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/crear-paneles-o-capas-deslizantes-con-transicion-utilizando-css3/"><img src="/wp-content/uploads/2012/09/paneles-css3-140x46.jpg" alt="Crear paneles o capas deslizantes con transición utilizando CSS3" align="left" /></a>
+
+            Seguimos nuevamente con las transiciones de CSS3. Las <a href="http://www.lewebmonster.com/crear-paneles-o-capas-deslizantes-con-transicion-utilizando-css3/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-enviar-correos-utilizando-php-funcion-mail-y-smtp-con-swift-mailer/"><span>¿Cómo enviar correos utilizando PHP? (función mail y SMTP con Swift Mailer)</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-enviar-correos-utilizando-php-funcion-mail-y-smtp-con-swift-mailer/"><img src="/wp-content/uploads/2012/09/correo-php-140x46.jpg" alt="¿Cómo enviar correos utilizando PHP? (función mail y SMTP con Swift Mailer)" align="left" /></a>Para enviar correos electrónicos con PHP existen muchas <a href="http://www.lewebmonster.com/como-enviar-correos-utilizando-php-funcion-mail-y-smtp-con-swift-mailer/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/acordeon-vertical-y-horizontal-utilizando-transiciones-transition-en-css3/"><span>Acordeón vertical y horizontal utilizando transiciones (transition) en CSS3</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/acordeon-vertical-y-horizontal-utilizando-transiciones-transition-en-css3/"><img src="/wp-content/uploads/2012/08/acorderon-css3-140x46.jpg" alt="Acordeón vertical y horizontal utilizando transiciones (transition) en CSS3" align="left" /></a>
+            CSS3: cada vez que menciono ese nombre se me viene a la <a href="http://www.lewebmonster.com/acordeon-vertical-y-horizontal-utilizando-transiciones-transition-en-css3/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/reconocimiento-de-caras-utilizando-jquery-y-el-plugin-face-detection/"><span>Reconocimiento de caras utilizando jQuery y el plugin Face Detection</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/reconocimiento-de-caras-utilizando-jquery-y-el-plugin-face-detection/"><img src="/wp-content/uploads/2012/09/deteccion-de-rostros-jquery-140x46.jpg" alt="Reconocimiento de caras utilizando jQuery y el plugin Face Detection" align="left" /></a>
+
+            Es muy común en algunas redes sociales como Facebook <a href="http://www.lewebmonster.com/reconocimiento-de-caras-utilizando-jquery-y-el-plugin-face-detection/">.../a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-leer-archivos-de-excel-xls-y-xlsx-con-php-y-la-clase-phpexcel/"><span>¿Cómo leer archivos de Excel (XLS y XLSX) con PHP y la clase PHPExcel?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-leer-archivos-de-excel-xls-y-xlsx-con-php-y-la-clase-phpexcel/"><img src="/wp-content/uploads/2012/09/leer-excel-con-php-140x46.jpg" alt="¿Cómo leer archivos de Excel (XLS y XLSX) con PHP y la clase PHPExcel?" align="left" /></a>
+
+            PHP es un lenguaje muy popular y ha tomado mucho más <a href="http://www.lewebmonster.com/como-leer-archivos-de-excel-xls-y-xlsx-con-php-y-la-clase-phpexcel/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/metodos-para-realizar-animaciones-estandar-con-la-libreria-jquery-parte-3/"><span>Métodos para realizar animaciones estándar con la librería jQuery: Parte 3</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/metodos-para-realizar-animaciones-estandar-con-la-libreria-jquery-parte-3/"><img src="/wp-content/uploads/2012/09/metodos-jquery-parte-3-140x46.jpg" alt="Métodos para realizar animaciones estándar con la librería jQuery: Parte 3" align="left" /></a>Esta es la última parte de una breve introducción a los <a href="http://www.lewebmonster.com/metodos-para-realizar-animaciones-estandar-con-la-libreria-jquery-parte-3/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/metodos-para-realizar-animaciones-estandar-con-la-libreria-jquery-parte-2/"><span>Métodos para realizar animaciones estándar con la librería jQuery: Parte 2</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/metodos-para-realizar-animaciones-estandar-con-la-libreria-jquery-parte-2/"><img src="/wp-content/uploads/2012/09/metodos-jquery-parte-2-140x46.jpg" alt="Métodos para realizar animaciones estándar con la librería jQuery: Parte 2" align="left" /></a>jQuery es como una droga, una vez que se prueba queremos <a href="http://www.lewebmonster.com/metodos-para-realizar-animaciones-estandar-con-la-libreria-jquery-parte-2/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/metodos-para-realizar-animaciones-estandar-con-la-libreria-jquery/"><span>Métodos para realizar animaciones estándar con la librería jQuery: Parte 1</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/metodos-para-realizar-animaciones-estandar-con-la-libreria-jquery/"><img src="/wp-content/uploads/2012/09/metodos-jquery-parte-1-140x46.jpg" alt="Métodos para realizar animaciones estándar con la librería jQuery: Parte 1" align="left" /></a>Con la librería jQuery es posible crear animaciones <a href="http://www.lewebmonster.com/metodos-para-realizar-animaciones-estandar-con-la-libreria-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/ley-de-delitos-informaticos-en-costa-rica/"><span>Ley de Delitos Informáticos en Costa Rica</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/ley-de-delitos-informaticos-en-costa-rica/"><img src="/wp-content/uploads/2012/08/delitos-informaticos-140x46.jpg" alt="Ley de Delitos Informáticos en Costa Rica" align="left" /></a>
+            Les comparto la Ley de Delitos Informáticos de Costa Rica, <a href="http://www.lewebmonster.com/ley-de-delitos-informaticos-en-costa-rica/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/crear-un-slideshow-o-presentacion-de-imagenes-con-jquery-sin-utilizar-plugins/"><span>Crear un slideshow o presentación de imágenes con jQuery sin utilizar plugins</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/crear-un-slideshow-o-presentacion-de-imagenes-con-jquery-sin-utilizar-plugins/"><img src="/wp-content/uploads/2012/08/slideshow-destacada-140x46.jpg" alt="Crear un slideshow o presentación de imágenes con jQuery sin utilizar plugins" align="left" /></a>
+            Los slideshows en jQuery no son algo nuevo, y de hecho, no <a href="http://www.lewebmonster.com/crear-un-slideshow-o-presentacion-de-imagenes-con-jquery-sin-utilizar-plugins/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/la-propiedad-box-shadow-de-css3-aplicar-sombra-a-los-elementos-en-caja/"><span>La propiedad box-shadow de CSS3: aplicar sombra a los elementos en caja</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/la-propiedad-box-shadow-de-css3-aplicar-sombra-a-los-elementos-en-caja/"><img src="/wp-content/uploads/2012/08/box-shadow-css3-140x46.jpg" alt="La propiedad box-shadow de CSS3: aplicar sombra a los elementos en caja" align="left" /></a>Siguiendo con el tema de las sombras en CSS3, en esta entrada <a href="http://www.lewebmonster.com/la-propiedad-box-shadow-de-css3-aplicar-sombra-a-los-elementos-en-caja/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/crear-un-efecto-de-texto-en-3d-con-css3/"><span>Crear un efecto de texto en 3D con CSS3 y la propiedad text-shadow</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/crear-un-efecto-de-texto-en-3d-con-css3/"><img src="/wp-content/uploads/2012/08/texto-3d-css3-140x46.jpg" alt="Crear un efecto de texto en 3D con CSS3 y la propiedad text-shadow" align="left" /></a>Normalmente para crear textos en 3D era necesario utilizar <a href="http://www.lewebmonster.com/crear-un-efecto-de-texto-en-3d-con-css3/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/desarrollo-de-juegos-con-javascript-movimientos-basicos-de-un-personaje/"><span>Desarrollo de juegos con JavaScript: movimientos básicos de un personaje</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/desarrollo-de-juegos-con-javascript-movimientos-basicos-de-un-personaje/"><img src="/wp-content/uploads/2012/08/super-mario-destacada-140x46.jpg" alt="Desarrollo de juegos con JavaScript: movimientos básicos de un personaje" align="left" /></a>En este artículo continuamos con los experimentos de juegos <a href="http://www.lewebmonster.com/desarrollo-de-juegos-con-javascript-movimientos-basicos-de-un-personaje/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/space-webmonsters-un-sencillo-juego-de-naves-con-jquery/"><span>Space Webmonsters: un sencillo juego de naves con jQuery</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/space-webmonsters-un-sencillo-juego-de-naves-con-jquery/"><img src="/wp-content/uploads/2012/08/juego-space-webmonsters-140x46.jpg" alt="Space Webmonsters: un sencillo juego de naves con jQuery" align="left" /></a>Como ya se habrán enterado, desde hace un tiempo para acá <a href="http://www.lewebmonster.com/space-webmonsters-un-sencillo-juego-de-naves-con-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/crear-un-efecto-de-cubo-3d-con-jquery-al-estilo-de-linux/"><span>Crear un efecto de cubo 3D con jQuery (al estilo de Linux)</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/crear-un-efecto-de-cubo-3d-con-jquery-al-estilo-de-linux/"><img src="/wp-content/uploads/2012/08/cubo-3d-jquery-140x46.jpg" alt="Crear un efecto de cubo 3D con jQuery (al estilo de Linux)" align="left" /></a>Una de las cosas que han hecho de Linux un sistema operativo <a href="http://www.lewebmonster.com/crear-un-efecto-de-cubo-3d-con-jquery-al-estilo-de-linux/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/crear-un-reproductor-de-musica-con-html5-y-jquery/"><span>Crear un reproductor de música con HTML5 y jQuery (para Google Chrome)</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/crear-un-reproductor-de-musica-con-html5-y-jquery/"><img src="/wp-content/uploads/2012/07/reproductor-html5-140x46.png" alt="Crear un reproductor de música con HTML5 y jQuery (para Google Chrome)" align="left" /></a>En la nueva especificación del lenguaje HTML, HTML5, se han <a href="http://www.lewebmonster.com/crear-un-reproductor-de-musica-con-html5-y-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/mover-el-fondo-con-el-mouse-utilizando-jquery/"><span>Mover el fondo con el mouse utilizando jQuery</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/mover-el-fondo-con-el-mouse-utilizando-jquery/"><img src="/wp-content/uploads/2012/07/descatada-movimiento-de-fondo-jquery-140x46.jpg" alt="Mover el fondo con el mouse utilizando jQuery" align="left" /></a>Gracias a jQuery la creación de efectos es algo <a href="http://www.lewebmonster.com/mover-el-fondo-con-el-mouse-utilizando-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/scroll-o-desplazamiento-suave-con-jquery-y-sin-utilizar-plugins/"><span>Scroll o desplazamiento suave con jQuery y sin utilizar plugins</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/scroll-o-desplazamiento-suave-con-jquery-y-sin-utilizar-plugins/"><img src="/wp-content/uploads/2012/07/destacada-scrolltop-140x46.jpg" alt="Scroll o desplazamiento suave con jQuery y sin utilizar plugins" align="left" /></a>Siempre ha sido una costumbre utilizar anchors o anclas para <a href="http://www.lewebmonster.com/scroll-o-desplazamiento-suave-con-jquery-y-sin-utilizar-plugins/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-ofuscar-y-desofuscar-codigo-javascript/"><span>¿Cómo ofuscar y desofuscar código JavaScript?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-ofuscar-y-desofuscar-codigo-javascript/"><img src="/wp-content/uploads/2012/07/destacada-ofuscar-javascript-140x46.jpg" alt="¿Cómo ofuscar y desofuscar código JavaScript?" align="left" /></a>¿Qué es ofuscar el código?
+
+            La técnica de ofuscación <a href="http://www.lewebmonster.com/como-ofuscar-y-desofuscar-codigo-javascript/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/el-api-de-geolocalizacion-en-html5-geolocation-api/"><span>El API de Geolocalización en HTML5: Geolocation API</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/el-api-de-geolocalizacion-en-html5-geolocation-api/"><img src="/wp-content/uploads/2012/07/geolocation-api-destacada-140x46.jpg" alt="El API de Geolocalización en HTML5: Geolocation API" align="left" /></a>La geolocalización, en términos más que simples, es el <a href="http://www.lewebmonster.com/el-api-de-geolocalizacion-en-html5-geolocation-api/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/modelado-de-bases-de-datos-con-mysql-workbench/"><span>Modelado de bases de datos con MySQL Workbench</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/modelado-de-bases-de-datos-con-mysql-workbench/"><img src="/wp-content/uploads/2012/07/mysql-workbench-140x46.jpg" alt="Modelado de bases de datos con MySQL Workbench" align="left" /></a>
+            Antes de entrar de lleno en el desarrollo web me encontraba <a href="http://www.lewebmonster.com/modelado-de-bases-de-datos-con-mysql-workbench/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/uso-de-mixins-funciones-y-variables-con-css-less/"><span>Uso de mixins, funciones y variables con CSS: LESS</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/uso-de-mixins-funciones-y-variables-con-css-less/"><img src="/wp-content/uploads/2012/07/less-destacada-140x46.jpg" alt="Uso de mixins, funciones y variables con CSS: LESS" align="left" /></a>
+            Sin lugar a duda CSS vino a cambiar muchas cosas desde su <a href="http://www.lewebmonster.com/uso-de-mixins-funciones-y-variables-con-css-less/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/la-nueva-etiqueta-video-de-html5/"><span>La nueva etiqueta "video" de HTML5</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/la-nueva-etiqueta-video-de-html5/"><img src="/wp-content/uploads/2012/07/destacada-video-html5-140x46.jpg" alt="La nueva etiqueta "video" de HTML5" align="left" /></a>
+            video es una nueva etiqueta de HTML5 que sirve justamente <a href="http://www.lewebmonster.com/la-nueva-etiqueta-video-de-html5/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/jsnotifications-una-clase-javascript-para-mostrar-notificaciones/"><span>jsNotifications: una clase JavaScript para mostrar notificaciones</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/jsnotifications-una-clase-javascript-para-mostrar-notificaciones/"><img src="/wp-content/uploads/2012/07/jsnotifications-140x46.jpg" alt="jsNotifications: una clase JavaScript para mostrar notificaciones" align="left" /></a>
+            Anteriormente en un artículo habíamos visto cómo usar <a href="http://www.lewebmonster.com/jsnotifications-una-clase-javascript-para-mostrar-notificaciones/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/lo-que-deberia-conocer-un-desarrollador-web-hibrido/"><span>Lo que debería conocer un desarrollador/diseñador web híbrido</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/lo-que-deberia-conocer-un-desarrollador-web-hibrido/"><img src="/wp-content/uploads/2012/07/desarrollador-hibrido-140x46.jpg" alt="Lo que debería conocer un desarrollador/diseñador web híbrido" align="left" /></a>Al día de hoy son cada vez más las empresas desarrolladoras <a href="http://www.lewebmonster.com/lo-que-deberia-conocer-un-desarrollador-web-hibrido/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/los-arrays-en-javascript/"><span>Los Arrays en JavaScript</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/los-arrays-en-javascript/"><img src="/wp-content/uploads/2012/07/arrays-javascript-140x46.jpg" alt="Los Arrays en JavaScript" align="left" /></a>
+            Los Arrays en JavaScript son variables de tipo objeto que <a href="http://www.lewebmonster.com/los-arrays-en-javascript/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/efectos-circulares-con-jquery-y-el-plugin-circulate/"><span>Efectos circulares con jQuery y el plugin Circulate</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/efectos-circulares-con-jquery-y-el-plugin-circulate/"><img src="/wp-content/uploads/2012/07/efectos-circulares-jquery-destacada-140x46.jpg" alt="Efectos circulares con jQuery y el plugin Circulate" align="left" /></a>jQuery es una librería que cuenta con muchas ventajas, y una <a href="http://www.lewebmonster.com/efectos-circulares-con-jquery-y-el-plugin-circulate/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/estructuras-condicionales-en-javascript-if-if-else-if-else-if-y-switch/"><span>Estructuras condicionales en JavaScript: if, if-else, if-else if y switch</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/estructuras-condicionales-en-javascript-if-if-else-if-else-if-y-switch/"><img src="/wp-content/uploads/2012/07/condicionales-javascript-140x46.jpg" alt="Estructuras condicionales en JavaScript: if, if-else, if-else if y switch" align="left" /></a>La estructuras condicionales en JavaScript (al igual que en <a href="http://www.lewebmonster.com/estructuras-condicionales-en-javascript-if-if-else-if-else-if-y-switch/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/mywebsql-una-gran-alternativa-para-phpmyadmin/"><span>MyWebSQL: una gran alternativa para phpMyAdmin</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/mywebsql-una-gran-alternativa-para-phpmyadmin/"><img src="/wp-content/uploads/2012/07/mywebsql-destacada-140x46.jpg" alt="MyWebSQL: una gran alternativa para phpMyAdmin" align="left" /></a>En esto del desarrollo web, y como en todo, hay herramientas <a href="http://www.lewebmonster.com/mywebsql-una-gran-alternativa-para-phpmyadmin/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/juploadphp-una-clase-php-para-subir-archivos-al-servidor/"><span>jUploadPHP: una clase PHP para subir archivos al servidor fácilmente</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/juploadphp-una-clase-php-para-subir-archivos-al-servidor/"><img src="/wp-content/uploads/2012/06/php5-140x46.jpg" alt="jUploadPHP: una clase PHP para subir archivos al servidor fácilmente" align="left" /></a>
+            jUploadPHP es una clase PHP5 que desarrollé esta semana <a href="http://www.lewebmonster.com/juploadphp-una-clase-php-para-subir-archivos-al-servidor/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/renderizar-contenido-con-google-chrome-frame-en-internet-explorer/"><span>Renderizar contenido con Google Chrome Frame en Internet Explorer</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/renderizar-contenido-con-google-chrome-frame-en-internet-explorer/"><img src="/wp-content/uploads/2012/06/google-chrome-frame-140x46.jpg" alt="Renderizar contenido con Google Chrome Frame en Internet Explorer" align="left" /></a>
+            En el proceso de desarrollo web es un poco tediosa la parte <a href="http://www.lewebmonster.com/renderizar-contenido-con-google-chrome-frame-en-internet-explorer/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/desarrollo-de-juegos-con-jquery-penalties/"><span>Desarrollo de juegos con jQuery: "Penalties"</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/desarrollo-de-juegos-con-jquery-penalties/"><img src="/wp-content/uploads/2012/06/futbol-jquery-destacada-140x46.jpg" alt="Desarrollo de juegos con jQuery: "Penalties"" align="left" /></a>Esto de los juegos con JavaScript y jQuery me llama algo la <a href="http://www.lewebmonster.com/desarrollo-de-juegos-con-jquery-penalties/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/rotar-imagenes-con-jquery-y-el-plugin-jqueryrotate/"><span>Rotar imágenes con jQuery y el plugin jQueryRotate</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/rotar-imagenes-con-jquery-y-el-plugin-jqueryrotate/"><img src="/wp-content/uploads/2012/06/rotar-imagenes-destacada-140x46.jpg" alt="Rotar imágenes con jQuery y el plugin jQueryRotate" align="left" /></a>Ya desde varios días atrás venía desarrollando y <a href="http://www.lewebmonster.com/rotar-imagenes-con-jquery-y-el-plugin-jqueryrotate/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/cambiar-la-opacidad-de-elementos-con-jquery/"><span>Cambiar la opacidad de elementos HTML con jQuery</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/cambiar-la-opacidad-de-elementos-con-jquery/"><img src="/wp-content/uploads/2012/06/opacidad-jquery-destacada-140x46.jpg" alt="Cambiar la opacidad de elementos HTML con jQuery" align="left" /></a>Este truco de cambiar la opacidad de los elementos es <a href="http://www.lewebmonster.com/cambiar-la-opacidad-de-elementos-con-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-crear-un-checkbox-personalizado-con-css-y-jquery/"><span>¿Cómo crear un CheckBox personalizado con CSS y jQuery?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-crear-un-checkbox-personalizado-con-css-y-jquery/"><img src="/wp-content/uploads/2012/06/checkbox-destacada-140x46.jpg" alt="¿Cómo crear un CheckBox personalizado con CSS y jQuery?" align="left" /></a>HTML es uno de los lenguajes más simples que inventó la <a href="http://www.lewebmonster.com/como-crear-un-checkbox-personalizado-con-css-y-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/manipulacion-de-listas-html-con-jquery/"><span>Manipulación de listas HTML con jQuery</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/manipulacion-de-listas-html-con-jquery/"><img src="/wp-content/uploads/2012/06/listas-jquery-140x46.jpg" alt="Manipulación de listas HTML con jQuery" align="left" /></a>Las listas HTML  (etiquetas ol y ul) son uno de los elementos <a href="http://www.lewebmonster.com/manipulacion-de-listas-html-con-jquery/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-crear-el-dock-de-mac-con-jquery/"><span>¿Cómo crear el Dock de Mac con jQuery?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-crear-el-dock-de-mac-con-jquery/"><img src="/wp-content/uploads/2012/06/menu-dock-jquery-destacada-140x46.jpg" alt="¿Cómo crear el Dock de Mac con jQuery?" align="left" /></a>Ya iba siendo hora de crear un nuevo post. A veces son muchas <a href="http://www.lewebmonster.com/como-crear-el-dock-de-mac-con-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/linux-para-desarrollo-web/"><span>Linux para desarrollo web</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/linux-para-desarrollo-web/"><img src="/wp-content/uploads/2012/06/linux-desarrollo-web-140x46.jpg" alt="Linux para desarrollo web" align="left" /></a>¿Qué es Linux?
+            Linux es un sistema operativo, a como lo es <a href="http://www.lewebmonster.com/linux-para-desarrollo-web/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-crear-ventanas-modales-con-jquery/"><span>¿Cómo crear ventanas modales con jQuery?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-crear-ventanas-modales-con-jquery/"><img src="/wp-content/uploads/2012/06/ventanas-modales-destacada-140x46.jpg" alt="¿Cómo crear ventanas modales con jQuery?" align="left" /></a>Las ventanas modales salieron ya hace bastante tiempo, y a mi <a href="http://www.lewebmonster.com/como-crear-ventanas-modales-con-jquery/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/desarrollo-de-juegos-con-jquery-memoria/"><span>Desarrollo de juegos con jQuery: "Memoria"</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/desarrollo-de-juegos-con-jquery-memoria/"><img src="/wp-content/uploads/2012/06/destacada-memoria-jquery-140x46.jpg" alt="Desarrollo de juegos con jQuery: "Memoria"" align="left" /></a>¿Cómo desarrollar juegos con jQuery?
+            Este es el primero de <a href="http://www.lewebmonster.com/desarrollo-de-juegos-con-jquery-memoria/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/detectar-pulsaciones-de-teclas-con-jquery/"><span>Detectar pulsaciones de teclas con jQuery</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/detectar-pulsaciones-de-teclas-con-jquery/"><img src="/wp-content/uploads/2012/06/eventos-del-teclado-jquery-140x46.jpg" alt="Detectar pulsaciones de teclas con jQuery" align="left" /></a>En un artículo anterior ya habíamos visto cómo detectar <a href="http://www.lewebmonster.com/detectar-pulsaciones-de-teclas-con-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/uso-de-constantes-en-php/"><span>Uso de constantes en PHP</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/uso-de-constantes-en-php/"><img src="/wp-content/uploads/2012/06/constantes-php-140x46.jpg" alt="Uso de constantes en PHP" align="left" /></a>¿Qué son las constantes?
+            Las constantes son datos o <a href="http://www.lewebmonster.com/uso-de-constantes-en-php/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/efecto-scratchcard-con-jquery/"><span>Efecto scratchcard (rasca y gana) con jQuery</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/efecto-scratchcard-con-jquery/"><img src="/wp-content/uploads/2012/06/rasca-y-gana-destacada-140x46.jpg" alt="Efecto scratchcard (rasca y gana) con jQuery" align="left" /></a>En este artículo presentaré el código necesario para crear <a href="http://www.lewebmonster.com/efecto-scratchcard-con-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/efecto-rollover-en-cruz-con-jquery/"><span>Efecto rollover en cruz con JQuery (simulación de imagen partida)</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/efecto-rollover-en-cruz-con-jquery/"><img src="/wp-content/uploads/2012/05/destacada-1-140x46.jpg" alt="Efecto rollover en cruz con JQuery (simulación de imagen partida)" align="left" /></a>JavaScript es un lenguaje simple pero con mucha potencia y <a href="http://www.lewebmonster.com/efecto-rollover-en-cruz-con-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/animacion-de-escenarios-con-jquery/"><span>Animación de escenarios con JQuery (fondo y objetos en movimiento)</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/animacion-de-escenarios-con-jquery/"><img src="/wp-content/uploads/2012/05/animar-escenario-destacada-140x46.jpg" alt="Animación de escenarios con JQuery (fondo y objetos en movimiento)" align="left" /></a>Ya algunos sabrán que la mayoría de los ejemplos expuestos <a href="http://www.lewebmonster.com/animacion-de-escenarios-con-jquery/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/imagenes-con-descripcion-animada-utilizando-jquery/"><span>Imágenes con descripción animada utilizando JQuery</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/imagenes-con-descripcion-animada-utilizando-jquery/"><img src="/wp-content/uploads/2012/04/imagenes-con-descripcion-140x46.jpg" alt="Imágenes con descripción animada utilizando JQuery" align="left" /></a>Imágenes con descripción utilizando JQuery
+            JQuery es una <a href="http://www.lewebmonster.com/imagenes-con-descripcion-animada-utilizando-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/aptana-studio-ide-multiplataforma-para-desarrollo-web/"><span>Aptana Studio: IDE multiplataforma para desarrollo web</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/aptana-studio-ide-multiplataforma-para-desarrollo-web/"><img src="/wp-content/uploads/2012/04/aptana-studio-3-140x46.jpg" alt="Aptana Studio: IDE multiplataforma para desarrollo web" align="left" /></a>¿Qué es Aptana Studio?
+            Aptana Studio es un IDE (Integrated <a href="http://www.lewebmonster.com/aptana-studio-ide-multiplataforma-para-desarrollo-web/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/evitar-el-hotlinking-o-robo-de-ancho-de-banda-desde-cpanel/"><span>Evitar el hotlinking o robo de ancho de banda desde CPanel</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/evitar-el-hotlinking-o-robo-de-ancho-de-banda-desde-cpanel/"><img src="/wp-content/uploads/2012/04/hotlinking-140x46.jpg" alt="Evitar el hotlinking o robo de ancho de banda desde CPanel" align="left" /></a>
+
+            El hotlinking en pocas palabras es el robo de ancho de <a href="http://www.lewebmonster.com/evitar-el-hotlinking-o-robo-de-ancho-de-banda-desde-cpanel/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/configurar-un-adaptador-wi-fi-usb-en-debian/"><span>Configurar un adaptador Wi-Fi USB en Debian</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/configurar-un-adaptador-wi-fi-usb-en-debian/"><img src="/wp-content/uploads/2012/04/lsusb-140x46.png" alt="Configurar un adaptador Wi-Fi USB en Debian" align="left" /></a>Hace unos meses atrás decidí instalar una red inalámbrica <a href="http://www.lewebmonster.com/configurar-un-adaptador-wi-fi-usb-en-debian/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/las-funciones-en-javascript/"><span>Las funciones en JavaScript y sus diferentes usos</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/las-funciones-en-javascript/"><img src="/wp-content/uploads/2012/04/funciones-javascript-140x46.jpg" alt="Las funciones en JavaScript y sus diferentes usos" align="left" /></a>
+
+            Las funciones, al igual que en muchos otros lenguajes, no <a href="http://www.lewebmonster.com/las-funciones-en-javascript/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/interaccion-basica-con-el-usuario-javascript/"><span>Interacción básica con el usuario en JavaScript: alert, confirm y prompt</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/interaccion-basica-con-el-usuario-javascript/"><img src="/wp-content/uploads/2012/04/interaccion-javascript-140x46.jpg" alt="Interacción básica con el usuario en JavaScript: alert, confirm y prompt" align="left" /></a>Muchos desarrolladores hemos pasado de crear aplicaciones en <a href="http://www.lewebmonster.com/interaccion-basica-con-el-usuario-javascript/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/bucles-en-javascript/"><span>Los bucles o ciclos en JavaScript: for, while y do while</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/bucles-en-javascript/"><img src="/wp-content/uploads/2012/04/ciclos-javascript-140x46.jpg" alt="Los bucles o ciclos en JavaScript: for, while y do while" align="left" /></a>Los ciclos en JavaScript, o mejor conocidos como bucles (en <a href="http://www.lewebmonster.com/bucles-en-javascript/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/recorrer-y-validar-formularios-con-javascript/"><span>Recorrer y validar formularios HTML con JavaScript</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/recorrer-y-validar-formularios-con-javascript/"><img src="/wp-content/uploads/2012/04/validar-javascript-140x46.jpg" alt="Recorrer y validar formularios HTML con JavaScript" align="left" /></a>¿Cómo recorrer y validar un formulario HTML con <a href="http://www.lewebmonster.com/recorrer-y-validar-formularios-con-javascript/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/menu-acordeon-con-jquery/"><span>Crear un menú en acordeón con JQuery sin plugins</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/menu-acordeon-con-jquery/"><img src="/wp-content/uploads/2012/04/acordeon-jquery-140x46.jpg" alt="Crear un menú en acordeón con JQuery sin plugins" align="left" /></a>¿Cómo crear un acordeón con JQuery?
+            Pensando en un nuevo <a href="http://www.lewebmonster.com/menu-acordeon-con-jquery/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/menu-deslizante-con-jquery/"><span>Menú deslizante con JQuery y el plugin Background-Position</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/menu-deslizante-con-jquery/"><img src="/wp-content/uploads/2012/04/menu-deslizante-140x46.jpg" alt="Menú deslizante con JQuery y el plugin Background-Position" align="left" /></a>Menú al estilo de cartas deslizantes con JQuery
+            Justamente <a href="http://www.lewebmonster.com/menu-deslizante-con-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/detectar-los-eventos-del-raton-con-jquery/"><span>Detectar los eventos del ratón con JQuery</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/detectar-los-eventos-del-raton-con-jquery/"><img src="/wp-content/uploads/2012/04/eventos-del-raton-140x46.jpg" alt="Detectar los eventos del ratón con JQuery" align="left" /></a>En ocasiones necesitamos detectar los eventos del ratón que <a href="http://www.lewebmonster.com/detectar-los-eventos-del-raton-con-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/carrusel-de-imagenes-con-jquery-sin-utilizar-plugins/"><span>Carrusel de imágenes con JQuery sin utilizar plugins</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/carrusel-de-imagenes-con-jquery-sin-utilizar-plugins/"><img src="/wp-content/uploads/2012/04/carrusel-jquery-140x46.jpg" alt="Carrusel de imágenes con JQuery sin utilizar plugins" align="left" /></a>Existen muchos plugins para crear carruseles con JQuery, pero <a href="http://www.lewebmonster.com/carrusel-de-imagenes-con-jquery-sin-utilizar-plugins/">...</a></p></div><div class="clr"></div>
+        </div><div class="slide"><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/manipulacion-de-tablas-con-jquery/"><span>Manipulación avanzada de tablas con JQuery</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/manipulacion-de-tablas-con-jquery/"><img src="/wp-content/uploads/2012/04/manipulacion-de-tablas-140x46.jpg" alt="Manipulación avanzada de tablas con JQuery" align="left" /></a>Una de las cosas más interesantes de JavaScript, entre <a href="http://www.lewebmonster.com/manipulacion-de-tablas-con-jquery/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/como-crear-un-sitio-web-basico-para-dispositivos-moviles-con-jquery-mobile/"><span>¿Cómo crear un sitio web básico para dispositivos móviles con jQuery Mobile?</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/como-crear-un-sitio-web-basico-para-dispositivos-moviles-con-jquery-mobile/"><img src="/wp-content/uploads/2013/02/jquery-mobile-destacada-140x46.png" alt="¿Cómo crear un sitio web básico para dispositivos móviles con jQuery Mobile?" align="left" /></a>¿Qué es jQuery Mobile?
+
+            Según su sitio web oficial: <a href="http://www.lewebmonster.com/como-crear-un-sitio-web-basico-para-dispositivos-moviles-con-jquery-mobile/">...</a></p></div><div class="col"><p class="post-title"><a href="http://www.lewebmonster.com/respaldar-y-restaurar-bases-de-datos-mysql-server-desde-la-consola/"><span>Respaldar y restaurar bases de datos MySQL Server desde la consola</span></a></p><p class="slider-content-both"><a href="http://www.lewebmonster.com/respaldar-y-restaurar-bases-de-datos-mysql-server-desde-la-consola/"><img src="/wp-content/uploads/2013/01/respaldar-mysql-140x46.png" alt="Respaldar y restaurar bases de datos MySQL Server desde la consola" align="left" /></a>
+            En este artículo voy a exponer varias formas de respaldar <a href="http://www.lewebmonster.com/respaldar-y-restaurar-bases-de-datos-mysql-server-desde-la-consola/">...</a></p></div><div class="clr"></div>
+        </div>
+        </div>
+    </div>
+    <div class="paging"><a href="#" rel="1">1</a><a href="#" rel="2">2</a><a href="#" rel="3">3</a><a href="#" rel="4">4</a><a href="#" rel="5">5</a><a href="#" rel="6">6</a><a href="#" rel="7">7</a><a href="#" rel="8">8</a><a href="#" rel="9">9</a><a href="#" rel="10">10</a><a href="#" rel="11">11</a><a href="#" rel="12">12</a><a href="#" rel="13">13</a><a href="#" rel="14">14</a><a href="#" rel="15">15</a><a href="#" rel="16">16</a><a href="#" rel="17">17</a><a href="#" rel="18">18</a><a href="#" rel="19">19</a><a href="#" rel="20">20</a><a href="#" rel="21">21</a><a href="#" rel="22">22</a><a href="#" rel="23">23</a><a href="#" rel="24">24</a><a href="#" rel="25">25</a><a href="#" rel="26">26</a><a href="#" rel="27">27</a><a href="#" rel="28">28</a><a href="#" rel="29">29</a></div>
+</div><div class="rps-clr"></div></div>
+<div class="clsCenter">
+    <br><br>
+    <a href="https://twitter.com/lewebmonster" class="twitter-follow-button" data-show-count="false" data-lang="es">Seguir a @lewebmonster</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    &nbsp;&nbsp;&nbsp;
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES"><img alt="Licencia de Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a>
+
+    &nbsp;&nbsp;&nbsp;
+    <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Flewebmonster&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=tahoma&amp;height=21&amp;appId=177807729021208" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+
+    &nbsp;&nbsp;&nbsp;
+
+    <!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
+    <div class="g-plusone" data-size="tall" data-annotation="none"></div>
+
+    <!-- Inserta esta etiqueta después de la última etiqueta de Botón +1. -->
+    <script type="text/javascript">
+        window.___gcfg = {lang: 'es-419'};
+
+        (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
+
+    <br><br>
+    <strong>Copyright &copy; 2012-2013 <a href="http://www.lewebmonster.com" title="lewebmonster.com">lewebmonster.com</a> - El blog de un mae que programa</strong><br>
+<span style="font-size:10px;">
+Contenido bajo licencia
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES">Creative Commons Reconocimiento-CompartirIgual 3.0 Unported License</a>
+</span>
+    <br>
+    <strong>142204</strong> visitantes únicos | <strong>405695</strong> páginas vistas | <strong>5666</strong> usuarios registrados | <strong>12 usuarios</strong> en línea<br>
+    <em>Estadísticas de visitas recibidas desde el 15 de junio del 2012 hasta hoy</em><br><br>
+    Conozca <a href="http://jsmconsole.org" style="font-weight:bold">jsmConsole</a> ¡la <a href="http://jsmconsole.org" style="font-weight:bold; text-decoration:underline;">consola de JavaScript para dispositivos m&oacute;viles</a>!
+</div>
+<script>
+    jQuery('#lnkMostrarComentariosLWM').on('click',function(){
+        jQuery('ol.commentlist').stop(true,true).toggle();
+    });
+</script>
+
+<div class='clear'></div>
+<script type="text/javascript">
+    disableSelection(document.body)
+</script>
+<script type="text/javascript" src="http://www.lewebmonster.com/wp-content/plugins/what-would-seth-godin-do/jquery.cookie.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        var count;
+        if ( !jQuery.cookie('wwsgd_visits') ) {
+            count = 1;
+        }
+        else {
+            count = parseInt(jQuery.cookie('wwsgd_visits'), 10) + 1;
+        }
+        jQuery.cookie('wwsgd_visits', count, { expires: 365, path: "/" });
+
+        if ( count <= 5 ) {
+            jQuery(".wwsgd").show();
+        }
+    });
+</script>
+<div class="wpsr-floatbar-float_left wpsr-floatbar-white wpsr-floatbar-movable  clearfix" ><div class="wpsr_floatbt">
+    <!-- Start WP Socializer Plugin - Facebook Button -->
+    <div class="fb-like" data-href="http://www.lewebmonster.com/proyectos/phpdataclass/" data-send="false" data-layout="box_count" data-width="48" data-show-faces="1" data-action="like" data-font="arial" data-colorscheme="light"></div>
+    <!-- End WP Socializer Plugin - Facebook Button -->
+</div><div class="wpsr_floatbt">
+    <!-- Start WP Socializer Plugin - Retweet Button -->
+    <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical"  data-lang="en"  data-url="http://www.lewebmonster.com/proyectos/phpdataclass/" data-text="phpDataClass: clase PHP para manejo de bases de datos MySQL, clase PHP para MySQL, persistencia bases de datos PHP - "></a>
+    <!-- End WP Socializer Plugin - Retweet Button -->
+</div><div class="wpsr_floatbt">
+    <!-- Start WP Socializer Plugin - +1 Button -->
+    <g:plusone size="tall" href="http://www.lewebmonster.com/proyectos/phpdataclass/" ></g:plusone>
+    <!-- End WP Socializer Plugin - +1 Button -->
+</div><div class="wpsr_floatbt">
+    <!-- Start WP Socializer Plugin - StumbleUpon Button -->
+    <su:badge layout="5"></su:badge>
+    <!-- End WP Socializer Plugin - StumbleUpon Button -->
+</div><div class="wpsr_floatbt">
+    <!-- Start WP Socializer Plugin - LinkedIn Button -->
+    <script type="IN/Share" data-url="http://www.lewebmonster.com/proyectos/phpdataclass/" data-counter="top"></script>
+    <!-- End WP Socializer Plugin - LinkedIn Button -->
+</div><div class="wpsr-linkback"><a href="http://www.aakashweb.com/wordpress-plugins/wp-socializer/" target="_blank">WP Socializer</a> <a href="http://www.aakashweb.com" target="_blank" class="wpsr_linkaw">Aakash Web</a></div></div>
+<!-- Start WP Socializer | Floating bar - JS file-->
+<script type="text/javascript" src="http://www.lewebmonster.com/wp-content/plugins/wp-socializer/public/js/wp-socializer-floating-bar-js.js?v=2.4.8"></script>
+<!-- End WP Socializer | Floating bar - JS file -->
+
+<!-- Start WP Socializer | Bookmark File -->
+<script type="text/javascript" src="http://www.lewebmonster.com/wp-content/plugins/wp-socializer/public/js/wp-socializer-bookmark-js.js?v=2.4.8"></script>
+<!-- End WP Socializer | Bookmark CSS File -->
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'es',
+            floatPosition: google.translate.TranslateElement.FloatPosition.TOP_RIGHT
+        });
+    }
+</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="http://www.lewebmonster.com/wp-content/plugins/syntax-highlighter/3.0.83/js/shCore.js?ver=3.0.83"></script>
+<script type="text/javascript" src="http://www.lewebmonster.com/wp-content/plugins/syntax-highlighter/3.0.83/js/shBrushPhp.js?ver=3.0.83"></script>
+<script type="text/javascript">//<![CDATA[
+SyntaxHighlighter.all();
+//]]></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var thickboxL10n = {"next":"Siguiente >","prev":"< Anterior","image":"Imagen","of":"de","close":"Cerrar","noiframes":"Esta funci\u00f3n requiere de frames insertados. Tienes los iframes desactivados o tu navegador no los soporta.","loadingAnimation":"http:\/\/www.lewebmonster.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif","closeImage":"http:\/\/www.lewebmonster.com\/wp-includes\/js\/thickbox\/tb-close.png"};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://www.lewebmonster.com/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105'></script>
+<script type='text/javascript' src='http://www.lewebmonster.com/wp-includes/js/underscore.min.js?ver=1.4.0'></script>
+<script type='text/javascript' src='http://www.lewebmonster.com/wp-includes/js/shortcode.min.js?ver=3.5.1'></script>
+<script type='text/javascript' src='http://www.lewebmonster.com/wp-admin/js/media-upload.min.js?ver=3.5.1'></script>
+<!-- WP-TopBar_ :: Number of TopBars Selected: 1-->
+
+<script type='text/javascript'>
+    jQuery(document).ready(function() {jQuery('body').prepend('<div id="topbar1" style="position:fixed; top: 0; padding:0; margin:0; width: 100%; z-index: 99999; font-size:11px; box-shadow: 0 0 10px #BCB9AB;"><p id="wptbheadline1" style="visibility:hidden;background: #464646;margin:  0px 0px 0px;text-align:center;font-size: 13px; padding-top:8px;padding-bottom:8px;color:#fff; display:block;border-bottom-color:#333;border-bottom-style: solid;border-bottom-width: 1px;font-size:11px; ">Cursos y capacitaciones de jQuery en Costa Rica, impartidos por el creador de lewebmonster.com<a style="color:#9fff00; " href="/servicios/capacitaciones/" target="_self"> » Clic aquí para más información «</a><span style=""><img align="middle" border="0" onClick="close_wptopbar1()" src="http://www.lewebmonster.com/wp-content/plugins/wp-topbar/lib/images/close.png" style="cursor:hand;cursor:pointer;vertical-align:text-bottom;float:right;"/></span></p></div>');} );
+</script>
+<script type='text/javascript'>
+
+
+    function close_wptopbar1() { document.getElementById("wptbheadline1").style.visibility = "hidden";var now= new Date();var expDate = new Date(2014, 12, 31 );document.cookie="wptopbar_7d3946f2acb7b982461df706daaa2df2"+"="+escape(1)+";expires="+expDate.toUTCString(); };
+</script>
+
+<script type='text/javascript'>
+
+
+    jQuery(document).ready(function() {
+
+                jQuery("#wptbheadline1").hide();
+                var wtpbPoints = [];
+
+                wtpbPoints[ 0 ] = 25;
+                wptb_selected_row = 1;
+                var wptbSelectRow = {
+                    1: function() {jQuery("#wptbheadline1").hide().delay(0).css("visibility","visible").slideDown(200).fadeIn(1000).show("slow");}
+                };
+
+                // execute the one specified in the 'wptb_selected_row' variable:
+
+                wptbSelectRow[wptb_selected_row]();
+            }
+    );
+</script>
+
+</div>
+
+</div>
+</body>
+</html>

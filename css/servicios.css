@@ -1,0 +1,490 @@
+@CHARSET "UTF-8";
+/**********GENERAL**********************/
+.fondoServicios {
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+    background-image: url(../imagenes/servicios/fondo-servicios-corporativos.jpg);
+    background-repeat: repeat;
+    background-position: center top;
+}
+
+.columnaInformacionCombustibles {
+    padding: 0 40px;
+}
+.tiendasContenedor {
+
+    width: 48%;
+}
+/*********************************************/
+.franja-serviciosd {
+    width: 100%;
+    max-width: 940px;;
+    height: 341px;
+    background-image: url(../imagenes/servicios/servicios-corporativos-franja-d.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.franja-serviciosi {
+    width: 100%;
+    max-width: 940px;
+    height: 341px;
+    background-image: url(../imagenes/servicios/servicios-corporativos-franja-i.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.servicios-seccion h1 {
+    color: #F05428;
+}
+
+.menuServicios li a {
+    color: #F05428;
+}
+
+#menuServicios {
+    width: auto;
+    float: right;
+    border-bottom: none;
+    background-image: url(../imagenes/servicios/Servicios-Corporativos-Card-Plus-submenu-rayahorizontal.png);
+    background-repeat: no-repeat;
+    background-position: 10px 30px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.linea-division-servicios {
+    float: right;
+    margin-left: 8px;
+    margin-right: 3px;
+    width: 7px;
+    height: 30px;
+    background-image: url(../imagenes/servicios/Servicios-Corporativos-Card-Plus-submenu-rayavertical.png);
+    background-position: 0px 10px;
+    background-repeat: no-repeat;
+}
+
+.cardplus {
+    width: 397px;
+    height: 297px;
+    margin-left: 20%;
+    margin-top: -20px;
+    background-image: url(../imagenes/servicios/Servicios-Corporativos-Card-Plus-cardplus.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.flecha-servicios-izquierda{
+	margin-top:18px;
+}
+
+.flecha-servicios-derecha{
+	margin-top:18px;
+}
+
+.texto-servicos-cardplus {
+    font-size: 15px;
+    height: auto;
+    line-height: 20px;
+    margin-left: 147px;
+    margin-top: 85px;
+    text-align: justify;
+    width: 335px;
+}
+
+
+.texto-servicos-cardplus h2 {
+    text-align: left;
+    padding-left: 0px;
+    letter-spacing: 1px;
+    font-size: 31px;
+}
+
+
+.texto-servicos-combustibles {
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 40%;
+    margin-top: 105px;
+    text-align: justify;
+    width: 460px;
+}
+.texto-servicos-combustibles h2 {
+    margin-top: 10px;
+    width: 140%;
+    text-align: left;
+    font-size: 32px;
+}
+
+.texto-servicos-combustibles ul{
+	margin-left: 14px;
+	margin-top: 5px;
+	
+}
+
+.icocard {
+    width: 119px;
+    height: 31px;
+    margin-left: 195px;
+    margin-top: -20px;
+    background-image: url(../imagenes/servicios/Servicios-Corporativos-Card-Plus-boton-primaxcardplus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.servicios-hombre {
+    width: 375px;
+    height: 347px;
+    margin-left: -48px;
+    margin-top: -30px;
+    background-image: url(../imagenes/servicios/Servicios-Corporativos-CombustiblesIndustriales-foto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.indicador-combustible {
+    width: 166px;
+    height: 87px;
+     margin-left: 170px;
+    margin-top: -135px;
+    background-image: url(../imagenes/servicios/Servicios-Corporativos-CombustiblesIndustriales-rayaycirculo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.servicios-seccion {
+    height: 78px;
+    width: 100%;
+}
+
+.indicador-combustible {
+    display: block;
+}
+
+.fondoServicios .menuServicios > .nav-tabs > .active > a,
+.fondoServicios .nav-tabs > .active > a:hover, .fondoServicios .nav-tabs > .active > a:focus {
+    color: #FF5600;
+}
+
+.fondoServicios .menuServicios > .active a {
+    color: #FF5600;
+}
+
+/* RESPONSIVE CSS TABLET
+    -------------------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .texto-servicos-cardplus {
+
+    }
+
+    .texto-servicos-combustibles {
+        line-height: 18px;
+    }
+
+    .texto-cardplus {
+        width: 48%;
+    }
+
+}
+
+@media ( min-width: 768px) and (max-width: 900px) {
+
+    .servicios-seccion {
+        height: 210px;
+        width: 100%;
+    }
+
+	.texto-servicos-combustibles {
+	    margin-left: 24%;
+	    margin-top: 100px;
+	    text-align: justify;
+	    width: 370px;
+	}
+
+
+   .fondoServicios h1 {
+        font-size: 50px;
+    }
+
+    .cardplus {
+        margin-left: 30px;
+        margin-top: -50px;
+    }
+
+    .texto-servicos-cardplus {
+        margin-left: 30px;
+        margin-top: 80px;
+        width: 275px;
+        font-size: 14px;
+    }
+
+    .texto-cardplus {
+        width: 47%;
+    }
+
+    .franja-serviciosd {
+        background-position: center top;
+    }
+
+    .franja-serviciosi {
+        background-position: center;
+    }
+
+    .indicador-combustible {
+        display: none;
+    }
+
+    .texto-servicos-combustibles {
+        margin-left: 235px;
+        margin-top: 100px;
+        width: 400px;
+    }
+
+    .texto-servicos-combustibles h2 {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 30px;
+        line-height: 29px;
+        text-align: left;
+    }
+
+    .texto-servicos-cardplus .ingresar {
+        margin-left: -200px;
+        margin-top: 110px;
+        color: #000000;
+        width: 100%;
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .texto-servicos-cardplus .ingresar .icocard {
+        margin-left: -30px;
+        margin-top: 10px;
+        width: 350px;
+    }
+
+}
+
+/*********SMALL TABLET*********/
+@media ( max-width: 767px) {
+    .texto-servicos-combustibles {
+        width: inherit;
+        margin-left: 28%;
+        line-height: 17px;
+    }
+
+    .texto-servicos-combustibles h2 {
+        font-size: 27px;
+        width: 140%;
+    }
+	.servicios-seccion {
+	    height: 140px;    
+	}	
+	
+    .fondoServicios h1 {
+        font-size: 40px;
+    }
+
+    .columnaCarplus {
+	    margin-left: 15%;
+	    margin-top: -70px;
+	    width: 70%;
+	}
+
+    .texto-cardplus {
+    width: 100%
+    }
+
+    .texto-servicos-cardplus {
+         margin: 130 auto;
+         margin-top: 190px;
+        width: 80%;    }
+
+    .cardplus {
+	    background-position: center -30px;
+	    height: 250px;
+	    margin: 0 auto;
+	    width: 95%;
+	}
+    
+    .texto-servicos-cardplus .ingresar {
+	    color: #000000;
+	    font-size: 21px;
+	    margin-left: auto;
+	    margin-top: 40px;
+	    text-align: center;
+	    width: 100%;
+	}
+
+   .texto-servicos-cardplus .ingresar .icocard {
+	    margin-left: auto;
+	    margin-top: 10px;
+	    width: 100%;
+	}
+    
+    .texto-servicos-cardplus {
+	    font-size: 15px;
+	    height: auto;
+	    margin-left: 10%;
+	    margin-top: 180px;
+	    text-align: justify;
+	    width: 80%;
+	}
+
+
+
+
+
+}
+
+/*********************/
+@media ( max-width: 600px) {
+
+}
+
+@media ( max-width: 360px) {
+
+    texto-servicos-combustibles {
+        font-size: 13px;
+        line-height: 14px;
+        margin-left: 13%;
+        margin-top: -28px;
+        width: inherit;
+    }
+	.fondoServicios h1 {
+	    font-size: 35px;
+	}
+	
+    .columnaCarplus {
+        margin-top: -40px;
+
+    }
+    .servicios-seccion {
+        height: 100px;
+        width: 100%;
+    }
+
+    .servicios-seccion h1 {
+        margin-top: 20px;
+    }
+
+    .menuServicios {
+        background-color: transparent;
+    }
+
+    .columnaCarplus {
+    	margin-top:0px;
+        width: 100%;
+    }
+
+    .texto-cardplus {
+        width: 320px;
+        height: 160px;
+        margin-top: -60px;
+        margin-left: -20px;
+        font-size: 12px;
+    }
+
+    .texto-cardplus h2 {
+        margin-left: 0;
+    }
+
+    .franja-serviciosd {
+        background-position: -49px -65px;
+        background-size: 172% 110%;
+    }
+
+    .franja-serviciosi {
+        background-position: -160px -70px;
+        background-size: 195% 100%;
+    }
+
+    .cardplus {
+        margin-left: 10px;
+        margin-top: -60px;
+        width: 200px;
+        height: 150px;
+        background-position: center -20px;
+    }
+
+    .texto-servicos-cardplus {
+        margin-left: 45px;
+        margin-top: 95px;
+        font-size: 12px;
+        width: 240px;
+        line-height:15px;
+    }
+
+    .texto-servicos-cardplus h2 {
+        margin-top: 0;
+        padding-left: 0;
+        text-align: left;
+        font-size: 18px;
+        height: 10px;
+    }
+
+    .indicador-combustible {
+        display: none;
+    }
+
+    .texto-servicos-cardplus .ingresar {
+        margin-left: 0px;
+        margin-top: 0px;
+        color: #ffffff;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .texto-servicos-cardplus .ingresar .icocard {
+        margin-left: -50px;
+        margin-top: 2px;
+        width: 350px;
+    }
+
+	.texto-servicos-cardplus {
+	    font-size: 12px;
+	    line-height: 15px;
+	    margin-left: 18%;
+	    margin-top: 95px;
+	    width: 80%;
+	}
+
+    
+   
+    .texto-servicos-combustibles h2 {
+        margin-left: 0;
+        color: #F05428;
+        font-size: 22px;
+        width: 100px;
+    }
+    
+    .texto-servicos-combustibles ul {
+	    margin-left: 10px;
+	    width: 195px;
+	}
+	
+	.texto-servicos-combustibles ul li{
+		height: 45px;
+    	line-height: 15px;
+	}
+		
+	.texto-servicos-combustibles {
+	    font-size: 12px;
+	    line-height: 14px;
+	    margin-left: 18%;
+	    margin-top: 15px;
+	    text-align: justify;
+	    width: 85%;
+	}
+
+}
+
+
+
+
+
+
+
+

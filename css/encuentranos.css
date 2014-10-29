@@ -1,0 +1,834 @@
+@CHARSET "UTF-8";
+/**********GENERAL**********************/
+.fondoEncuentranos {
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+    background-image: url(../imagenes/encuentranos/fondo-encuetranos.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+/*********************************************/
+.franja-encuentranosi {
+    width: 100%;
+    max-width: 940px;;
+    height: 300px;
+    background-image: url(../imagenes/encuentranos/encuentranos-naranja-i.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.encuentranos-seccion h1 {
+    color: #fff;
+}
+
+.form-encuentranos {
+    width: 100%;
+    height: 180px;
+    float: left;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.btn-group > .btn:first-child {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-left: 0;
+    border: none;
+    padding: 1px 12px;
+    background-color: #FFF;
+    background-image: linear-gradient(to bottom, #FFF, #FFF);
+    background-repeat: repeat-x;
+    text-align: left;
+    width: 170px;
+    color: #CA3C00;
+}
+
+.btn-group > .btn:last-child, .btn-group > .dropdown-toggle {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.btn-group > .btn + .dropdown-toggle {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    border: none;
+    border-left: solid 1px #F35123;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #fff, #fff);
+    background-repeat: repeat-x;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
+    color: #ffffff;
+    height: 15px;
+    text-decoration: none;
+    background-color: #F76D26;
+    background-image: -moz-linear-gradient(top, #F76D26, #F76D26);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F76D26), to(#F76D26));
+    background-image: -webkit-linear-gradient(top, #F76D26, #F76D26);
+    background-image: -o-linear-gradient(top, #F76D26, #F76D26);
+    background-image: linear-gradient(to bottom, #F76D26, #F76D263);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F76D26', endColorstr='#F76D26', GradientType=0);
+}
+
+.btn .caret {
+    border-top: 4px solid #F76D26;
+}
+
+.btn-servicios {
+    border-color: transparent;
+    border: none;
+    width: 96px;
+    height: 96px;
+    float: left;
+    display: inline-block;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 10px;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.alinear {
+    float: left;
+    width: 2px;
+    margin-left: 0px;
+    margin-right: 5px;
+    margin-top: 20px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.open > .dropdown-menu {
+    height: 130px;
+    overflow: auto;
+}
+
+.servicio1, .servicio2, .servicio3 {
+    float: left;
+    margin-right: 0;
+    background-size: 100%;
+    background-position: center;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: transparent;
+}
+
+.servicio1-azul {
+    background: url(../imagenes/encuentranos/dispensador-azul.png) no-repeat;
+    background-color: transparent;
+    background-size: 100%;
+}
+
+.servicio2-azul {
+    background: url(../imagenes/encuentranos/listo-azul.png) no-repeat;
+    background-color: transparent;
+    background-size: 100%;
+}
+
+.servicio3-azul {
+    background: url(../imagenes/encuentranos/lubricante-azul.png?frefresh=321546) no-repeat;
+    background-color: transparent;
+    background-size: 100%;
+}
+
+.servicio1.disabled, .servicio1[disabled], .servicio2.disabled, .servicio2[disabled], .servicio3.disabled, .servicio3[disabled] {
+    background-color: transparent;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.servicio1.disabled, .servicio1[disabled] {
+    background: url(../imagenes/encuentranos/dispensador-desactivado.png) no-repeat;
+    background-color: transparent;
+    background-size: 100%;
+}
+
+.servicio2.disabled, .servicio2[disabled] {
+    background: url(../imagenes/encuentranos/listo-desactivado.png) no-repeat;
+    background-color: transparent;
+    background-size: 100%;
+}
+
+.servicio3.disabled, .servicio3[disabled] {
+    background: url(../imagenes/encuentranos/lubricante-desactivado.png) no-repeat;
+    background-color: transparent;
+    background-size: 100%;
+}
+
+.btn:hover, .btn:focus {
+    background-position: center;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: transparent;
+}
+
+.servicio1:hover, .servicio2:hover, .servicio3:hover {
+    background-color: transparent;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.servicio1-active {
+    color: #ffffff;
+    background: url(../imagenes/encuentranos/dispensador-azul.png) no-repeat;
+    background-color: transparent;
+    background-size: 100%;
+    background-position: center center;
+    *background-color: transparent;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: transparent;
+}
+
+.servicio2-active {
+    color: #ffffff;
+    background: url(../imagenes/encuentranos/listo-naranja.png) no-repeat;
+    background-color: transparent;
+    background-size: 100%;
+    background-position: center center;
+    *background-color: transparent;
+    box-shadow: none;
+}
+
+.servicio3-active {
+    color: #ffffff;
+    background: url(../imagenes/encuentranos/lubricante-naranja.png) no-repeat;
+    background-color: transparent;
+    background-size: 100%;
+    background-position: center center;
+    *background-color: transparent;
+    box-shadow: none;
+}
+
+#map {
+    width: 442px;
+    height: 312px;
+    border: solid 3px #EA6F24;
+    -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari y Chrome */
+    -khtml-border-radius: 10px; /* Konkeror, ... */
+    border-radius: 10px; /* Opera 10.50, IE y CSS3 */
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-left: 0;
+    background-color: #fff;
+}
+
+#map_canvas {
+    width: 420px;
+    height: 286px;
+    border: solid 8px #ffffff;
+    -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari y Chrome */
+    -khtml-border-radius: 10px; /* Konkeror, ... */
+    border-radius: 10px; /* Opera 10.50, IE y CSS3 */
+    margin-top: 0px;
+    margin-left: 0;
+    background-color: #fff;
+}
+
+.table th, .table td {
+    border-top: none;
+}
+
+.mapa-content {
+    width: 100%;
+    float: left;
+    margin-left: 0px;
+    padding-left: 0;
+    margin-top: -25px;
+}
+
+.columnaMapa {
+    float: left;
+    width: 450px;
+    height: 400px;
+    padding-left: 0;
+}
+
+.one-side-float {
+    float: left;
+    padding: 70px 0px 0px 50px;
+}
+
+.other-side-float {
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+    margin-top: -15px;
+}
+
+.alinearDropdown {
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+
+}
+
+.columnaEncuentranos {
+    width: 470px;
+}
+
+.form-encuentranos h2, .other-side-float h2 {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.map-puntero {
+    float: left;
+    width: 47%;
+    height: 52px;
+    margin-top: 0px;
+    background-image: url(../imagenes/encuentranos/ecuentranos-picho.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.map-puntero .puntero {
+    padding-left: 35px;
+    width: 170px;
+    color: #fff;
+    line-height: 15px;
+    font-size: 11px;
+}
+
+.map-ubicate {
+    float: right;
+    width: 49%;
+    height: 52px;
+    margin-top: 0px;
+    background-image: url(../imagenes/encuentranos/Encuentranos-intro-icono-ubicacion.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.map-ubicate .ubicate {
+    padding-left: 35px;
+    width: 190px;
+    color: #fff;
+    text-align: left;
+    line-height: 15px;
+    font-size: 11px;
+}
+
+.grupo1 {
+    float: left;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.grupo2 {
+    float: left;
+    width: 100%;
+    margin-left: 0px;
+
+}
+
+@media ( min-width: 768px) and (max-width: 900px) {
+
+    .columnaEncuentranos {
+        height: 150px;
+        margin-left: 15%;
+        margin-top: 0;
+        width: 75%;
+    }
+
+    .form-encuentranos {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -60px;
+    }
+
+    .grupo1 {
+        width: 50%;
+        margin-left: 0px;
+    }
+
+    .fondoEncuentranos .tituloNosotros {
+        height: 200px;
+    }
+
+    .grupo2 {
+        width: 47%;
+        margin-left: 10px;
+    }
+
+    .other-side-float {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .alinear {
+        margin-top: 0px;
+    }
+
+    .columnaMapa {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .mapa-content {
+        margin-left: 20%;
+        margin-top: -20px;
+        width: 80%;
+    }
+
+    #map_canvas {
+        border: 3px solid #EA6F24;
+        height: 310px;
+        width: 428px;
+    }
+
+    #map {
+        width: 434px;
+    }
+
+    .btn-servicios {
+        width: 50px;
+        height: 50px;
+    }
+
+    .servicio1, .servicio2, .servicio3 {
+        width: 50px;
+        margin-top: 10px;
+    }
+
+    .map-puntero {
+        width: 35%;
+    }
+
+    .map-ubicate {
+        float: left;
+        width: 49%;
+        margin-left: 10px;
+    }
+
+}
+
+/*********SMALL TABLET*********/
+@media ( max-width: 767px) {
+
+    .encuentranos-seccion {
+        height: 150px ! important;
+    }
+
+    .columnaEncuentranos {
+        height: 300px;
+        margin-left: 10%;
+        margin-top: 0;
+        width: 90%;
+    }
+
+    .form-encuentranos {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -60px;
+    }
+
+    .grupo1 {
+        width: 50%;
+        margin-left: 0px;
+    }
+
+    .fondoEncuentranos .tituloNosotros {
+        height: 200px;
+    }
+
+    .grupo2 {
+        width: 47%;
+        margin-left: 10px;
+    }
+
+    .other-side-float {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .alinear {
+        margin-top: 0px;
+    }
+
+    .columnaMapa {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -180px;
+    }
+
+    .mapa-content {
+        margin-left: 16%;
+        margin-top: -20px;
+        width: auto;
+    }
+
+    .map-puntero {
+        width: 45%;
+    }
+
+    .map-ubicate {
+        float: left;
+        margin-left: 2%;
+        width: 49%;
+    }
+
+    #map_canvas {
+        border: 3px solid #EA6F24;
+        height: 310px;
+        width: 428px;
+    }
+
+    #map {
+        width: 434px;
+    }
+
+    .btn-servicios {
+        width: 50px;
+        height: 50px;
+    }
+
+    .servicio1, .servicio2, .servicio3 {
+        width: 50px;
+        margin-top: 10px;
+    }
+
+}
+
+@media ( max-width: 360px) {
+    .encuentranos-seccion {
+        height: 100px !important;
+    }
+
+    .fondoEncuentranos .tituloNosotros {
+        height: 100px;
+    }
+
+    .grupo1 .alinearDropdown {
+        margin-left: 10px;
+        margin-top:  5px;
+    }
+
+    .columnaEncuentranos {
+        width: 100%;
+        height: 100px;
+        margin-left: 0;
+        margin-top: -50px;
+    }
+
+    .form-encuentranos {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .grupo1 {
+        width: 50%;
+        margin-left: 0px;
+    }
+
+    .grupo1 h2 {
+        margin-left: 10px;
+        padding-left: 0px;
+        font-size: 15px;
+    }
+
+    .grupo2 {
+        width: 48%;
+        margin-left: 0px;
+
+    }
+
+    .grupo2 h2 {
+        margin-left: 10px;
+        padding-left: 0px;
+        font-size: 15px;
+    }
+
+    .other-side-float {
+        width: 100%;
+    }
+
+    .columnaMapa {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .btn-group > .btn:first-child {
+        width: 100px;
+        height: 20px;
+    }
+
+    #map_canvas {
+        width: 300px;
+        height: 150px;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    .map-puntero {
+        font-size: 10px;
+        letter-spacing: -1px;
+        margin-left: 5px;
+        margin-top: 0;
+        width: 47%;
+        line-height: 16px;
+    }
+
+    .mapa-content {
+        margin-top: -55px;
+        margin-left: 0;
+    }
+
+    .map-puntero .puntero {
+        width: 120px;
+        font-size: 11px;
+    }
+
+    .map-ubicate {
+        letter-spacing: -1px;
+        margin-left: 90px;
+        margin-top: -50px;
+        width: 49%;
+        background-position: 74px top;
+        float: left;
+    }
+
+    .map-ubicate .ubicate {
+        width: 130px;
+        font-size: 11px;
+        margin-left: 65px;
+        line-height: 14px;
+    }
+
+    #map {
+        margin-left: 2%;
+        margin-top: 40px;
+        width: 295px;
+        height: 165px
+    }
+
+    #map_canvas {
+        height: 160px;
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 290px;
+    }
+
+    .servicio1, .servicio2, .servicio3 {
+        width: 45px;
+        margin-top: 10px;
+    }
+
+    .btn-servicios {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/*
+@media ( max-width : 600px) {
+	
+
+	.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    	width: 100%;
+    	height: 100%;    	
+    	min-width: 320px;
+    	color: #fff;
+	}
+			
+	div.other-side-float p, div.one-side-float p{
+		font-size: 12px;
+	} 
+	
+	.btn-group>.btn:first-child {
+		font-size: 8px;
+		border-bottom-left-radius: 20px;
+		border-top-left-radius: 20px;
+		margin-left: 0;
+		border: none;		
+		background-color: #F6DBCB;
+		background-image: linear-gradient(to bottom, #F6DBCB, #FBE3D3);
+		background-repeat: repeat-x;		
+		text-align: left;
+		padding: 0px 5px;
+		width: 100px;
+		height: 15px;
+		line-height: 15px;		
+	}
+	
+	.row-fluid > .span6 > .btn-group > button.opcionDropdown{
+		width: 170px;
+	}
+	
+	.btn-group>.btn:last-child,.btn-group>.dropdown-toggle {
+		border-bottom-right-radius: 20px;
+		border-top-right-radius: 20px;
+	}
+	.btn-group>.btn+.dropdown-toggle {
+		padding: 0px 5px;				
+		border: none;
+		border-left: solid 1px #F35123;
+		background-color: #F6DBCB;
+		background-image: linear-gradient(to bottom, #F6DBCB, #FBE3D3);
+		background-repeat: repeat-x;
+		height: 15px;		
+		line-height: 25px;
+	}
+	.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-submenu:hover>a,.dropdown-submenu:focus>a
+		{
+		color: #ffffff;
+		text-decoration: none;
+		background-color: #F76D26;
+		background-image: -moz-linear-gradient(top, #F76D26, #F76D26);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F76D26),
+			to(#F76D26) );
+		background-image: -webkit-linear-gradient(top, #F76D26, #F76D26);
+		background-image: -o-linear-gradient(top, #F76D26, #F76D26);
+		background-image: linear-gradient(to bottom, #F76D26, #F76D263);
+		background-repeat: repeat-x;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F76D26',
+			endColorstr='#F76D26', GradientType=0 );
+	}
+	.btn .caret {
+		border-top: 4px solid #F76D26;
+	}
+	.serviciosDropdown {
+		background-color: transparent;
+		background-image: none;
+		background-repeat: repeat-x;
+		border-color: transparent;
+		width: 30%;
+		height: 86px;
+		float: none;
+		display: inline-block;
+		border-radius: 0px;
+    	box-shadow: none;    		
+    	padding: 0px;	 
+	}
+	.servicio1 {
+		background: url("../images/Encuentranos-intro-icono-dispensador-gris.png") no-repeat;
+		background-size: 100%;		 
+	}
+	.servicio2 {
+		background: url("../images/Encuentranos-intro-icono-listo-gris.png") no-repeat;
+		background-size: 100%;
+	}
+	.servicio3 {
+		background: url("../images/Encuentranos-intro-icono-lubricante-gris.png") no-repeat;
+		background-size: 100%;
+	}
+	
+	.btn:hover,.btn:focus {
+		background-position: center;
+		-webkit-transition: none;
+		-moz-transition: none;
+		-o-transition: none;
+		transition: none;		
+	}
+	
+	.servicio1:hover,.servicio1:focus,.servicio1:active,.servicio1.active,.servicio1.disabled,.servicio1[disabled]{
+		color: #ffffff;
+		background: url("../images/Encuentranos-intro-icono-dispensador-naranja.png") no-repeat;
+		background-color: transparent;
+		*background-color: transparent;
+		border-radius: 0px;
+    	box-shadow: none;
+    	width: 30%;
+    	background-size: 100%;
+	}
+	
+	.servicio2:hover,.servicio2:focus,.servicio2:active,.servicio2.active,.servicio2.disabled,.servicio2[disabled]
+		{
+		color: #ffffff;
+		background: url("../images/Encuentranos-intro-icono-listo-naranja.png") no-repeat;
+		background-color: transparent;
+		*background-color: transparent;
+		border-radius: 0px;
+    	box-shadow: none;    	
+    	width: 30%;
+    	background-size: 100%;
+	}
+	.servicio3:hover,.servicio3:focus,.servicio3:active,.servicio3.active,.servicio3.disabled,.servicio3[disabled]{
+		color: #ffffff;
+		background: url("../images/Encuentranos-intro-icono-lubricante-naranja.png") no-repeat;
+		background-color: transparent;
+		*background-color: transparent;
+		border-radius: 0px;
+    	box-shadow: none;
+    	width: 30%;
+    	background-size: 100%;    	
+	}
+	#map_canvas {
+		width: 508px;
+		height: 310px;
+		border: solid 3px #EA6F24;		
+		-moz-border-radius: 10px; /* Firefox */
+/*	-webkit-border-radius: 10px; /* Safari y Chrome */
+/*	-khtml-border-radius: 10px; /* Konkeror, ... */
+/*	border-radius: 10px; /* Opera 10.50, IE y CSS3 */
+/*	margin: 0px auto;
+}
+.table th,.table td {
+    border-top: none;
+}
+
+.franja{
+    background: url("../images/Encuentranos-intro-recuadro1.png") no-repeat center 150px;
+    min-height: 768px;
+    margin-top: 50px;
+    text-align: center;
+    background-size: 100% 200px;
+}
+
+.form-encuentranos{
+    width: 80%;
+    display: inline-block;
+    float: none;
+    text-align: left;
+}
+
+
+.display-block{
+    display: block;
+    margin-bottom: 5px;
+}
+.btn-group + .btn-group {
+     margin-left: 0px;
+}
+
+.one-side-float{
+    float: left;
+    padding: 0px;
+    width: 50%;
+}
+.other-side-float{
+    float: right;
+    padding: 0px;
+    width: 50%;
+}
+
+}*/
+	
+	
+	
+	
+	
+	
+	

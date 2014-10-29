@@ -1,0 +1,38 @@
+{
+    "id": "historia",
+    "type": "desktop/historia",
+    "about": {
+        "author": "",
+        "description": "Mantenimiento de Historia.",
+        "name": "Ventana Historia",
+        "url": "",
+        "version": "1.0"
+    },
+
+    "client": {
+        "class": "QoDesk.HistoriaWindow",
+        "css": [
+            {
+                "directory": "desktop/historia/client/resources/",
+                "files": [ "styles.css" ]
+            }
+        ],
+        "javascript": [
+            {
+                "directory": "desktop/historia/client/",
+                "files": [ "historia-win.js" ]
+            }
+        ],
+        "launcher": {
+            "config": {
+                "iconCls": "historia-icon",
+                "shortcutIconCls": "historia-shortcut",
+                "text": "Historia Primax",
+                "tooltip": "<b>Historia Primax</b>"
+            },
+            "paths": {
+                "startmenu": "/"
+            }
+        }
+    }
+}

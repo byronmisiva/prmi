@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Primax :: Ecuador</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="PRIMAX Ecuador ofrece a sus clientes: combustibles líquidos, lubricantes, ventas coportativas, ventas a industria."/>
+    <meta name="keywords" content="Primax, ecuador, 10, gasolina, ford escape, gana carro, gana carro gasolina" />
+    <meta property="og:title" content="PRIMAX Ecuador | Todo para seguir"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.primax.com.ec/"/>
+    <meta property="og:image" content="http://www.primax.com.ec/imagenes/logo-primax.png"/>
+    <meta property="og:site_name" content="PRIMAX Ecuador | Todo para seguir"/>
+    <meta property="og:description" content="PRIMAX Ecuador,  Por cada  $10  de consumo en gasolina,  recibes un cupón para participar en los sorteos de 5 Ford Escape."/>       
+    <link rel="icon" type="image/png" href="../imagenes/favicon.ico" />
+    
+    <link href="./css/boot/bootstrap.css" rel="stylesheet" />
+    <link href="./css/boot/bootstrap-responsive.css" rel="stylesheet" />   
+
+    <link href="./css/estilo.css?frefresh=45646" rel="stylesheet" />
+    <link href="./css/beneficios.css?frefresh=4532321" rel="stylesheet" />
+     <link href="./css/tiendas.css?frefresh=45398945" rel="stylesheet" /> 
+    
+    <!-- <link href="./css/servicios.css" rel="stylesheet" />
+    
+    <link href="./css/encuentranos.css" rel="stylesheet" /> -->    
+    
+    <script src="./assets/js/jquery.js"></script>    
+    <script src="./js/bold/easytabs.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/regular/easytabs.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/plugin/jquery.scrollTo-min.js" type="text/javascript" charset="utf-8"></script>  
+  	<script type="text/javascript" src="./js/carusel/carouFredSel.js"></script>
+  
+<script>
+function movimiento(pos){	
+	var $a = $("#contenedor2");
+	$a.stop().scrollTo('div.'+pos, {duration:1000});
+}
+</script>   			
+	 <style type="text/css">
+		 .image_carousel {		
+		 	float:left;
+		}
+	
+		.image_carousel img {
+			padding: 0px;
+			margin: 0px;
+			display: block;
+			float: left;
+		}
+				
+		.clearfix {
+			float: none;
+			clear: both;
+		}
+	 
+@font-face {
+	font-family: 'frutiger_57cnregular';
+	src: url('./css/regular/ufonts.com_frutiger_57_condensed-webfont.eot');
+	src:
+		url('./css/regular/ufonts.com_frutiger_57_condensed-webfont.eot?#iefix')
+		format('embedded-opentype'),
+		url('./css/regular/ufonts.com_frutiger_57_condensed-webfont.woff')
+		format('woff'),
+		url('./css/regular/ufonts.com_frutiger_57_condensed-webfont.ttf')
+		format('truetype'),
+		url('ufonts.com_frutiger_57_condensed-webfont.svg#frutiger_57cnregular')
+		format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	@font-face {	
+	font-family: 'frutigerbold';
+    src: url('./css/bold/frutiger_67_bold_condensed-webfont.eot');
+    src: url('./css/bold/frutiger_67_bold_condensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./css/bold/frutiger_67_bold_condensed-webfont.woff') format('woff'),
+         url('./css/bold/frutiger_67_bold_condensed-webfont.ttf') format('truetype'),
+         url('./css/bold/frutiger_67_bold_condensed-webfont.svg#frutigerbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+	
+	
+</style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">   
+  </head>
+  <body style="background:#EAEAEA;" >
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper" style="overflow: hidden;">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container" >
+        <div class="navbar navbar-inverse"  >
+          <div class="navbar-inner" >
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" id="menu">
+            	<img src="./imagenes/header/smartphone-menu.png" />                            
+            </button>
+            	<img src="./imagenes/header/hader-logo-primax.png"  onclick="movimiento('row_home');verificarFooter(1);$('#menu').click();" class="logo-superior" onclick="$('#menu').click();" />
+            <div class="nav-collapse collapse" >
+              <ul class="nav nav-cabecera" >
+                <li onclick="movimiento('row_home');verificarFooter(1);$('#menu').click();" id="estado1"  >                	
+                	<a class="home" >Home</a>
+                </li>
+                <li onclick="movimiento('fondo-nosotros');verificarFooter(0);$('#menu').click();$('#btn-empresa').click();" id="estado2" >
+	               <a class="nosotros"  >Nosotros</a>
+                </li>                
+                <li onclick="movimiento('fondoGprix');verificarFooter(0);$('#menu').click();$('#btn-beneficios').click();" id="estado3" >                    
+                	<a class="super-g-prix" >Super G-Prix</a>
+                </li>
+                <li onclick="movimiento('fondoTiendas');verificarFooter(0);$('#menu').click();" id="estado4" >
+	                <a class="tiendas" >Tiendas Listo!</a>
+                </li>
+                <li onclick="movimiento('fondo-seccion5');verificarFooter(0);$('#menu').click();" id="estado5" >
+	                <a class="lubricantes" >Lubricantes</a>
+                </li>
+                <li onclick="movimiento('fondo-seccion6');verificarFooter(0);$('#menu').click();" id="estado6" >	                
+	                <a class="servicios" >Servicios Corporativos</a>
+                </li>
+                <li onclick="movimiento('fondo-seccion7');verificarFooter(0);$('#menu').click();" id="estado7" >
+                	<a class="encuentranos" >Encuéntranos</a>
+                </li>
+                <li onclick="movimiento('fondo-seccion8');verificarFooter(0);$('#menu').click();" id="estado8" >                	
+                	<a class="contactenos" >Contáctanos</a>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+    <div id="contenedor2" >		
+			<div class="row_home" style="overflow: hidden;">
+				 <div id="alinearAbajo" >
+					<div id="imagenHome"></div>
+				</div> 
+			</div>					 
+		<div class="fondo-nosotros" style="overflow: hidden;">
+		 <div  class="container"  >		
+			   <div class="carousel slide" id="myCarousel" >				
+				<div class="tituloNosotros" >
+					<h1>Nosotros</h1>
+					<div class="alinearmenuNosotros">
+					<ul class="nav nav-tabs"  id="menuNosotros">
+						<li id="btn-empresa" data-target="#myCarousel" data-slide-to="0" class="active"><a href="#" data-toggle="tab" >Empresa </a></li>
+						<li ><span class="linea-division"></span></li>
+						<li id="btn-mision"  data-target="#myCarousel" data-slide-to="1"><a style="display:none;" href="#" data-toggle="tab">Misión</a></li>						
+						<li id="btn-vision"  data-target="#myCarousel" data-slide-to="2"><a style="display:none;" href="#" data-toggle="tab">Visión</a></li>
+						<li id="btn-valores" data-target="#myCarousel" data-slide-to="3"><a style="display:none;" href="#" data-toggle="tab">Valores</a></li>
+						<li data-target="#myCarousel" data-slide-to="4"><a href="#" data-toggle="tab">Historia </a></li>
+						<li  ><span class="linea-division"></span></li>
+						<li data-target="#myCarousel" data-slide-to="5" ><a href="#" data-toggle="tab">Presencia Internacional </a></li>
+					</ul>
+					</div>	 									
+				</div>             
+                
+                <div class="carousel-inner"  >
+                 <!-- item 0 -->
+                  <div class="item active fondo-secciond" >                  
+  					<div class="carousel-caption" style="background-color: transparent;top:0px;">                  
+                    <div class="span6 columnaPersonaje"  >
+						<div class="personaje1" ></div>
+					</div>
+                    <div class="columnaInformacion"  >													
+								<div class="span5 submenuNosotros">		
+									<ul class="nav nav-tabs" id="opciones" >
+										<li ><a href="#" onclick="$('#btn-mision').click();" >Misión </a></li>
+										<li ><span class="linea-division"></span></li>									
+										<li ><a href="#"  onclick="$('#btn-vision').click();" >Visión </a></li>
+										<li ><span class="linea-division"></span></li>
+										<li ><a href="#" onclick="$('#btn-valores').click();"> Valores  </a></li>
+									</ul>
+								</div>																
+								<div class="row tab-content">
+									<div class="tab-pane active"  >																		    
+										<div class="textoContenido">
+												Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo 
+												ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis 
+												 texto 1
+										</div>
+										<div class="indicador1"></div>
+									</div>									
+								</div>	
+                     </div>                      
+                  </div>  
+                  </div>
+                  <div class="item fondo-seccioni" >                  
+  					<div class="carousel-caption" style="background-color: transparent;top:0px;">    
+                  <!-- <img src="" alt=""> -->                 
+                    <div class="span6 columnaPersonaje"  >						
+						<div class="personaje1" ></div>
+					</div>
+                    <div class="columnaInformacion" >		
+								<div class="span5 submenuNosotros">		
+									<ul class="nav nav-tabs" id="opciones" >
+										<li class="active" ><a href="#" onclick="$('#btn-mision').click();" >Misión </a></li>
+										<li ><span class="linea-division"></span></li>									
+										<li ><a href="#"  onclick="$('#btn-vision').click();" >Visión </a></li>
+										<li ><span class="linea-division"></span></li>
+										<li ><a href="#" onclick="$('#btn-valores').click();"> Valores  </a></li>
+									</ul>
+								</div>									
+								<div class="tab-content">									
+									<div class="tab-pane active" >																		
+									<div class="textoContenido">
+												<H2>MISIÓN</H2>
+												Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo 
+												ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis 
+												 texto 1
+										</div>
+									<div class="indicador2"></div>
+									</div>																
+								</div>													
+                     </div>
+                  </div>
+                  </div>
+                 <!-- item 2   -->
+						<div class="item fondo-secciond">
+							<div class="carousel-caption"
+								style="background-color: transparent; top: 0px;">
+								<div class="span6 columnaPersonaje">
+									<div class="personaje2"></div>
+								</div>
+								<div class=" columnaInformacion">
+									<div class="span5 submenuNosotros">
+										<ul class="nav nav-tabs" id="opciones">
+											<li  ><a href="#" onclick="$('#btn-mision').click();" >Misión </a></li>
+											<li ><span class="linea-division"></span></li>									
+											<li class="active"><a href="#"  onclick="$('#btn-vision').click();" >Visión </a></li>
+											<li ><span class="linea-division"></span></li>
+											<li ><a href="#" onclick="$('#btn-valores').click();"> Valores  </a></li>
+										</ul>
+									</div>
+									<div class="tab-content">
+										<div class="tab-pane active">
+											<div class="textoContenido2">
+												<h2>VISIÓN</h2>
+												Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+												Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+												natoque penatibus et magnis dis  texto 3
+											</div>
+											
+											<div class="indicador2 indicadorVision"></div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item fondo-seccioni" >
+  					<div class="carousel-caption" style="background-color: transparent;top:0px;">                  
+                    <div class="span6 columnaPersonaje"  >						
+						<div class="personaje3" ></div>	
+					</div>
+                    <div class="columnaInformacion" >															
+								<div class="span5 submenuNosotros">		
+									<ul class="nav nav-tabs" id="opciones" >
+										<li  ><a href="#" onclick="$('#btn-mision').click();" >Misión </a></li>
+										<li ><span class="linea-division"></span></li>									
+										<li ><a href="#"  onclick="$('#btn-vision').click();" >Visión </a></li>
+										<li ><span class="linea-division"></span></li>
+										<li class="active"><a href="#" onclick="$('#btn-valores').click();"> Valores  </a></li>
+									</ul>
+								</div>	
+								<div class="tab-content">
+									<div class="tab-pane active"  >
+										<h2 class="textoValores">VALORES</h2>
+										<ul class="textoContenido3">				
+												<li>Lorem ipsum dolor</li>
+												<li>Lorem ipsum dolor </li>
+												<li>Lorem ipsum dolor </li>
+												<li>Lorem ipsum dolor </li>
+												<li>Lorem ipsum dolor </li>										
+											</ul>											
+											<div class="indicador2 indicadorValores"></div>
+									</div>																
+								</div>		
+                     </div>                      
+                  </div>
+                  </div>
+                 <!-- item 3 -->
+             
+                  <div class="item fondo-secciond" >
+  					<div class="carousel-caption">
+                    <div  id="timeline" >
+                        <div class="timeline-content" style="overflow: hidden ; margin: 0 60px;">
+
+	                    	<div class="fechas" id="TimeNormal2 historia_carrousel">
+
+                                <div><button class="btn-fechas fecha" title="Compra Shell Perú" data-placement="bottom" data-toggle="tooltip" type="button"  ><img class="encendido" src="./imagenes/nosotros/nosotros-historia-2004.png" /> </button></div>
+                                <div><button class="btn-fechas fecha" title="Nace Primax Perú" data-placement="bottom" data-toggle="tooltip" type="button"  ><img src="./imagenes/nosotros/nosotros-historia-2005.png" /></button></div>
+                                <div><button class="btn-fechas fecha" title="Compra red E/S Shell Ecuador" data-placement="bottom" data-toggle="tooltip" type="button"><img src="./imagenes/nosotros/nosotros-historia-2006.png" /></button></div>
+                                <div><button class="btn-fechas fecha" title="Nace Primax Perú"  data-placement="bottom" data-toggle="tooltip" type="button"  ><img src="./imagenes/nosotros/nosotros-historia-2007-sep.png" /></button></div>
+                                <div><button class="btn-fechas fecha" title="Nace Primax Perú"  data-placement="bottom" data-toggle="tooltip" type="button"  ><img src="./imagenes/nosotros/nosotros-historia-2007-nov.png" /></button></div>
+                                <div><button class="btn-fechas fecha" title="Nace Primax Perú"  data-placement="bottom" data-toggle="tooltip" type="button"  ><img src="./imagenes/nosotros/nosotros-historia-2008-ene.png" /></button></div>
+                                <div><button class="btn-fechas fecha" title="Nace Primax Perú"  data-placement="bottom" data-toggle="tooltip" type="button"  ><img src="./imagenes/nosotros/nosotros-historia-2008-sep.png" /></button></div>
+                                <div><button class="btn-fechas fecha" title="Nace Primax Perú"  data-placement="bottom" data-toggle="tooltip" type="button"  ><img src="./imagenes/nosotros/nosotros-historia-2008-dic.png" /></button></div>
+                                <div><button class="btn-fechas fecha" title="Nace Primax Perú"  data-placement="bottom" data-toggle="tooltip" type="button"  ><img src="./imagenes/nosotros/nosotros-historia-2009.png" /></button></div>
+                                <div><button class="btn-fechas fecha" title="Nace Primax Perú"  data-placement="bottom" data-toggle="tooltip" type="button"  ><img src="./imagenes/nosotros/nosotros-historia-2010.png" /></button></div>
+                                <div><button class="btn-fechas fecha" title="Nace Primax Perú"  data-placement="bottom" data-toggle="tooltip" type="button"  ><img src="./imagenes/nosotros/nosotros-historia-2011.png" /></button></div>
+                                <div><button class="btn-fechas fecha" title="Nace Primax Perú"  data-placement="bottom" data-toggle="tooltip" type="button"  ><img src="./imagenes/nosotros/nosotros-historia-2013.png" /></button></div>
+                            </div>
+
+                            <div class="controlI"></div>
+                            <div class="controlD"></div>
+
+                        </div>
+
+                    </div>
+                  </div>
+                  </div>
+                  <!-- fin item 3 -->
+
+                  <div class="item fondo-seccioni" >                 
+  					<div class="carousel-caption" style="background-color: transparent;top:0px;">                  
+                    <div class="span6 columnaPersonaje"  >						
+						<div class="presencia" ></div>	
+					</div>
+                    <div class="columnaInformacion" >													
+								<div class="tab-content">
+									<div class="tab-pane active"  >										
+										<div class="textoContenido presenciaInternacional">
+										<h2 id="presenciaTexto">PRESENCIA INTERNACIONAL</h2>											
+												Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo 
+												ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis 
+												dis parturient montes, nascetur ridiculus mus. 
+												 texto 3											
+										</div>
+										<div class="indicador3"></div>										
+									</div>																
+								</div>		
+                     </div>                      
+                  </div>
+                  </div>
+                </div>                
+               <a class="left carousel-control"  href="#myCarousel" data-slide="prev"></a>
+               <a class="right carousel-control" href="#myCarousel" data-slide="next"></a>                
+              </div>
+			</div>			
+			</div>
+		<!-- inicio-->	
+		
+		<!-- SECCION Beneficios -->
+		<!-- SECCION 3 -->
+		<div class="row fondoGprix" >
+		<div  class="container"  >		
+			   <div class="carousel slide" id="carruselSuper" >				
+				<div class="tituloNosotros beneficio-seccion" >
+					<h1>Super G-Prix</h1>
+					<div class="alinearmenuNosotros">
+					<ul class="nav nav-tabs"  id="menuBeneficios">
+						<li data-target="#carruselSuper" data-slide-to="0" class="active" ><a href="#" data-toggle="tab" >Beneficios</a></li>
+						<li><span class="linea-division"></span></li>
+						<li  data-target="#carruselSuper" data-slide-to="1"><a href="#" data-toggle="tab">Caracteristicas de los aditivos</a></li>
+					</ul>
+					</div>	 									
+				</div>             
+                
+                <div class="carousel-inner"  >
+                 <!-- item 0 -->
+                  <div class="item active franja-Gprixd" >                  
+  					<div class="carousel-caption" style="background-color: transparent;top:0px;">                  
+                    <div class="span6 columnaPersonaje"  >
+						<div class="beneficios" ></div>
+					</div>
+                    <div class="columnaInformacion" >										
+						<div class="row tab-content">
+							<div class="tab-pane active "  >																										    
+								<div class="textoBeneficio">									
+										<H2>BENEFICIOS</H2>
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo 
+										ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis 
+										dis parturient montes, nascetur ridiculus mus. 
+										Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. texto 1
+								</div>	
+								<div class="logoGprix"></div>								
+							</div>									
+						</div>	
+                     </div>                      
+                  </div>  
+                  </div>
+                  <div class="item franja-Gprixi" >                  
+  					<div class="carousel-caption" style="background-color: transparent;top:0px;">    
+                  <!-- <img src="" alt=""> -->                 
+                    <div class="span12"  >
+                    <h2 class="titulo-caracteristicas">CARACTERÍSTICAS</h2>
+                    			<div class="tab-content">		
+                    				<div class="tab-pane active" >
+											<div class="aditivos">
+												<div class="beneficio3">														
+													<div class="imagenbeneficio1" ></div>		
+													<div class="linea1" onclick="desplegar(1)" ></div>
+													<div class="textoBeneficios texto1">
+														<h2 class="titulobeneficio titulo1">DETERGENTES:</h2>
+														Remueve depósitos en el motor.
+													</div>
+													
+												</div>
+												<div class="division-caracteristicas"></div>
+												<div class="beneficio2">
+													<div class="imagenbeneficio2"></div>													
+													<div class="linea2" onclick="desplegar(2)"></div>
+													<div class="textoBeneficios texto2">
+														<h2 class="titulobeneficio">DISPERSANTES:</h2>
+														Evita la formación de depositos en el motor
+													</div>
+													
+												</div>
+												<div class="division-caracteristicas"></div>
+												<div class="beneficio1">
+													<div class="imagenbeneficio3"></div>													
+													<div class="linea1" onclick="desplegar(3)"></div>
+													<div class="textoBeneficios texto3">
+														<h2 class="titulobeneficio">INHIBIDORES:</h2>
+														Evita que el motor se dañe por la acción de los gases de
+														la combustion
+													</div>
+													
+												</div>
+											</div>
+										</div>						
+								</div>
+					</div>                     
+                  </div>
+                  </div>
+               
+                </div>                
+               <a class="left carousel-control"  href="#carruselSuper" data-slide="prev"></a>
+               <a class="right carousel-control" href="#carruselSuper" data-slide="next"></a>                
+              </div>
+			</div>		
+		</div>	
+		
+		
+		<!-- fin-->
+		<!-- inicio-->
+		<!-- SECCION Tiendas -->
+		
+		<div class="row fondoTiendas">
+			<div  class="container"  >		
+			   <div class="carousel slide" id="carruselTiendas" >				
+				<div class="tituloNosotros beneficio-seccion" >
+					<h1>Tiendas Listo!</h1>
+					<div class="alinearmenuNosotros">
+					<ul class="nav nav-tabs"  id="menuBeneficios">
+						<li id="btn-beneficios" data-target="#carruselTiendas" data-slide-to="0" class="active"><a href="#" data-toggle="tab" >Intro</a></li>
+						<li id="btn-beneficios" data-target="#carruselTiendas" data-slide-to="0" class="active"><a href="#" data-toggle="tab" >Menú</a></li>
+						<li ><span class="linea-division"></span></li>
+						<li  data-target="#carruselTiendas" data-slide-to="1"><a href="#" data-toggle="tab">Promociones</a></li>
+					</ul>
+					</div>	 									
+				</div>             
+                
+                <div class="carousel-inner"  >
+                 <!-- item 0 -->
+                  <div class="item active franja-Gprixd" >                  
+  					<div class="carousel-caption" style="background-color: transparent;top:0px;">                  
+                    <div class="span6 columnaPersonaje"  >
+						<div class="mesera" ></div>
+					</div>
+                    <div class="columnaInformacion" >										
+						<div class="row tab-content">
+							<div class="tab-pane active "  >																										    
+								<div class="textoBeneficio">									
+										
+								</div>	
+																
+							</div>									
+						</div>	
+                     </div>                      
+                  </div>  
+                  </div>
+                  <div class="item franja-Gprixi" >                  
+  					<div class="carousel-caption" style="background-color: transparent;top:0px;">    
+                  <!-- <img src="" alt=""> -->                 
+                    <div class="span12"  >
+                    	<div class="tab-content">		
+                    		<div class="tab-pane " >
+											
+							</div>						
+						</div>                   
+                  </div>
+                  </div>
+                  <div class="item franja-Gprixi" >                  
+  					<div class="carousel-caption" style="background-color: transparent;top:0px;">    
+                  <!-- <img src="" alt=""> -->                 
+                    <div class="span12"  >
+                    <h2 class="titulo-caracteristicas">CARACTERÍSTICAS</h2>
+                    	<div class="tab-content">		
+                    		<div class="tab-pane " >
+										
+							</div>						
+						</div>
+					</div>                    
+                  </div>
+                  </div>
+               
+                </div>                
+               <a class="left carousel-control"  href="#carruselTiendas" data-slide="prev"></a>
+               <a class="right carousel-control" href="#carruselTiendas" data-slide="next"></a>                
+              </div>
+			</div>		
+		</div>	
+		<!-- SECCION 5 -->		
+		<div class="row fondo-seccion3">
+			<img src="./imagenes/home/home-foto-01.png" class="img-home" />
+			seccion 5
+		</div>
+		
+		
+		<!-- SECCION 6 -->
+		<div class="row fondo-seccion3">
+			<img src="./imagenes/home/home-foto-01.png" class="img-home" />
+			seccion 6
+		</div>
+		
+		<!-- SECCION 7 -->
+		<div class="row fondo-seccion3">
+			<img src="./imagenes/home/home-foto-01.png" class="img-home" />
+			seccion 7
+		</div>
+		
+		<!-- SECCION 8 -->
+		<div class="row fondo-seccion3">
+			<img src="./imagenes/home/home-foto-01.png" class="img-home" />
+			seccion 8
+		</div>
+	</div> 			
+    
+    <div id="footer-promociones" class="navbar-wrapper2"  style="display:none;">   
+       <div class="container" >
+		        <div class="promociones-container">
+		        <div class="promociones-centrar">
+			        <div class="img-promocion">
+			        	Hoy en PRIMAX
+			        </div>
+			        <div class="promoContenedorMobile">		     
+			        <div class="flechaI"></div>			        
+			        <div class="image_carousel">
+						<div id="foo2">
+							<img src="./imagenes/home/home-foto-02.jpg"  width="134" height="96" />
+					        <img src="./imagenes/home/home-foto-03.jpg"  width="134" height="96" />
+					        <img src="./imagenes/home/home-foto-04.jpg"  width="134" height="96" />
+					        <img src="./imagenes/home/home-foto-05.jpg"  width="134" height="96" />
+				        	
+				        	 <img src="./imagenes/home/home-foto-02.jpg" width="134" height="96" />
+					        <img src="./imagenes/home/home-foto-03.jpg"  width="134" height="96" />
+					        <img src="./imagenes/home/home-foto-04.jpg"  width="134" height="96" />
+					        <img src="./imagenes/home/home-foto-05.jpg"  width="134" height="96" /> 
+						</div>						
+						<div class="clearfix"></div>		
+					</div>
+					<div class="flechad"></div>
+			        </div>
+			        </div>			    
+		        </div>
+	               
+	        <div class="promociones-container">
+		        <div class="promociones-centrar">
+		        
+			        <a class="yt" href="#" ></a>
+			        <a class="fb" href="#" ></a>
+			        <a class="tw" href="#" ></a>		        	
+		        	        
+	        </div>          
+	      </div>      	
+      </div>   
+      </div>
+      <div id="footer"  >   
+       <div class="container"  >       			
+	          	 	<a class="yt2" href="#" ></a>
+			        <a class="fb2" href="#" ></a>
+			        <a class="tw2" href="#" ></a>	          	
+	          		<div class="logo-misiva"  onclick="window.open('http://www.misiva.com.ec');"></div>
+	          	
+       </div>
+       </div>      
+    <!-- /.container -->  
+    <script src="./js/boot/bootstrap.min.js"></script>    
+    
+        
+    <script>
+    function desplegar(id){
+    	if (id==1){
+    		$('.imagenbeneficio1').addClass("activo");
+    		$('.texto1').show();
+    	}else if(id==2){    	
+    		$('.imagenbeneficio2').addClass("activo");
+    		$('.texto2').show();
+    	}else{
+    		$('.imagenbeneficio3').addClass("activo");
+    		$('.texto3').show();
+    	}
+    	
+    }
+    
+    function verificarFooter(dato){    	
+    	if(dato==0)
+    		$('#footer-promociones').fadeOut();
+    	else
+    		$('#footer-promociones').fadeIn();
+    }
+   
+    $('.carousel').carousel({
+    	  interval: false
+    });
+    
+    
+    $(function () {
+    	 $('.btn-fechas').tooltip({delay: {   hide: 500 }});
+    });
+    
+    var numeroPromociones=4;
+     if ($('body').width() > 702 )
+    	 numeroPromociones=4;
+     else
+    	 numeroPromociones=1;
+    var promocionTemporal=0;
+   
+    
+    $(document).ready(function() {    
+    	//alert( "Screen: "+window.innerWidth+" - "+ window.innerHeight+" Body: "+$('body').width() +" - "+ $('body').height());
+    	
+    	
+    	setTimeout("cambiarPromociones($('body').width())" ,100);    
+     
+	    $(window).resize(function () {
+	    	if ( numeroPromociones != promocionTemporal ){
+	    		cambiarPromociones($('body').width());
+	    		promocionTemporal=numeroPromociones;
+	    	}
+	    	
+	    	 if ($('body').width() > 702 )
+	        	 numeroPromociones=4;
+	         else
+	        	 numeroPromociones=1;    	
+	    });
+
+	     //historia
+
+        //fechas
+
+        var positionFecha = 1;
+        $(".controlI").hide();
+
+
+
+        $('.fechas').width( ( $('.fecha').width() + 50) * $('.fechas').children().size());
+
+
+        $( ".controlI" ).click(function() {
+            if (positionFecha>1){
+            $( ".fechas" ).animate({ "left": "+=160px" }, "fast" );
+                positionFecha -- ;
+            } else
+            positionFecha = 0;
+        });
+
+        $( ".controlD" ).click(function() {
+            if ((positionFecha + 5) <= $('.fechas').children().size()) {
+            $( ".fechas" ).animate({ "left": "-=160px" }, "fast" );
+            positionFecha++;
+            if (positionFecha > 1) $(".controlI").show();
+            }
+            if ((positionFecha+1) == $('.fechas').children().size()) $(".controlD").hide();
+            
+            
+        });
+
+        //fin historia
+ 
+   
+    });
+    
+   
+    
+    function cambiarPromociones(ancho){    	
+    	if(ancho>702){
+    	    	$("#foo2").carouFredSel({
+        	        items               : 4,
+        	        prev				:".flechaI",
+    				next				:".flechad",
+        	    	 scroll : {    	
+         	            items           : 1,    	
+         	            easing          : null,    	
+         	            duration        : 1000,
+         	            pauseOnHover    : true    	
+         	        }
+        	    });    	
+    	    	
+    	    }else{
+    	    	$("#foo2").carouFredSel({
+        	        items               : 1,
+        	        prev				:".flechaI",
+    				next				:".flechad",
+        	    	 scroll : {    	
+         	            items           : 1,    	
+         	            easing          : null,    	
+         	            duration        : 1000,
+         	            pauseOnHover    : true    	
+         	        }
+        	    });
+    	    }
+    	};
+    	
+    	
+    	 //sincronizador botones con menu
+    	   $(function () {
+
+
+    	       $('.slide').carousel().on('slid', function (e) {
+    	           var opcionActiva= 0;
+    	           $(this).children('.carousel-inner').children().each(function (index) {
+    	              if ($(this).hasClass('active')){
+    	                  //cambio en el menu
+    	                  opcionActiva = index;
+    	              }
+    	           })
+    	           var contador = 0
+    	           $(this).children('.tituloNosotros').children(1).children(0).children().each(function (index) {
+    	               if( typeof $(this).attr("data-slide-to") !== 'undefined' ) {
+    	                   $(this).removeClass ("active")
+    	                  // console.log (contador)
+    	                   if (opcionActiva == contador) {
+    	                       $(this).addClass ("active")
+    	                   }
+    	                   contador++;
+    	               }
+    	           })
+    	       })
+    	   });
+    	   //sincronizador botones con menu
+    </script>
+    
+  </body>
+</html>

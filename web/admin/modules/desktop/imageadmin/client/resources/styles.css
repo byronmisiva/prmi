@@ -1,0 +1,10 @@
+.imageadmin-icon { background-image: url(images/imageadmin.png) !important; }
+.x-btn-medium .imageadmin-icon { background-image: url(images/imageadmin48.png) !important; }
+.x-btn-large .imageadmin-icon { background-image: url(images/imageadmin32.png) !important; }
+.imageadmin-shortcut { background-image: url(images/imageadmin48.png) !important; }
+#imageadmin-nav-panel li { margin-bottom:5px; }
+.save-icon{background:transparent url(images/add.png) 0 0 no-repeat !important;}
+.delete-icon{background:transparent url(images/delete.png) 0 0 no-repeat !important;}
+.print-icon{background:transparent url(images/printer.png) 0 0 no-repeat !important;}
+.send-icon{background:transparent url(images/email_go.png) 0 0 no-repeat !important;}
+.upload-icon{background:transparent url(images/image_add.png) 0 0 no-repeat !important;}

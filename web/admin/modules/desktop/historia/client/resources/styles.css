@@ -1,0 +1,10 @@
+.historia-icon { background-image: url(images/historia.png) !important; }
+.x-btn-medium .historia-icon { background-image: url(images/historia32.png) !important; }
+.x-btn-large .historia-icon { background-image: url(images/historia32.png) !important; }
+.historia-shortcut { background-image: url(images/historia48.png) !important; }
+#historia-nav-panel li { margin-bottom:5px; }
+.save-icon{background:transparent url(images/add.png) 0 0 no-repeat !important;}
+.delete-icon{background:transparent url(images/delete.png) 0 0 no-repeat !important;}
+.print-icon{background:transparent url(images/printer.png) 0 0 no-repeat !important;}
+.send-icon{background:transparent url(images/email_go.png) 0 0 no-repeat !important;}
+.upload-icon{background:transparent url(images/image_add.png) 0 0 no-repeat !important;}

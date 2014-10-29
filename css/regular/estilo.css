@@ -1,0 +1,2689 @@
+@CHARSET "UTF-8";
+.image_carousel {
+    float: left;
+}
+
+.navbar .nav > li:last-child > a {
+    /* todo: espacio menu lubricantes */
+    padding-left: 32px;
+}
+
+.image_carousel img {
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: left;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+@font-face {
+    font-family: 'frutiger_57cnregular';
+    src: url('regular/ufonts.com_frutiger_57_condensed-webfont.eot');
+    src: url('regular/ufonts.com_frutiger_57_condensed-webfont.eot?#iefix') format('embedded-opentype'), url('regular/ufonts.com_frutiger_57_condensed-webfont.woff') format('woff'), url('regular/ufonts.com_frutiger_57_condensed-webfont.ttf') format('truetype'), url('regular/ufonts.com_frutiger_57_condensed-webfont.svg#frutiger_57cnregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'frutigerbold';
+    src: url('bold/frutiger_67_bold_condensed-webfont.eot');
+    src: url('bold/frutiger_67_bold_condensed-webfont.eot?#iefix') format('embedded-opentype'), url('bold/frutiger_67_bold_condensed-webfont.woff') format('woff'), url('bold/frutiger_67_bold_condensed-webfont.ttf') format('truetype'), url('bold/frutiger_67_bold_condensed-webfont.svg#frutigerbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'frutiger_lt_std47LtCn';
+    src: url('ligth/frutiger_47_ligth_condensed-webfont.eot');
+    src: url('ligth/frutiger_47_ligth_condensed-webfont.eot?#iefix') format('embedded-opentype'), url('ligth/frutiger_47_ligth_condensed-webfont.woff') format('woff'), url('ligth/frutiger_47_ligth_condensed-webfont.ttf') format('truetype'), url('ligth/frutiger_47_ligth_condensed-webfont.svg#frutiger_lt_std47LtCn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    height: 100%
+}
+
+body {
+    background-color: #e9e9e9;
+    font-family: 'frutiger_57cnregular';
+    color: #5a5a5a;
+}
+
+.submenuNosotros {
+    float: right;
+    margin-left: 0;
+    margin-top: 6px;
+    width: auto;
+}
+
+.homegallery {
+    width: 120px;
+    height: 90px;
+    border: 3px solid #fff;
+    margin: 0 4px !important;
+}
+
+.homegallery:hover {
+    cursor: pointer;
+}
+
+#alinearAbajo {
+    height: 100%;
+}
+
+#myCarousel {
+    margin-top: 0px;
+    height: 100%;
+}
+
+/*********FONDOS SECCIONES******************/
+.fondo-nosotros {
+    height: 100%;
+    width: 100%;
+    background-image: url(../imagenes/nosotros/fondo.jpg);
+    background-repeat: repeat;
+}
+
+.fondo-secciond {
+    width: 100%;
+    height: 300px;
+    background-image: url(../imagenes/nosotros/nosotros-franja-naranja-d.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.timeline-content {
+    overflow: hidden;
+    margin: 50px auto;
+    height: 250px;
+}
+
+#foo2 {
+    width: 536px;
+    height: 96px !important;
+    overflow: hidden;
+}
+
+.fondo-seccioni {
+    width: 100%;
+    height: 300px;;
+    background-image: url(../imagenes/nosotros/nosotros-franja-naranja-i.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-caption {
+    background-color: transparent;
+    top: 0px;
+}
+
+/*BOTONES HOME*/
+.home {
+    margin-left: 0px;
+    background: url(../imagenes/header/header-home-.png?frefresh=32136554) no-repeat;
+}
+
+.home:hover, .home.active {
+    background-image: url(../imagenes/header/header-home-over.png?frefresh=32136554);
+}
+
+#estado1 a:hover,
+#estado2 a:hover,
+#estado3 a:hover,
+#estado4 a:hover,
+#estado5 a:hover,
+#estado6 a:hover,
+#estado7 a:hover,
+#estado8 a:hover,
+#estado1 .active,
+#estado2 .active,
+#estado3 .active,
+#estado4 .active,
+#estado5 .active,
+#estado6 .active,
+#estado7 .active,
+#estado8 .active {
+    color: #F25C20;
+}
+
+.nosotros {
+    background: url(../imagenes/header/header-nosotros.png?frefresh=32136554) no-repeat;
+}
+
+.nosotros:hover, #estado2 .active {
+    color: #F25C20;
+    background-image: url(../imagenes/header/header-nosotros-over.png?frefresh=32136554);
+}
+
+.super-g-prix {
+    background: url(../imagenes/header/header-gprix.png?frefresh=3598736554) no-repeat;
+}
+
+.super-g-prix:hover, .super-g-prix.active {
+    color: #F25C20;
+    background-image: url(../imagenes/header/header-gprix-over.png?frefresh=332544554);
+}
+
+.tiendas {
+    background: url(../imagenes/header/header-tiendaslisto.png?frefresh=32136554) no-repeat;
+}
+
+.tiendas:hover, .tiendas.active {
+    color: #F25C20;
+    background-image: url(../imagenes/header/header-tiendaslisto-over.png?frefresh=32136554);
+}
+
+.lubricantes {
+    background: url(../imagenes/header/header-lubricantes.png?frefresh=32136554) no-repeat;
+}
+
+.servicios {
+    background: url(../imagenes/header/header-servicioscorporativos.png?frefresh=32136554) no-repeat;
+}
+
+.servicios:hover, .servicios.active {
+    background: url(../imagenes/header/header-servicioscorporativos-over.png?frefresh=32136554) no-repeat;
+}
+
+.lubricantes:hover, .lubricantes.active {
+    color: #F25C20;
+    background-image: url(../imagenes/header/header-lubricantes-over.png?frefresh=32136554);
+}
+
+.encuentranos {
+    background: url(../imagenes/header/header-ecuentranos.png?frefresh=32136554) no-repeat;
+}
+
+.encuentranos:hover, .encuentranos.active {
+    color: #F25C20;
+    background-image: url(../imagenes/header/header-ecuentranos-over.png?frefresh=32136554);
+}
+
+.columnaInformacion {
+    float: left;
+    width: 525px;
+}
+
+.contactenos {
+    background: url(../imagenes/header/header-contactanos.png?frefresh=32136554) no-repeat;
+}
+
+.contactenos:hover, .contactenos.active {
+    color: #F25C20;
+    background-image: url(../imagenes/header/header-contactanos-over.png?frefresh=32136554);
+}
+
+.enlace1 {
+    float: left;
+    width: 65px;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 14px;
+    font-family: frutiger_57cnregular;
+}
+
+.linea-division {
+    float: right;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 7px;
+    height: 30px;
+    background-image: url(../imagenes/nosotros/nosotros-linea-submenu-1.png);
+    background-position: 0px 10px;
+    background-repeat: no-repeat;
+}
+
+.enlace2 {
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 90px;
+    font-size: 14px;
+    font-family: frutiger_57cnregular;
+}
+
+/************************/
+
+/******BANNERS************/
+#banner1 {
+    float: left;
+}
+
+#banner2 {
+    float: left;
+}
+
+#banner3 {
+    float: left;
+}
+
+#banner4 {
+    float: left;
+}
+
+.flechaI {
+    float: left;
+    width: 29px;
+    height: 32px;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-right: 5px;
+    background-image: url(../imagenes/home/home-flecha-i.png);
+    background-repeat: no-repeat;
+}
+
+.flechad {
+    float: left;
+    width: 29px;
+    height: 32px;
+    margin-top: 30px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-image: url(../imagenes/home/home-flecha-d.png);
+    background-repeat: no-repeat;
+}
+
+.contenedor-banner {
+    float: left;
+    width: 70%;
+    height: 100px;
+}
+
+.fondoSeccionNosotros {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagenes/nosotros/nosotros-franja-naranja-d.png);
+    background-repeat: no-repeat;
+}
+
+.linea {
+    margin-top: 15%;
+    margin-left: 50px;
+    width: 780px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+/***********************/
+/* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+.navbar-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0;
+    height: auto;
+    background-image: url(../imagenes/header/header-linea-divide.png);
+    background-repeat: repeat-x;
+    background-position: 0 103%;
+    background-color: #EAEAEA;
+    min-height: 64px;
+    max-height: 100%;
+    z-index: 300;
+}
+
+.navbar .btn-navbar img {
+    width: 36px;
+    height: 20px;
+    background-color: transparent;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0px 0 rgba(225, 225, 225, 0.25);
+    -moz-box-shadow: 0 0px 0 rgba(225, 225, 225, 0.25);
+}
+
+.navbar-wrapper2 {
+    position: fixed;
+    width: 100%;
+    background-color: #ff5d00;
+    /*background-color:#F35C21;*/
+    bottom: 43px;
+    height: 125px;
+    padding: 10px 0 0 0;
+}
+
+.indicador1 {
+    float: none;
+    margin-left: -20px;
+    margin-top: -130px;
+    width: 192px;
+    height: 153px;
+    background-image: url(../imagenes/nosotros/nosotros-indicador.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.fondoSecionMobile {
+    display: none;
+}
+
+.indicador2 {
+    float: none;
+    margin-left: -130px;
+    margin-top: -210px;
+    width: 185px;
+    height: 103px;
+    background-image: url(../imagenes/nosotros/nosotros-indicador.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.indicador3 {
+    float: none;
+    margin-left: -150px;
+    margin-top: -135px;
+    width: 192px;
+    height: 153px;
+    background-image: url(../imagenes/nosotros/nosotros-indicador.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.tab-content {
+    overflow: visible;
+    clear: both;
+}
+
+.logo-superior {
+    cursor: pointer;
+    padding-top: 20px;
+    padding-left: 3px;
+    width: 224px;
+}
+
+.logo-misiva {
+    float: right;
+    width: 193px;
+    height: 43px;
+    margin-top: 10px;
+    background-image: url(../imagenes/footer/footer-logo-misiva.png);
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.tw {
+    float: right;
+    width: 26px;
+    height: 26px;
+    background-image: url(../imagenes/home/home-twitter.png);
+    cursor: pointer;
+}
+
+.fb {
+    float: right;
+    width: 26px;
+    height: 26px;
+    background-image: url(../imagenes/home/home-facebook.png);
+    cursor: pointer;
+}
+
+.yt {
+    float: right;
+    width: 26px;
+    height: 26px;
+    background-image: url(../imagenes/home/home-youtube.png);
+    margin-right: 36px;
+    cursor: pointer;
+}
+
+.personaje1 {
+    background-image: url(../imagenes/nosotros/nosotros-intro-foto-1.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 1000px;
+    margin-left: 10px;
+    margin-top: -135px;
+    width: 500px;
+}
+
+.grupo-primax {
+    background-image: url("../imagenes/nosotros/grupo-primax.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 641px;
+    margin-left: 0;
+    margin-top: -97px;
+    width: 510px;
+
+}
+
+.span6 {
+    overflow: visible;
+}
+
+.personaje2 {
+    margin-left: 40px;
+    margin-top: -100px;
+    width: 325px;
+    height: 800px;
+    background-image: url(../imagenes/nosotros/nosotros-vision-foto-2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.personaje3 {
+    margin-left: 40px;
+    margin-top: -150px;
+    width: 810px;
+    height: 500px;
+    background-image: url(../imagenes/nosotros/nosotros-valores-foto-3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.presencia {
+    margin-left: 0px;
+    margin-top: -120px;
+    width: 612px;
+    height: 885px;
+    background-image: url(../imagenes/nosotros/nosotros-presenciainternacional-foto-5.png?frefresh=3215488);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+.titulo-seccion {
+    float: right;
+    font-size: 45px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-right: 10%;
+}
+
+.seccion_menu {
+    height: 35px;
+    margin-top: 75px;
+}
+
+.active {
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+}
+
+h1 {
+    text-align: right;
+    color: #ffffff;
+    margin-top: 0;
+    margin-right: 0px;
+    font-size: 65px;
+    letter-spacing: -5px;
+    font-weight: normal;
+    text-shadow: 2px 2px 3px #c07211;
+    font-family: frutiger_57cnregular;
+    line-height: 38px;
+    margin-right: 20px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 35px;
+    letter-spacing: -3px;
+}
+
+a:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.nav-cabecera {
+    margin-top: 12px !important;
+    margin-bottom: 18px !important;
+    margin-right: 0px !important;
+}
+
+#menuNosotros {
+    margin-top: -14px;
+    float: right;
+    width: auto;
+    height: 40px;
+    border-bottom: none;
+    background-image: url(../imagenes/nosotros/nosotros-linea-submenu-2.png);
+    background-repeat: no-repeat;
+    background-position: 10px 30px;
+    background-size: 100%;
+    background-color: transparent;
+}
+
+.columnaPersonaje {
+    width: 36%;
+}
+
+.nav-tabs > li {
+    padding-right: 0;
+}
+
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+    border-color: transparent;
+}
+
+.nav-tabs > li > a {
+    font-size: 19px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+    color: #ffffff;
+    cursor: default;
+    background-color: transparent;
+    border: 0px solid #ddd;
+    border-bottom-color: transparent;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    padding-top: 8px;
+    padding-bottom: 0;
+}
+
+.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+    border-radius: 3px;
+    color: #777777;
+    font-weight: normal;
+    padding: 0px 15px;
+}
+
+.navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .nav > li > a:focus, .navbar-inverse .nav-collapse .dropdown-menu a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:focus {
+    background-color: transparent;
+}
+
+#opciones {
+    margin-top: -5px;
+    margin-bottom: 0;
+    width: auto;
+    font-size: 14px;
+    border-bottom: none;
+    font-family: frutiger_57cnregular;
+    margin-right: 0;
+}
+
+#opciones li a {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+.row_home {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.img-home {
+    margin-bottom: 10px;
+}
+
+#contenedor2 {
+    margin: 124px auto 0;
+    height: 750px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.textoContenido {
+    color: #FFFFFF;
+    font-family: frutiger_57cnregular;
+    height: 80px;
+    line-height: 16px;
+    margin-left: 200px;
+    margin-top: 20px;
+    width: 330px;
+    text-align: justify;
+}
+
+.textoContenido h2 {
+    margin-bottom: 1px !important;
+}
+
+.texto2 {
+    margin-left: 50px;
+    margin-top: 10px;
+    color: #ffffff;
+    width: 380px;
+    height: 80px;
+    font-size: 14px;
+    font-family: frutiger_57cnregular;
+    line-height: 0px
+}
+
+.carousel {
+    height: 100%;
+}
+
+.item-seccion {
+    float: right;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.carousel-control {
+    top: 285px;
+    background: transparent;
+    border: 0px solid #ffffff;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+/**Controloes Nosotros ******/
+.nosotroscontrolI, .nosotroscontrolD {
+    height: 40px;
+    position: relative;
+    background-position: 12px center;
+    width: 40px;
+    z-index: 20;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.nosotroscontrolI {
+    background-image: url("../imagenes/nosotros/nosotros-flecha-submenu-i.png");
+    background-position: 0 center;
+    float: left;
+    margin: 0;
+    position: inherit;
+    top: 146px;
+    z-index: 990;
+}
+
+.nosotroscontrolD {
+    background-image: url("../imagenes/nosotros/nosotros-flecha-submenu-d.png");
+    background-position: 0 center;
+    float: right;
+    margin: 0;
+    position: inherit;
+    right: 15px;
+    top: 146px;
+    z-index: 990;
+}
+
+.nosotros-content {
+    height: 250px;
+
+    overflow: hidden;
+    width: 100%;
+}
+
+.nosotrosItems {
+    float: left;
+    height: 200px;
+    left: 0;
+    position: relative;
+    width: 100%;
+}
+
+
+
+.nosotrosItem {
+    float: left;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 0;
+    text-align: justify;
+    width: 100%;
+
+}
+
+.nosotrosItem h2 {
+    margin-left: 2px;
+}
+
+.nosotrosItem p {
+    line-height: 18px;
+}
+
+ul.textoContenido3 {
+    padding: 0 0 0 10px;
+}
+
+#nosotros {
+    padding: 0 0 0 140px;
+}
+
+/*****Fin Controloes Nosotros ******/
+
+.timeline-content .controlI, .timeline-content .controlD {
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 40px;
+    position: relative;
+    width: 40px;
+    z-index: 20;
+}
+
+
+
+.timeline-content .controlI {
+    float: left;
+    margin: -88px 0px 4px -4px;
+    background-image: url("../imagenes/nosotros/flecha-lineadetiempo-historiaI.png");
+    background-position: 0 center;
+}
+
+.timeline-content .controlD {
+    background-image: url("../imagenes/nosotros/flecha-lineadetiempo-historia.png");
+    background-position: right 0;
+    float: right;
+    margin: -76px -1px 4px -7px;
+}
+
+.promociones-content .controlI, .promociones-content .controlD {
+    height: 40px;
+    position: relative;
+    background-position: 12px center;
+    width: 40px;
+    z-index: 20;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.promociones-content .controlI {
+    float: left;
+    margin: 0;
+    background-image: url("../imagenes/nosotros/flecha-promociones-l.png");
+    background-position: 0 center;
+}
+
+.promociones-content .controlD {
+    float: right;
+    margin: 0;
+    background-image: url("../imagenes/nosotros/flecha-promociones-r.png");
+}
+
+.promociones-content .controlBotonContent {
+
+    float: left;
+    position: inherit;
+    width: 100%;
+}
+
+.promociones-content .controlBoton {
+    margin: -5px auto;
+    position: relative;
+    width: 100px;
+}
+
+.fechas_fondo {
+    background-image: url("../imagenes/nosotros/lineadetiempo.png");
+    background-position: -81px 81px;
+    background-repeat: repeat-x;
+    z-index: 10;
+}
+
+.fechas {
+    height: 150px;
+    margin: 10px 0 0;
+    position: relative;
+    left: 0px;
+}
+
+#timelineHeader {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.fecha {
+    float: left;
+    margin: 0 25px;
+    padding: 0;
+}
+
+.icono1 {
+    margin-left: 25px;
+}
+
+.icono1, .icono2, .icono3, .icono4, .icono5, .icono6, .icono7, .icono8 {
+    width: 27px;
+    height: 26px;
+    background-image: url(../imagenes/nosotros/nosotros-historia-punto.png);
+}
+
+.fechas_1 {
+    position: inherit;
+    margin-left: 10px;
+    height: 20px;
+    margin-top: 60px;
+
+}
+
+button.btn-fechas {
+    background: url("../imagenes/nosotros/nosotros-historia-punto.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    border: medium none;
+    float: left;
+    height: 95px;
+    width: 110px;
+}
+
+button.btn-fechas:hover {
+    background-image: url(../imagenes/nosotros/nosotros-historia-punto-activo.png);
+    background-repeat: no-repeat;
+    list-style: none;
+}
+
+.tooltip-inner {
+    background-color: #b34c11;
+    max-width: 140px;
+    border: 1px solid;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #fff;
+}
+
+.carousel-control.right {
+    left: auto;
+    background-image: url(../imagenes/nosotros/nosotros-flecha-submenu-d.png);
+}
+
+.carousel-control.left {
+    background-image: url(../imagenes/nosotros/nosotros-flecha-submenu-i.png);
+}
+
+.navbar-wrapper .navbar {
+    margin-bottom: 0px;
+    height: auto;
+}
+
+.navbar .navbar-inner {
+    border: 0;
+    background: transparent;
+}
+
+.navbar .brand {
+    padding: 14px 20px 16px;
+    font-size: 16px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+}
+
+.navbar .nav > li > a {
+    float: none;
+    padding: 7px 41px 7px 28px;
+    color: #777777;
+    text-decoration: none;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.img-promocion {
+    width: 150px;
+    float: left;
+    margin-top: 10px;
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 40px;
+    font-family: frutiger_57cnregular;
+}
+
+.navbar .btn-navbar {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    border: medium none;
+    height: 20px;
+    margin: 0 7px 0 0;
+    padding: 20px !important;
+    width: 36px;
+}
+
+img {
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
+}
+
+.img-promocion {
+    margin-top: 0;
+}
+
+#footer {
+    position: fixed;
+    width: 100%;
+    height: 43px;
+    bottom: 0;
+    background-color: #ffffff;
+}
+
+.normal {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+#imagenHome {
+    height: 489px;
+    background-image: url(../imagenes/home/home-foto-01.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: inherit;
+    background-position: center center;
+    width: 100%;
+}
+
+.tw2 {
+    display: none;
+}
+
+.fb2 {
+    display: none;
+}
+
+.yt2 {
+    display: none;
+}
+
+.promociones-container {
+    float: left;
+    width: 100%;
+    position: inherit;
+}
+
+.promociones-centrar {
+    margin: 0 auto;
+    position: inherit;
+    width: 754px;
+}
+
+#timeline {
+    margin: 20px auto 0;
+    width: 90%;
+}
+
+.tituloNosotros {
+    margin-top: 36px;
+    width: 100%;
+    max-width: 940px;
+    height: 118px;
+}
+
+#presenciaTexto {
+    margin-top: 60px;
+}
+
+#footer-promociones .container, #footer .container {
+    width: 100%;
+    max-width: 940px;
+}
+
+.columnaInformacion {
+    float: left;
+    width: 60%;
+}
+
+  
+
+.carousel-inner {
+    overflow: visible;
+    height: 100%;
+}
+
+/*------DESKTOP GRANDE-*/
+@media (min-width: 1024px) {
+    .container {
+        width: 940px;
+    }
+
+    #imagenHome {
+        margin-top: -120px;
+    }
+
+    .fondoSecionMobile {
+        display: none;
+    }
+
+    .navbar .nav > li > a {
+        padding: 7px 37px;
+        /* padding: 7px 28px 7px 28px;*/
+        /* todo: espacio menu lubricantes */
+        font-size: 13px;
+    }
+
+    .fondoSecionMobile {
+        display: none;
+    }
+
+    #seccionGPrix {
+        margin-top: 0px;
+        height: 100%;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .navbar .navbar-inner {
+        border: 0;
+        background: transparent;
+        padding: 0px;
+    }
+
+    .home {
+        margin-left: 5px;
+    }
+
+    .columnaPersonaje {
+        width: 40%;
+        margin-left: 0;
+    }
+
+    /****/
+    .navbar-wrapper .navbar {
+        width: 100%;
+    }
+
+    .carousel-control.right {
+        left: auto;
+        background-image: url(../imagenes/nosotros/nosotros-flecha-submenu-d.png);
+    }
+
+    .carousel-control.left {
+        background-image: url(../imagenes/nosotros/nosotros-flecha-submenu-i.png);
+    }
+
+    .nav-tabs {
+        width: 330px;
+        *zoom: 0;
+    }
+
+    .alinearValores {
+        margin-left: 90px;
+        margin-top: 0px;
+    }
+
+    h2 {
+        font-size: 35px;
+        letter-spacing: -1px;
+    }
+
+    #menuNosotros, #menuBeneficios {
+        margin-right: 5px;
+        float: right;
+        margin-top: 0px;
+    }
+
+    #opciones {
+        margin-top: -5px;
+        margin-bottom: 0;
+        width: auto;
+        font-size: 14px;
+        border-bottom: none;
+        font-family: frutiger_57cnregular;
+        margin-right: 0;
+
+    }
+
+    #opciones li a {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .linea-division {
+        float: right;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .fondoSecion {
+        float: left;
+        margin-top: -35px;
+    }
+
+    .personaje2 {
+        ackground-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 770px;
+        margin-left: -10px;
+        margin-top: -161px;
+        width: 430px;
+    }
+
+    .personaje3 {
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 770px;
+        margin-left: -36px;
+        margin-top: -150px;
+        width: 410px;
+    }
+
+    .presencia {
+        background-image: url("../imagenes/nosotros/nosotros-presenciainternacional-foto-5.png?frefresh=3215488");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 885px;
+        margin-left: -60px;
+        margin-top: -220px;
+        width: 610px;
+    }
+
+    .indicador2 {
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        float: none;
+        height: 153px;
+        margin-left: 60px;
+        margin-top: -130px;
+        width: 162px;
+    }
+
+    .indicador3 {
+        float: none;
+        margin-left: 60px;
+        margin-top: -80px;
+        width: 107px;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-position: -78px -75px;
+    }
+
+    .textoValores {
+    }
+
+    .indicadorValores {
+        margin-left: -55px;
+        margin-top: -190px;
+    }
+
+    .textoContenido {
+        line-height:20px;
+        font-size: 15px;  
+        margin-left: 160px;
+    	margin-top: 40px;      
+    }
+    
+    .presenciaInternacional{
+    margin-left: 140px;
+    }
+
+    .alinear-empresa {
+        margin-left: 180px;
+    }
+
+    .textoContenido2 {
+        margin-left: 140px;
+        margin-top: 10px;
+        color: #ffffff;
+        width: 300px;
+        height: 80px;
+        font-family: frutiger_57cnregular;
+    }
+
+    .textoContenido3 {
+        margin-left: 8px;
+    }
+
+   
+
+    .texto2 {
+        margin-top: 0px;
+        width: 350px;
+        line-height: 10px;
+    }
+
+    #presenciaTexto {
+        margin-left: 0px;
+        margin-top: 60px;
+        font-size: 30px;
+        letter-spacing: -2px;
+        line-height: 28px;
+        width: 250px;
+    }
+
+    #timeline {
+        width: 100%;
+    }
+
+    #fechas {
+        margin-left: 120px;
+        height: 20px;
+        margin-top: 5%;
+    }
+
+    #fechas_1 {
+        margin-left: 100px;
+        height: 20px;
+        margin-top: 15%;
+    }
+
+    #fechas_1 li {
+        float: left;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 10px;
+        list-style: none;
+    }
+
+    #fechas li {
+        float: left;
+        width: 27px;
+        height: 26px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: -2px;
+        list-style: none;
+
+    }
+
+    #fechas li:hover {
+        background-image: url(../imagenes/nosotros/nosotros-historia-punto-activo.png);
+    }
+
+    #fechas li a {
+        text-decoration: none;
+    }
+    
+.textoContenido .presenciaInternacional{
+    margin-left: 180px;
+    }
+
+    .nosotrosPrincipal {
+        margin-left: 190px;
+        width: 300px;
+    }
+
+}
+
+/*****************************TABLET*************************************************************************************************/
+
+/* RESPONSIVE CSS TABLET
+    -------------------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container,
+    .navbar-static-top .container,
+    .navbar-fixed-top .container,
+    .navbar-fixed-bottom .container {
+        /*width: 100%;*/
+
+    }
+
+    .nosotroscontrolD, .nosotroscontrolI {
+        top: 104px;
+    }
+
+    .fondoSecionMobile {
+        display: none;
+    }
+
+    .textoContenido {
+        font-size: 15px;
+border:1px solid blue;
+    }
+
+    .nosotrosPrincipal {
+        line-height: 19px;
+        margin-left: 161px;
+        width: 300px;
+    }
+
+    .grupo-primax {
+        margin-left: 30px;
+        margin-top: -97px;
+        width: 450px;
+        height: 641px;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .navbar .navbar-inner {
+        border: 0;
+        background: transparent;
+        padding: 0px;
+    }
+
+    .home {
+        margin-left: 5px;
+    }
+
+    .columnaPersonaje {
+        width: 40%;
+        margin-left: 0;
+    }
+
+    .columnaInformacion {
+        float: left;
+        width: 60%;
+    }
+
+    #alinearAbajo {
+        height: auto;
+    }
+
+    /****/
+    .navbar-wrapper .navbar {
+        width: 100%;
+    }
+
+    .logo-superior {
+        padding-top: 20px;
+        padding-left: 8px;
+    }
+
+    .carousel-control.right {
+        left: auto;
+        background-image: url(../imagenes/nosotros/nosotros-flecha-submenu-d.png);
+    }
+
+    .carousel-control.left {
+        background-image: url(../imagenes/nosotros/nosotros-flecha-submenu-i.png);
+    }
+
+    .nav-tabs {
+        width: 330px;
+    }
+
+    .alinearValores {
+        margin-left: 90px;
+        margin-top: 0px;
+    }
+
+    h2 {
+        font-size: 35px;
+        letter-spacing: -1px;
+    }
+
+    #menuNosotros {
+        float: right;
+        margin-top: 0px;
+    }
+
+    #opciones {
+        margin-top: -5px;
+        width: auto;
+        font-size: 14px;
+        border-bottom: none;
+        font-family: frutiger_57cnregular;
+        margin-right: 0;
+    }
+
+    #opciones li a {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .linea-division {
+        float: right;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .fondoSecion {
+        float: left;
+        margin-top: -35px;
+    }
+
+    .personaje2 {
+        ackground-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 670px;
+        margin-left: -10px;
+        margin-top: -161px;
+        width: 430px;
+
+    }
+
+    .personaje3 {
+        margin-left: -36px;
+        margin-top: -150px;
+
+    }
+
+    .presencia {
+        margin-top: -190px;
+        margin-left: 20px;
+        width: 450px;
+        height: 800px;
+        background-image: url(../imagenes/nosotros/nosotros-presenciainternacional-foto-4.png?frefresh=132546);
+        background-size: 100%;
+    }
+
+    .presenciaInternacional {
+        margin-left: 100px;
+
+    }
+
+    .nosotroscontrolD, .nosotroscontrolI {
+        top: 146px;
+    }
+
+    .indicador2 {
+        float: none;
+        margin-left: 60px;
+        margin-top: -130px;
+        width: 162px;
+        height: 153px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+
+    .indicador3 {
+        float: none;
+        margin-left: 60px;
+        margin-top: -80px;
+        width: 107px;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-position: -78px -75px;
+    }
+
+    .textoValores {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .indicadorValores {
+        margin-left: -55px;
+        margin-top: -190px;
+    }
+
+    .textoContenido2 {
+        margin-left: 180px;
+        margin-top: 10px;
+        color: #ffffff;
+        width: 300px;
+        height: 80px;
+        font-size: 12px;
+        font-family: frutiger_57cnregular;
+        text-align: justify;
+    }
+
+    .textoContenido3 {
+        margin: 0 0 0 5px;
+        margin-left: 8px;;
+    }
+
+    .textoContenido3 li {
+        height: 16px;
+    }
+
+    .texto2 {
+        margin-top: 0px;
+        width: 350px;
+        line-height: 10px;
+    }
+
+    #presenciaTexto {
+        margin-left: 0px;
+        margin-top: 60px;
+        font-size: 30px;
+        letter-spacing: -2px;
+        line-height: 28px;
+        width: 250px;
+    }
+
+    #timeline {
+        width: 100%;
+    }
+
+    #fechas {
+        margin-left: 120px;
+        height: 20px;
+        margin-top: 5%;
+    }
+
+    #fechas_1 {
+        margin-left: 100px;
+        height: 20px;
+        margin-top: 15%;
+    }
+
+    #fechas_1 li {
+        float: left;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 10px;
+        list-style: none;
+    }
+
+    #fechas li {
+        float: left;
+        width: 27px;
+        height: 26px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: -2px;
+        list-style: none;
+
+    }
+
+    #fechas li:hover {
+        background-image: url(../imagenes/nosotros/nosotros-historia-punto-activo.png);
+    }
+
+    #fechas li a {
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+
+
+    .navbar .nav > li:last-child > a {
+        padding-left: 65px;
+    }
+
+    .navbar .nav > li > a {
+        padding: 7px 18px 7px 27px !important;
+        font-size: 13px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 768px;
+    }
+
+    .tituloNosotros {
+        height: 221px;
+    }
+
+    #opciones {
+        margin-right: 0px;
+    }
+
+    #opciones li a {
+        font-size: 18px;
+    }
+
+    .fondo-secciond {
+        background-size: 100% 300px;
+
+    }
+
+    .fondo-seccioni {
+        background-size: 100% 300px;
+    }
+
+    .textoContenido {
+        width: 230px;
+        margin-left: 85px;
+        margin-top: 20px;
+    }
+
+    .textoContenido {
+        margin-left: 85px;
+        margin-top: 20px;
+        width: 230px;
+    }
+
+    .presenciaInternacional {
+        margin-left: 40px;
+    }
+
+    .nosotrosItem {
+       font-size: 14px;
+    }
+
+    .indicador1 {
+        margin-top: -150px;
+        margin-left: -120px;
+    }
+
+    .indicador2 {
+        margin-top: -135px;
+        margin-left: -110px;
+        z-index: 0;
+    }
+
+    .columnaPersonaje {
+        margin-left: 0px;
+        width: 53%;
+    }
+
+    .columnaInformacion {
+        float: left;
+        width: 47%;
+    }
+
+    .personaje1 {
+        margin-left: -30px;
+        margin-top: -130px;
+        width: 470px;
+        height: 800px;
+    }
+
+    .personaje2 {
+        margin-left: -20px;
+        margin-top: -130px;
+        width: 400px;
+        height: 700px;
+        z-index: 10;
+    }
+
+    .personaje3 {
+        margin-left: -20px;
+        margin-top: -130px;
+        width: 400px;
+        height: 700px;
+        z-index: 10;
+    }
+
+    #nosotros {
+        padding: 0;
+    }
+
+    .textoContenido4 {
+        margin-left: 75px;
+        margin-top: 70px;
+        color: #ffffff;
+        width: 250px;
+        height: 80px;
+        font-size: 12px;
+        font-family: frutiger_57cnregular;
+    }
+
+    .indicador3 {
+        margin-left: -53px;
+    }
+
+    .nosotroscontrolD, .nosotroscontrolI {
+        top: 105px;
+    }
+
+    .presencia {
+        margin-top: -200px;
+        height: 700px;
+        background-image: url(../imagenes/nosotros/nosotros-presenciainternacional-foto-4.png?frefresh=6548963);
+    }
+
+    .indicadorValores {
+        margin-left: -80px;
+        margin-top: -200px;
+    }
+
+    .textoValores {
+        letter-spacing: -2px;
+        margin-left: 0px;
+    }
+
+    .textoContenido3 {
+        margin-top: 0;
+        margin-left: 8px;
+    }
+
+    .textoContenido3 li {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .indicador1 {
+        margin-left: -120px;
+        background-size: 90%;
+        margin-top: -140px;
+    }
+
+    .carousel-control {
+        top: 391px;
+    }
+
+    .carousel-control.right {
+        margin-right: 0;
+    }
+
+    .carousel-control.left {
+        margin-left: 0px;
+    }
+
+    .fechas {
+        margin-left: 15px;
+
+        margin-top: 30px;
+        width: 600px;
+    }
+
+    .fechas_1 {
+        margin-left: 50px;
+        height: 20px;
+        margin-top: 50px;
+        width: 600px;
+    }
+
+    .fechas_1 li {
+        float: left;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 10px;
+        list-style: none;
+    }
+
+    .fechas li {
+        float: left;
+        width: 27px;
+        height: 26px;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: -2px;
+        list-style: none;
+
+    }
+
+    .fechas li:hover {
+        background-image: url(../imagenes/nosotros/nosotros-historia-punto-activo.png);
+    }
+
+    .fechas li a {
+        text-decoration: none;
+    }
+
+    /**************************/
+}
+
+/*********SMALL TABLET*********/
+@media ( max-width: 767px) {
+    .navbar .nav > li:last-child > a {
+        padding-left: 50px;
+    }
+
+    .presenciaInternacional {
+        clear: none;
+        width: 60%;
+    }
+
+    .navbar-wrapper {
+        background-position: 0 112%;
+    }
+
+    .navbar-wrapper .navbar {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        letter-spacing: -1px;
+    }
+
+    .tituloNosotros {
+        margin-top: 20px;
+        height: 90px;
+    }
+
+    #btn-valores, #btn-mision, #btn-vision {
+        width: 0;
+        overflow: hidden;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo-superior {
+        cursor: pointer;
+        padding-top: 17px;
+        padding-left: 12px;
+        width: 134px;
+        height: 26px;
+    }
+
+    #imagenHome {
+        width: 100%;
+        /* height: calc(100%); */
+        background-size: 210% auto;
+    }
+
+    .img-promocion {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 30px;
+        color: #ffffff;
+    }
+
+    .flechaI {
+        width: 50px;
+        margin-left: 0;
+        margin-top: 24px;
+        clear: both;
+    }
+
+    .flechad {
+        width: 50px;
+        margin-top: 24px;
+        background-position: right;
+    }
+
+    .span12 {
+        width: 100%;
+        height: 100px;
+    }
+
+    .tw {
+        display: none;
+    }
+
+    .fb {
+        display: none;
+    }
+
+    .yt {
+        display: none;
+    }
+
+    .tw2 {
+        display: block;
+        margin-top: 3px;
+        float: left;
+        width: 26px;
+        height: 26px;
+        background-image: url("../imagenes/home/smartphone-primax-twitter.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        cursor: pointer;
+    }
+
+    .fb2 {
+        display: block;
+        margin-top: 3px;
+        float: left;
+        width: 26px;
+        height: 26px;
+        background-image: url(../imagenes/home/smartphone-primax-facebook.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        cursor: pointer;
+    }
+
+    .yt2 {
+        display: block;
+        margin-top: 3px;
+        float: left;
+        width: 26px;
+        height: 26px;
+        background-image: url('../imagenes/home/smartphone-primax-youtube.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        cursor: pointer;
+        margin-left: 12px;
+    }
+
+    .logo-misiva {
+        margin-right: 5px;
+    }
+
+    .featurette {
+        height: auto;
+        padding: 0;
+    }
+
+    .navbar-inner {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-wrapper2 {
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .nav-tabs > li > a {
+        font-size: 13px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .nav-tabs > li:last-child > a {
+        padding-right: 0px;
+    }
+
+    .contenedor-banner {
+        overflow: hidden;
+        float: left;
+        width: 60%;
+        height: 100px;
+    }
+
+    #banner1, #banner2, #banner3, #banner4 {
+        width: 70px;
+    }
+
+    .columnaPersonaje {
+        width: 30%;
+        float: left;
+        margin-top: -40px;
+    }
+
+    #menuNosotros {
+        margin-top: 0px;
+    }
+
+    .nav-tabs {
+        position: inherit;
+        margin-right: 10px;
+        width: 280px;
+        *zoom: 0;
+    }
+
+    .indicador1 {
+        margin-top: -145px;
+        margin-left: -120px;
+        display: none;
+    }
+
+    .indicador2 {
+        margin-top: -175px;
+        margin-left: -130px;
+        display: none;
+    }
+
+    .indicador3 {
+        margin-top: -140px;
+        margin-left: -50px;
+        display: none;
+    }
+
+    .personaje1 {
+        height: 800px;
+        width: 110%;
+        margin-left: 10px;
+        margin-top: -60px;
+    }
+
+    .personaje2 {
+        background-size: 80% auto;
+        height: 800px;
+        margin-left: 0;
+        margin-top: -40px;
+        width: 150%;
+    }
+
+    .personaje3 {
+        background-size: 80% auto;
+        height: 800px;
+        margin-left: 0;
+        margin-top: -40px;
+        width: 150%;
+    }
+
+    .presencia {
+        background-size: 80% auto;
+        height: 800px;
+        margin-left: -79px;
+        margin-top: -180px;
+        width: 210%;
+    }
+
+    .presenciaInternacional {
+        margin-left: 20px;
+    }
+
+    .home {
+        margin-left: 75px;
+        background: url(../imagenes/header/smartphone-home-b.png) no-repeat;
+
+    }
+
+    .nosotros {
+        margin-left: 75px;
+        background: url(../imagenes/header/smartphone-nosotros-b.png) no-repeat;
+
+    }
+
+    .super-g-prix {
+        margin-left: 75px;
+        background: url(../imagenes/header/smartphone-g-prix-b.png) no-repeat;
+
+    }
+
+    .tiendas {
+        margin-left: 75px;
+        background: url(../imagenes/header/smartphone-tiendas-listo-b.png) no-repeat;
+
+    }
+
+    .lubricantes {
+        margin-left: 75px;
+        background: url(../imagenes/header/smartphone-lubricantes-b.png) no-repeat;
+
+    }
+
+    .servicios {
+        margin-left: 75px;
+        background: url(../imagenes/header/smartphone-servicios-corporativos-b.png) no-repeat;
+
+    }
+
+    .encuentranos {
+        margin-left: 75px;
+        background: url(../imagenes/header/smartphone-encuentranos-b.png) no-repeat;
+
+    }
+
+    .contactenos {
+        margin-left: 75px;
+        background: url(../imagenes/header/smartphone-contactanos-b.png) no-repeat;
+
+    }
+
+    .home:hover {
+        background: url(../imagenes/header/smartphone-home.png) no-repeat;
+
+    }
+
+    .enlace1 {
+        width: 150px;
+        background-color: transparent;
+    }
+
+    .enlace3 {
+        background-color: transparent;
+    }
+
+    .nosotros:hover {
+        background: url(../imagenes/header/smartphone-nosotros.png) no-repeat;
+
+    }
+
+    .super-g-prix:hover {
+        background: url(../imagenes/header/smartphone-g-prix.png) no-repeat;
+
+    }
+
+    .tiendas:hover {
+        background: url(../imagenes/header/smartphone-tiendas-listo.png) no-repeat;
+
+    }
+
+    .lubricantes:hover {
+        background: url(../imagenes/header/smartphone-lubricantes.png) no-repeat;
+
+    }
+
+    .servicios:hover {
+        background: url(../imagenes/header/smartphone-servicios-corporativos.png) no-repeat;
+
+    }
+
+    .encuentranos:hover {
+        background: url(../imagenes/header/smartphone-encuentranos.png) no-repeat;
+
+    }
+
+    .contactenos:hover {
+        background: url(../imagenes/header/smartphone-contactanos.png) no-repeat;
+
+    }
+
+    .container.navbar-wrapper {
+        margin-top: 100px;
+        width: auto;
+        height: auto;
+    }
+
+    .navbar .nav > li > a {
+        text-decoration: none;
+        text-shadow: none;
+        cursor: pointer;
+        float: left;
+        padding: 4px 65px 20px 50px;
+        color: #777777;
+        width: 50%;
+        font-size: 18px;
+    }
+
+    .nav {
+        background-color: #393939;
+        height: 100%;
+    }
+
+    .nav-collapse.collapse {
+        margin-top: 15px;
+        left: 0px;
+        background-color: #393939;
+    }
+
+    #contenedor2 {
+        height: 650px;
+        margin: 64px auto 0px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .promociones-centrar {
+        width: 100%;
+    }
+
+    .promoContenedorMobile {
+        margin: 0 auto;
+        width: 244px;
+    }
+
+    .logo-misiva {
+        width: 107px;
+        height: 19px;
+        margin-top: 5px;
+        margin-right: 12px;
+        background-size: 107px 19px;
+    }
+
+    #footer {
+        height: 33px;
+    }
+
+    .navbar-wrapper2 {
+        bottom: 33px;
+        height: 133px;
+    }
+
+    .columnaPersonaje {
+        height: 41px;
+        width: 40%;
+    }
+
+    .columnaInformacion {
+        clear: both;
+        width: 100%;
+    }
+
+    .columnaNosotros {
+        clear: none;
+        width: 60%;
+    }
+
+    .columnaNosotros #nosotros {
+        padding: 0 0 0 0px;
+    }
+
+    .nosotroscontrolD, .nosotroscontrolI {
+        top: 174px;
+    }
+
+    .nosotroscontrolI {
+        background-position: -4px center;
+    }
+
+    .nosotroscontrolD {
+        right: 10px;
+    }
+
+    .submenuNosotros {
+        height: 50px;
+    }
+
+    #opciones li a {
+        font-size: 14px;
+    }
+
+    #opciones {
+        font-size: 12px;
+        background-color: transparent;
+        margin-left: 0;
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .img-promocion {
+        line-height: 35px;
+    }
+
+    .texto {
+        margin-top: 0px;
+        color: #ffffff;
+        font-size: 12px;
+        width: 65%;
+        height: auto;
+        font-family: frutiger_57cnregular;
+        margin-left: 27%;
+    }
+
+    .texto2 {
+        margin-top: 10px;
+        color: #ffffff;
+        font-size: 12px;
+        width: 75%;
+        height: auto;
+        font-family: frutiger_57cnregular;
+        margin-left: 27%;
+        line-height: 2px;
+    }
+
+    .carousel-control {
+
+    }
+
+    .carousel-control.right {
+        right: 10px;
+    }
+
+    .carousel-control.left {
+        left: 10px;
+    }
+
+    h1 {
+        letter-spacing: -2px;
+        font-size: 55px;
+    }
+
+    .textoValores {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .textoContenido {
+        font-size: 14px;
+        margin: 0 auto;
+        width: 70%;
+    }
+    
+    .nosotrosItem{
+    font-size: 14px;
+    }
+
+    .alinear-empresa {
+        margin-left: 15px;
+    }
+
+    .textoContenido2, .textoContenido3 {
+        margin-left: 10px;
+    }
+
+    h2 {
+        font-family: frutigerbold;
+        font-size: 20px;
+        font-weight: normal;
+        letter-spacing: -1px;
+        line-height: 20px;
+        margin-top: 0px;
+    }
+
+    #presenciaTexto {
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+
+    .alinearValores {
+        margin-top: -10px;
+    }
+
+    .normal {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    #timeline {
+        width: 100%;
+    }
+
+    #fechas {
+        margin-left: 120px;
+        height: 20px;
+        margin-top: 10%;
+    }
+
+    #fechas_1 {
+        margin-left: 100px;
+        height: 20px;
+        margin-top: 0%;
+    }
+
+    #fechas_1 li {
+        float: left;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        list-style: none;
+    }
+
+    #fechas li {
+        float: left;
+        width: 27px;
+        height: 26px;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: -2px;
+        list-style: none;
+    }
+
+    #fechas li:hover {
+        background-image: url(../imagenes/nosotros/nosotros-historia-punto-activo.png);
+    }
+
+    #fechas li a {
+        text-decoration: none;
+    }
+
+    .grupo-primax {
+        margin-top: 180px;
+        margin-left: 0;
+        width: 200%;
+        height: 641px;
+    }
+
+    .presenciaInternacional {
+        clear: none;
+        margin-left: 248px;
+        margin-top: 97px;
+        width: 45%;
+    }
+
+}
+
+@media ( max-width: 360px) {
+
+    .grupo-primax {
+        margin-top: 68px;
+        margin-left: 0;
+        width: 115%;
+        height: 641px;
+    }
+    
+    .timeline-content {	 
+	    margin: 35% auto;	 
+	}
+
+    .container {
+        min-width: 100px;
+        width: 100%;
+    }
+
+    .fechas {
+        margin-top: -10px;
+    }
+
+    .tituloNosotros {
+        height: 70px;
+        margin-top: 30px;
+    }
+
+    .img-promocion {
+        width: 100%;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .fondo-secciond {
+        background-position: center 0;
+        background-size: 100% 10%;
+    }
+
+    .fondo-seccioni {
+        background-position: center 0;
+        background-size: 100% 10%;
+    }
+
+    .promoContenedorMobile {
+        margin: -5px auto;
+        width: 245px;
+    }
+
+    .navbar-wrapper2 {
+        bottom: 33px;
+        height: 116px;
+    }
+
+    .image_carousel {
+        margin-top: -8px;
+    }
+
+    h1 {
+        font-size: 35px;
+        line-height: 0;
+        margin-right: 10px;
+    }
+
+    #menuNosotros {
+        margin-top: 0px;
+        height: 40px;
+        font-size: 11px;
+        z-index: 1001;
+    }
+    
+    
+
+    .submenuNosotros {
+        margin-top: -20px;
+        height: 50px;
+    }
+
+    #menuNosotros li a {
+        font-size: 13px;
+    }
+
+    .fondo-secciond {
+        background-size: auto 80%;
+    }
+
+    .fondo-seccioni {
+        background-size: auto 80%;
+    }
+
+    .personaje1 {
+        margin-left: -21px;
+        margin-top: 20px;
+        width: 140%
+    }
+
+    .personaje2 {
+        margin-left: -24px;
+        margin-top: 19px;
+        width: 200%;
+    }
+
+    .personaje3 {
+        margin-left: -50px;
+        margin-top: 27px;
+        width: 220%;
+    }
+
+    .presencia {
+        margin-left: -45px;
+        margin-top: 0px;
+        width: 250px;
+        height: 430px;
+        background-size: 100%;
+        z-index: -1000;
+        background-position: top;
+    }
+
+    .columnaInformacion {
+        clear: none;
+        width: 60%;
+        float: right;
+    }
+
+    .carousel-caption {
+        padding: 5px;
+        position: absolute;
+    }
+
+    #nosotros {
+        padding: 0 0 0 0px;
+    }
+
+    #opciones {
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    #opciones li a {
+        font-size: 14px;
+    }
+
+    .textoContenido {
+        font-size: 11px;
+        height: 245px;
+        margin-left: 0;
+        margin-top: 0;
+        overflow: hidden;
+        padding: 0 35px 0 17px;
+        width: auto;
+    }
+
+    .columnaNosotros #nosotros {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 0px;
+        width: auto;
+    }
+
+    .textoContenido h2 {
+        margin-left: 0;
+        margin-top: 0px;
+    }
+
+    .textoContenido2 {
+        margin-left: 35px;
+        width: 120px;
+        font-size: 11px;
+        height: 150px;
+        overflow: hidden;
+        line-height: 16px;
+    }
+
+    .textoContenido h2,
+    .textoContenido2 h2,
+    .textoValores {
+        letter-spacing: -1px;
+        margin-left: 0px;
+        margin-top: 0;
+    }
+
+    .textoValores {
+
+    }
+
+    .textoContenido3 li {
+        font-size: 11px;
+        height: 14px;
+    }
+
+    .textoContenido3,
+    .presenciaInternacional {
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+
+    ul.textoContenido3 {
+        padding: 0 0 0 15px
+    }
+
+    .presenciaInternacional {
+        margin-top: 15px;
+
+    }
+
+    #presenciaTexto {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .indicador1, .indicador2 {
+        margin-top: -330px;
+        margin-left: -24px;
+        background-size: 50%;
+        background-position: -41px;
+        display: block;
+    }
+
+    .indicador2 {
+        margin-top: -307px;
+        margin-left: -20px;
+        background-size: 50%;
+        background-position: -41px;
+        display: block;
+    }
+
+    .indicador3 {
+        margin-top: -143px;
+        margin-left: -55px;
+        background-size: 58%;
+        background-position: -41px;
+        display: none;
+    }
+
+    .indicadorVision {
+        margin-left: -2px;
+        margin-top: -212px;
+        width: 160px;
+    }
+
+    .indicadorValores {
+        margin-top: -184px;
+        margin-left: -8px;
+    }
+
+    .carousel-control {
+        top: 210px;
+    }
+
+    .carousel-control.right {
+
+        background-image: url(../imagenes/nosotros/home-flecha-d.png);
+        background-repeat: no-repeat;
+        right: 5px;
+        background-position: right;
+
+    }
+
+    .carousel-control.left {
+        left: 5px;
+        background-image: url(../imagenes/nosotros/home-flecha-i.png);
+        background-repeat: no-repeat;
+        background-position: 0 center;
+    }
+
+    .nosotroscontrolD {
+        background-image: url("../imagenes/nosotros/home-flecha-d.png");
+        background-position: right center;
+        background-repeat: no-repeat;
+        right: 5px;
+    }
+
+    .nosotroscontrolI {
+        background-image: url("../imagenes/nosotros/home-flecha-i.png");
+        background-position: right center;
+        background-repeat: no-repeat;
+        left: -5px;
+    }
+
+    .nosotroscontrolD, .nosotroscontrolI {
+        top: 121px;
+    }
+
+    .nosotrosItem {
+        font-size: 11px;
+        line-height: 12px;
+    }
+
+}
+
+@media ( max-width: 219px) {
+
+}
+
+.navbar .nav > li:last-child > a {
+    padding-right: 0;
+}
