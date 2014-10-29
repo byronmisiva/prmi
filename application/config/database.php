@@ -56,6 +56,7 @@ $db['default']['username'] = "externo";
 $db['default']['password'] = "feadmin06";
 $db['default']['database'] = "primax";
 
+
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
