@@ -387,7 +387,13 @@
     margin-left: 50px;
     margin-top: 60px;
     width: 278px;
+    display: block;
 }	
+
+
+
+
+
 
 /*------DESKTOP GRANDE-*/
 @media (min-width: 1024px) {
@@ -582,6 +588,10 @@
 /******MOBILE NORMAL*********************************************************************/
 
 @media ( max-width: 360px) {
+	.logo-nuestros-precios{
+	display: none;
+	}
+	
     .menuContenedor .carousel-caption {
 
         top: -40px !important;
@@ -793,4 +803,8 @@
     .columnaRecuadro {
         margin-top: 30px;
     }
+    
+    .logo-nuestros-precios{
+	display: none;
+	}
 }
