@@ -19,6 +19,11 @@ class Oferta extends CI_Model{
 	 	return $consulta->result();	 	
 	 }
 	 
+	 function get_Alllista(){
+	 	$consulta=$this->db->get("lista");
+	 	return $consulta->result();
+	 }
+	 
 	 function get_Oferta($id){	 	
 	 	$this->db->where('id',$id);
 	 	$this->db->where("activo","1");

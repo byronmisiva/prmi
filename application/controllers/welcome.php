@@ -61,6 +61,11 @@ class Welcome extends CI_Controller {
 		$this->load->view('templates/front/registrOferta',$data);
 	}
 	
+	function allPrecios(){
+		$data['registros']=$this->modelo->get_Alllista();
+		$this->load->view('templates/front/nuestros-precios-lista',$data);
+	}
+	
 	public function get_ciudad_by_provincia(){			
 		$this->db->select('ciudad');	
 		$this->db->distinct();	

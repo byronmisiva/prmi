@@ -75,14 +75,14 @@
     <!--[if lt IE 9]>
     <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
-
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
 </head>
-<body style="background:#EAEAEA;" onload="$('#youvideo').click();" >
+<!-- onload="$('#youvideo').click();" -->
+<body style="background:#EAEAEA;"  >
 <!--<body style="background:#EAEAEA;" onload="llamarBanner()" >-->
 <!-- NAVBAR
 ================================================== -->
@@ -140,9 +140,6 @@
 <?php
 /* 
 echo "<pre>";
-var_dump($novedades);
-var_dump($promociones);
-var_dump($menus);
 echo "</pre>";
 die;*/
 
@@ -376,17 +373,16 @@ die;*/
 <div class="carousel slide" id="carruselTiendas">
     <div class="tituloNosotros tiendas-seccion">
         <h1>Tiendas Listo!</h1>
-
         <div class="alinearmenuNosotros">
             <ul class="nav nav-tabs" id="menuBeneficios">
                 <li id="btn-tiendas" style="display:none;" data-target="#carruselTiendas" data-slide-to="0"
                     class="active"><a href="#" data-toggle="tab">Intro</a></li>
-                <li id="btn-menu" data-target="#carruselTiendas" data-slide-to="1"><a href="#"
-                                                                                      data-toggle="tab">Menú</a>
+                <li id="btn-menu" data-target="#carruselTiendas" data-slide-to="1"><a href="#" data-toggle="tab">Menú</a>
                 </li>
                 <li><span class="linea-division"></span></li>
-                <li data-target="#carruselTiendas" data-slide-to="2"><a href="#"
-                                                                        data-toggle="tab">Promociones</a>
+                <li data-target="#carruselTiendas" data-slide-to="2"><a href="#" data-toggle="tab">Promociones</a>
+                <li><span class="linea-division"></span></li>
+                <li data-target="#carruselTiendas" data-slide-to="3"><a href="#" data-toggle="tab">Precios</a>
                 </li>
             </ul>
         </div>
@@ -448,10 +444,8 @@ die;*/
         </div>
         <!-- item 2 -->
         <div class="item franja-tiendasd">
-            <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                <!-- <img src="" alt=""> -->
+            <div class="carousel-caption" style="background-color: transparent;top:0px;">          
                 <h2 class="titulo-promociones">PROMOCIONES</h2>
-
                 <div class="promociones-content">
                     <div id="promocionColorBox" class="promocionCarouFredSel">
                     <?php 
@@ -473,16 +467,32 @@ die;*/
                 </div>
             </div>
         </div>
+        <!-- item 3 -->
+        <div class="item franja-tiendasi">
+            <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                <div class="span6 columnaPersonaje">
+            		<div class="logo-nuestros-precios"></div>            
+            		<div class="mensajeDepartamento"></div>
+        		</div>
+        		<div class="span5 columnaPersonaje">
+        		<div class="columnaInformacion columnaListaOferta">		            
+		            <div class="row tab-content">
+		                <div class="tab-pane active">
+		                    <div id="resultadosPrecios"></div>		                    
+		                </div>
+		            </div>
+        		</div>
+        		</div>
+            </div>
+        </div>
     </div>
-
     <a class="left carousel-control" href="#carruselTiendas" data-slide="prev"></a>
     <a class="right carousel-control" href="#carruselTiendas" data-slide="next"></a>
-
 </div>
 
 </div>
 </div>
-<!-- INICIO SERVICIOS -->
+
 <!-- SECCION 5 -->
 <div class="row fondoServicios" style="overflow:hidden;">
     <div class="container">
@@ -682,7 +692,6 @@ die;*/
     <div class="carousel-caption" style="background-color: transparent;top:0px;">
         <div class="span6 columnaPersonaje">
             <h2 class="tituloHoja">OFERTA LABORAL</h2>
-
             <div class="departamento">
                 <div class="btn-group display-block alinearDropdown">
                     <button id="option_depto" class="btn opcionDropdown" id="cargo" name="cargo"
@@ -783,23 +792,15 @@ die;*/
                                 $('#option_campo').html("" + cargo);
                             });
                         </script>
-
-
+                        
                         <div class="linea-contactanos hoja1"></div>
-
-                        <input type="text" class="hoja-apellido" placeholder="Apellido*" id="apellido"
-                               name="apellido"/>
-                        <input type="text" class="hoja-ciudad" placeholder="Ciudad*" id="ciudad2"
-                               name="ciudad2"/>
-                        <input type="text" class="hoja-telefono" placeholder="Teléfono fijo*"
-                               id="telefono2" name="telefono2" maxlength="10"/>
+                        <input type="text" class="hoja-apellido" placeholder="Apellido*" id="apellido" name="apellido"/>
+                        <input type="text" class="hoja-ciudad" placeholder="Ciudad*" id="ciudad2" name="ciudad2"/>
+                        <input type="text" class="hoja-telefono" placeholder="Teléfono fijo*" id="telefono2" name="telefono2" maxlength="10"/>
                         <input type="hidden" placeholder="" id="cargo_id" name="cargo_id"/>
-
                         <div class="btn-group display-block alinearDropdown2"
                              style="margin-left:30px;margin-top: 0px;">
-                            <button id="option_cargo" class="btn opcionDropdown" id="cargo" name="cargo"
-                                    data-toggle="dropdown">Cargo Aplicar
-                            </button>
+                            <button id="option_cargo" class="btn opcionDropdown" id="cargo" name="cargo" data-toggle="dropdown">Cargo Aplicar</button>
                             <button class="btn dropdown-toggle" data-toggle="dropdown">
                                 <span class="caret flecha-drop"></span>
                             </button>
@@ -822,9 +823,7 @@ die;*/
                         </script>
 
                         <div class="linea-contactanos hoja2"></div>
-
-                        <textarea class="textarea1 hoja-comentario" type="text"
-                                  placeholder="Comentarios" id="mensaje2" name="mensaje2"
+                        <textarea class="textarea1 hoja-comentario" type="text" placeholder="Comentarios" id="mensaje2" name="mensaje2"
                                   onclick="limpiarTexare('mensaje2')">Comentarios </textarea>
                         <input type="text" class="hoja-archivo" placeholder=""
                                style="width: 120px;margin-left: 20px;background-color: transparent;color:#ffffff;border:none;display:none;"
@@ -893,18 +892,14 @@ die;*/
             <div class="promociones-centrar">
                 <!--<a class="yt" href="http://www.youtube.com/user/PrimaxEcuador?feature=watch" target="_blank" ></a>-->
                 <a class="fb" href="https://www.facebook.com/PrimaxEcuador" target="_blank"></a>
-
-                <!-- <a class="fb" href="#"></a>-->
-                <!-- <a class="tw" href="#"></a>-->
+                
             </div>
         </div>
     </div>
 </div>
 <div id="footer">
-    <div class="container">
-        <!--  <a class="yt2" href="#"></a> -->
-         <a class="fb2" href="https://www.facebook.com/PrimaxEcuador" target="_blank"></a>
-        <!-- <a class="tw2" href="#"></a> -->
+    <div class="container">        
+         <a class="fb2" href="https://www.facebook.com/PrimaxEcuador" target="_blank"></a>        
         <div class="logo-misiva" onclick="window.open('http://www.misiva.com.ec');"></div>
     </div>
 </div>
@@ -1050,12 +1045,11 @@ die;*/
 		$("#60").click();
     }
    $("#resultadosDepartamentos").load("index.php/welcome/allOferta");
+   $("#resultadosPrecios").load("index.php/welcome/allPrecios");
+   
 
 
     /**************************************************/
-
-   
-
      getInformacion(<?=$menuopcion?>);
 	
 
