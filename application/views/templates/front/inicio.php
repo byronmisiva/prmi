@@ -499,7 +499,6 @@ die;*/
         <div class="carousel slide" id="carruselServicios">
             <div class="tituloNosotros servicios-seccion">
                 <h1>Servicios Corporativos</h1>
-
                 <div class="alinearmenuNosotros">
                     <ul class="nav nav-tabs menuServicios" id="menuServicios">
                         <li data-target="#carruselServicios" data-slide-to="0" class="active">
@@ -566,7 +565,6 @@ die;*/
                 <div class="form-encuentranos">
                     <div class="grupo1">
                         <h2>Selecciona la provincia y la ciudad</h2>
-
                         <div class="btn-group display-block alinearDropdown">
                             <button id="option_provincia" class="btn opcionDropdown">Provincia..</button>
                             <button class="btn dropdown-toggle" data-toggle="dropdown">
@@ -632,20 +630,24 @@ die;*/
 <div class="carousel slide" id="carruselContactanos">
 <div class="tituloNosotros contactos-seccion">
     <h1>Contáctanos</h1>
-
     <div class="alinearmenuNosotros">
         <ul class="nav nav-tabs" id="menuNosotros">
             <li id="btn-formaContacto" data-target="#carruselContactanos" data-slide-to="0" class="active">
                 <a href="#" data-toggle="tab">Escríbenos </a></li>
             <li><span class="linea-division"></span></li>
-            <li id="btn-oferta" data-target="#carruselContactanos" data-slide-to="1"><a href="#"
-                                                                                        data-toggle="tab">Trabaja
-                    con Nosotros </a></li>
-            <li style="display:none;" data-target="#carruselContactanos" data-slide-to="1"><a href="#"
-                                                                                              data-toggle="tab">Oferta
-                    Laboral</a></li>
-            <li id="btn-hoja" style="display:none;" data-target="#carruselContactanos" data-slide-to="2"><a
-                    href="#" data-toggle="tab">Hoja de Vida</a></li>
+            
+            <li id="btn-oferta" data-target="#carruselContactanos" data-slide-to="1">
+            <a href="#" data-toggle="tab">Trabaja con Nosotros </a></li>
+            
+            <li><span class="linea-division"></span></li>
+           	<li id="btn-oferta" data-target="#carruselContactanos" data-slide-to="3">
+           	 	<a href="#" data-toggle="tab">Proveedores </a>
+           	 </li>
+            
+            <li style="display:none;" data-target="#carruselContactanos" data-slide-to="1">
+            	<a href="#" data-toggle="tab">Oferta Laboral</a></li>
+            <li id="btn-hoja" style="display:none;" data-target="#carruselContactanos" data-slide-to="2">
+            	<a href="#" data-toggle="tab">Hoja de Vida</a></li>
         </ul>
     </div>
 </div>
@@ -853,6 +855,9 @@ die;*/
         </div>
     </div>
 </div>
+
+
+
 <!-- item 2   -->
 </div>
 	<a class="left carousel-control" href="#carruselContactanos" data-slide="prev"></a>

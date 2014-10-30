@@ -22,6 +22,46 @@
     background-color: rgba(0, 0, 0, 0);
 }
 
+/*****************************/
+#resultadosPrecios{
+	position:absolute;
+	height:188px;	
+	width:420px;
+	left: 395px;
+    top: 65px;    
+}
+
+.lineacolumnas-precios{
+	margin-left: 49%;
+    margin-top: 0;
+    position: absolute;
+	width:3px;
+	height:205px;
+	background-image: url(../imagenes/contactanos/Contactanos-trabajaconnosotros-linea-vertical.png);
+	background-repeat: no-repeat;
+}
+
+.lineacolumnas2-precios{
+	margin-left: 74%;
+    margin-top: 0;
+    position: absolute;	
+	width:3px;
+	height:205px;
+	background-image: url(../imagenes/contactanos/Contactanos-trabajaconnosotros-linea-vertical.png);
+	background-repeat: no-repeat;
+}
+.lineacolumnas3-precios{
+	margin-left: 75%;
+    margin-top: 0;
+    position: absolute;	
+	width:3px;
+	height:205px;
+	background-image: url(../imagenes/contactanos/Contactanos-trabajaconnosotros-linea-vertical.png);
+	background-repeat: no-repeat;	
+}
+
+/****************************************************/
+
 .fondoTiendas {
     height: 100%;
     width: 100%;
@@ -55,7 +95,7 @@
     margin-left: 0%;
     width: 120%;
     height: 183px;
-    background-image: url(../imagenes/tiendaslisto/tiendas-listo-intro-iconos.png);
+    background-image: url('../imagenes/tiendaslisto/intro-tiendas--listo.png');
     background-size: 100% center;
     background-repeat: no-repeat;
 }
@@ -336,6 +376,19 @@
     filter: alpha(opacity=80);
 }
 
+.tabla-lista-precios tr td{
+	font-size: 13px;
+	}
+	
+.logo-nuestros-precios{
+	 background-image: url("../imagenes/tiendaslisto/icono-horizontal-tiendas.png");
+    float: left;
+    height: 137px;
+    margin-left: 50px;
+    margin-top: 60px;
+    width: 278px;
+}	
+
 /*------DESKTOP GRANDE-*/
 @media (min-width: 1024px) {
 
@@ -416,6 +469,13 @@
     }
 
 
+	#resultadosPrecios {
+	    height: 188px;
+	    left: 284px;
+	    position: absolute;
+	    top: 65px;
+	    width: 420px;
+	}
 
 }
 
@@ -493,6 +553,19 @@
     .columnaRecuadro {
         margin-top: 30px ;
     }
+    
+    
+	#resultadosPrecios {
+	    height: 188px;
+	    left: 284px;
+	    position: absolute;
+	    top: 65px;
+	    width: 420px;
+	}
+	
+	.tabla-lista-precios tr td{
+		font-size: 12px;
+	}
 }
 
 /*********************/
@@ -691,6 +764,23 @@
         font-size: 10px;
         width: 55px;
     }
+    
+    #resultadosPrecios {
+    height: 188px;
+    left: 10%;
+    position: absolute;
+    top: 41px;
+    width: 80%;
+}
+
+
+.lineacolumnas2-precios { 
+	    margin-left: 78%;
+	}
+	
+	.tabla-lista-precios tr td{
+	font-size: 12px;
+	}
 
 }
 
