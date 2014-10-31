@@ -865,9 +865,8 @@ die;*/
 	            </div>	
 	            
 	            <div class="textoForma texto-proveedor-contacto proveedor-smart">
-	            ¿Deseas convertirte en proveedor? Llena la solicitud y adjunta un PDF con: 
-	            Nombre, tipo de producto y una imagen del mismo para que un representante 
-	            de PRIMAX se contacte contigo. 
+	            Conviértete en proveedor. Llena los datos y adjunta un PDF con nombre, tipo e imagen 
+	            del producto y nos comunicaremos contigo.
 	            </div>            
 	        </div>
 	        <div class="columnaContactanos">
