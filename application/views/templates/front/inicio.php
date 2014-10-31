@@ -81,8 +81,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
 </head>
-<!--  -->
-<body style="background:#EAEAEA;"  onload="$('#youvideo').click();">
+<!-- onload="$('#youvideo').click();" -->
+<body style="background:#EAEAEA;" onload="$('#youvideo').click();" >
 <!--<body style="background:#EAEAEA;" onload="llamarBanner()" >-->
 <!-- NAVBAR
 ================================================== -->
@@ -870,27 +870,22 @@ die;*/
 	            </div>            
 	        </div>
 	        <div class="columnaContactanos">
-	            <form id="contactoProveedores">
-	                <input class="contacto-nombre" type="text" value="" placeholder="Nombre y Apellido*"
-	                       id="nombre" name="nombre"/>
-	                <input class="contacto-email" type="text" value="" placeholder="Correo electrónico*"
-	                       id="email" name="email"/>
-	                <input class="contacto-ciudad" type="text" value="" placeholder="Ciudad*" id="ciudad"
-	                       name="ciudad"/>
-	                <textarea class="textarea1 contacto-mensaje"  placeholder="Mensaje"
-	                          id="mensaje" name="mensaje"> </textarea>
-	                <input class="contacto-telefono" type="text" value="" placeholder="Teléfono*"
-	                       id="telefono" name="telefono" maxlength="10"/>
-	                <input class="contacto-sector" type="text" value="" placeholder="Sector de la ciudad"
-	                       id="sector" name="sector"/>
+	            <form id="contactoProveedores">            
+	            <input type="text" class="input-proveedor" placeholder="Razón social*" id="razon" name="razon-proveedor"/>
+	            <input type="text" class="input-proveedor" placeholder="Correo electrónico*" id="mail" name="mail-proveedor"/>	            
+	            <input type="text" class="input-proveedor" placeholder="RUC*" id="ruc" name="ruc"/>
+	            <input type="text" class="input-proveedor" placeholder="Registro sanitario*" id="resgitro-proveedor" name="resgitro-proveedor"/>	            
+	            <input type="text" class="input-proveedor" placeholder="Dirección*" id="direccion" name="direccion-proveedor"/>
+	            <input type="text" class="input-proveedor" placeholder="Teléfono*" id="telefono" name="telefono-proveedor"/>         	                
+	              
 	                <div class="hoja-adjuntar doc-proveedor" >
 	                            <iframe src="<?= base_url() . 'index.php/welcome/archivoProveedores' ?>"
 	                                    frameborder=0 height=31px marginheight=0 marginwidth=0 width=145"
-	                                    class="upload " scrolling="no"
-	                                    style="overflow:hidden;color:#ffffff;">
+	                                    class="upload " scrolling="no" style="overflow:hidden;color:#ffffff;">
 	                            </iframe>
 	                        </div>       
-	                <input type="hidden" value="" id="archivo_proveedor" name="archivo_proveedor" />
+	                	                
+	                <input type="text" class="archivo-adjuntado" placeholder="" id="archivo_proveedor" name="archivo_proveedor"/>	                
 	                <input type="submit" class="enviar contacto-enviar btn-env-proveedor" placeholder=" " value=" " id="btnEnviar"/>
 	            </form>
 	            <div class="linea-contactanos"></div>
