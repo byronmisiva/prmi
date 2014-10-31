@@ -182,6 +182,37 @@ class Welcome extends CI_Controller {
 		}		
 	}
 	
+	function contactoFormaProveedores(){		
+		$this->load->library('email');
+		$config['protocol']    = 'smtp';
+		$config['smtp_host']    = '172.18.120.12';
+		$config['smtp_port']    = '25';
+		$config['smtp_timeout'] = '4';
+		$config['smtp_user']='mail@primax.com.ec';
+		$config['smtp_pass']='pa$$w0rd';
+		$config['charset']    = 'utf-8';
+		$config['newline']    = "\r\n";
+		$config['mailtype'] = 'html';
+		$config['validation'] = TRUE;
+		$config['wordwrap'] = FALSE;
+			
+		$this->email->initialize($config);
+		$this->email->from('mail@primax.com.ec', 'Contacto PRIMAX');
+		$this->email->to('lcastroc@primax.com.ec');
+		if (count($_POST) != 0)  {
+			$data['informacion']=$_POST;
+			$body=$this->load->view('templates/front/email_proveedor',$data,TRUE);
+			$this->email->subject("PRIMAX");
+			$this->email->message($body);
+			$this->email->attach($_POST['archivo_proveedor']);	
+			$this->email->send();
+			echo "1";
+		} else {
+			echo "2";
+		}
+		
+	}
+	
 	function contactoFormaHoja(){		
 		$this->load->library('email');
 		$config['protocol']    = 'smtp';
@@ -217,6 +248,12 @@ function archivo($mensaje=''){
 		$data['script']="";
 		$this->load->view('templates/front/carga_documento',$data);	
 	}
+	
+	function archivoProveedores($mensaje=''){
+		$data['mensaje']=$mensaje;
+		$data['script']="";
+		$this->load->view('templates/front/carga_documento_proveedores',$data);	
+	} 
 		
 	function check(){		
 		$data['script']="";
@@ -242,6 +279,33 @@ function archivo($mensaje=''){
 			}
 		}
 		$this->load->view('templates/front/carga_documento',$data);
+	}
+	
+	function checkProveedor(){
+		$data['script']="";
+		if(isset($_FILES['archivos'])){
+			$config['upload_path'] = './archivo_proveedores/';
+			$config['allowed_types'] = 'doc|docx|pdf|xls|xlsx';
+			$config['max_size']	= '100000';
+			$config['encrypt_name'] = FALSE;
+			$this->load->library('upload', $config);
+			if ( ! $this->upload->do_upload('archivos')){
+				$error = array('error' => $this->upload->display_errors());
+				echo $data['script']="<script>alert('Error... Al cargar documento - ".$error."');</script> ";
+			}else{
+				$upload=$this->upload->data();
+				$nombre=$upload['full_path'];
+				$tipo=$upload["file_type"];
+				echo $data['script']="
+				<script>
+					parent.document.getElementById('archivo_proveedor').value='".$nombre."';
+					parent.document.getElementById('archivo_proveedor').style.display = 'block';
+					//alert('El Archivo fue cargado correctamente...');
+				</script>";
+			}
+		}
+		$this->load->view('templates/front/carga_documento_proveedores',$data);
+		
 	}
 		
 

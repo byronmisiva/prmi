@@ -157,13 +157,12 @@ input[type="submit"]{
 	height:205px;	
 	background-image:url(../imagenes/contactanos/Contactanos-trabajaconnosotros-linea-vertical.png);
 	background-position: center;
-	background-repeat: no-repeat;	
-	
+	background-repeat: no-repeat;		
 }
 
 .alertaFormulario{
 	position:inherit;
-	width:300px;
+	width: 260px;
 	height:45px;
 	top:210px;
 	left:335px;
@@ -218,6 +217,13 @@ input[type="submit"]{
 	height:100%;
 	width:100%;
 	top:60px;	
+}
+
+#contactoProveedores{
+	position:inherit;
+	height:100%;
+	width:100%;
+	top:60px;
 }
 
 #contactoHoja{
@@ -580,6 +586,47 @@ border-radius: 0 6px 0 0;
     /*margin-left: 11%;	*/
 }
 
+.icono-pdf{
+   background-color: #571016;
+    border-radius: 23px;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 200px;
+    padding: 5px;
+    position: inherit;
+    width: 284px;
+}
+
+	.icono-flecha{
+		  background-image: url("../imagenes/contactanos/ico-flecha.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    float: left;
+    height: 45px;
+    margin-left: 10px;
+    margin-top: 1px;
+    width: 39px;		
+	}
+	
+	.icono-documento{
+	  background-image: url("../imagenes/contactanos/ico-pdf.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    float: left;
+    height: 40px;
+    width: 44px;
+	}
+	
+	.texto-descarga{
+	 float: left;
+    height: 40px;
+    line-height: 19px;
+    margin-left: 5px;
+    text-align: center;
+    width: 170px;
+	}
+
 .hoja-nombre{	
 	position: inherit;
 	top:20px;
@@ -672,6 +719,14 @@ border-radius: 0 6px 0 0;
 	position:inherit;
 	top:130px;
 	left:427px;
+	cursor:pointer;margin-top:-1px;margin-left:140px;position: relative;
+}
+
+.doc-proveedor{
+ 	left: 455px;
+    top: 151px;
+    width: 120px;
+    z-index: 10000;
 }
 
 .textoHoja{	
@@ -697,7 +752,22 @@ border-radius: 0 6px 0 0;
 	height: 110px;	
 }
 
+	.proveedor-smart{
+	display: none;	
+	}
+	
+	.proveedor-normal{
+	display: block;
+	}
+
 @media ( min-width : 768px) and (max-width: 900px) {
+	
+	.hoja-adjuntar {
+    left: 228px;
+    position: inherit;
+    top: 212px;
+}
+	
 	.informacionContactos .textoForma {
     height: auto;
     margin-left: 35px;
@@ -937,6 +1007,26 @@ border-radius: 0 6px 0 0;
 	#contactoHoja .btn-group > .btn:first-child {
     width: 209px;
 	}
+	
+	
+	.icono-pdf { 
+	    margin-top: 310px;
+	}
+	
+	.doc-proveedor {
+    left: 237px !important;
+    top: 210px !important;
+    width: 120px;
+    z-index: 10000;
+}
+
+	.proveedor-smart{
+	display: none;	
+	}
+	
+	.proveedor-normal{
+	display: block;
+	}
 
 }
 
@@ -944,6 +1034,71 @@ border-radius: 0 6px 0 0;
 
 @media ( max-width: 360px) {	
 
+.btn-env-proveedor{
+	margin-left: 136px;
+}
+
+.texto-proveedor-contacto{
+  font-size: 12px;
+    margin-left: 1%;
+    margin-top: -51px;
+    text-align: center;
+    width: 90%;
+}
+
+
+
+#contactoProveedores {
+    top: 78px;    
+}
+
+.icono-pdf {
+    background-color: #571016;
+    border-radius: 23px;
+    cursor: pointer;
+    height: 32px;
+    margin-left: 0;
+    margin-top: 280px;
+    padding: 5px;
+    position: inherit;
+    width: 195px;
+}
+
+.doc-proveedor {
+    left: -140px !important;
+    top: 168px !important;
+    width: 120px;
+    z-index: 10000;
+}
+
+
+.doc-proveedor {
+       left: -171px;
+    top: 166px;
+}
+	
+	
+.icono-flecha {    
+    display: none;
+}
+
+
+.icono-documento {
+    width: 30px;
+}
+
+
+.texto-descarga { 
+     float: left;
+    font-size: 12px;
+    height: 40px;
+    line-height: 14px;
+    margin-left: -7px;
+    text-align: center;
+    width: 170px;
+}
+	
+	
 	.contactos-seccion {
     height: 80px;
 	}
@@ -1266,8 +1421,82 @@ border-radius: 0 6px 0 0;
     background-size: auto 84%;
     height: 340px;
 }
+
+	.proveedor-smart{
+	display: block;	
+	}
+	
+	.proveedor-normal{
+	display: none;
+	}
 	
 }
+
+@media ( max-width: 320px) {
+	.texto-proveedor-contacto{
+	   margin-left: 1% !important;
+    margin-top: -75px !important;
+    width: 85% !important;
+	}
+	
+	#contactoProveedores {
+	    top: 42px;
+	}
+	
+	
+.icono-pdf {
+    background-color: #571016;
+    border-radius: 23px;
+    cursor: pointer;
+    height: 32px;
+    margin-left: 0;
+    margin-top: 235px;
+}
+
+	.proveedor-smart{
+	display: block;	
+	}
+	
+	.proveedor-normal{
+	display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

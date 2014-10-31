@@ -639,225 +639,280 @@ die;*/
             <li id="btn-oferta" data-target="#carruselContactanos" data-slide-to="1">
             <a href="#" data-toggle="tab">Trabaja con Nosotros </a></li>
             
-            <li><span class="linea-division"></span></li>
-           	<li id="btn-oferta" data-target="#carruselContactanos" data-slide-to="3">
-           	 	<a href="#" data-toggle="tab">Proveedores </a>
-           	 </li>
+            
             
             <li style="display:none;" data-target="#carruselContactanos" data-slide-to="1">
             	<a href="#" data-toggle="tab">Oferta Laboral</a></li>
             <li id="btn-hoja" style="display:none;" data-target="#carruselContactanos" data-slide-to="2">
             	<a href="#" data-toggle="tab">Hoja de Vida</a></li>
+            <li><span class="linea-division"></span></li>
+           	<li id="btn-oferta" data-target="#carruselContactanos" data-slide-to="3">
+           	 	<a href="#" data-toggle="tab">Proveedores </a>
+           	 </li>	
         </ul>
     </div>
 </div>
 <div class="carousel-inner">
-<div class="item active franja-contactanosd">
-    <div class="carousel-caption" style="background-color: transparent;top:0px;">
-        <div class="span6 columnaPersonaje informacionContactos">
-            <h2>ESCRÍBENOS</h2>
-            <div class="textoForma">
-            	<?=$contenidos['11']->contenido?>
-            </div>
-        </div>
-        <div class="columnaContactanos">
-            <form id="contactoNormal">
-                <input class="contacto-nombre" type="text" value="" placeholder="Nombre y Apellido*"
-                       id="nombre" name="nombre"/>
-                <input class="contacto-email" type="text" value="" placeholder="Correo electrónico*"
-                       id="email" name="email"/>
-                <input class="contacto-ciudad" type="text" value="" placeholder="Ciudad*" id="ciudad"
-                       name="ciudad"/>
-                <textarea class="textarea1 contacto-mensaje" type="text" value="" placeholder="Mensaje"
-                          id="mensaje" name="mensaje"> </textarea>
-                <input class="contacto-telefono" type="text" value="" placeholder="Teléfono*"
-                       id="telefono" name="telefono" maxlength="10"/>
-                <input class="contacto-sector" type="text" value="" placeholder="Sector de la ciudad"
-                       id="sector" name="sector"/>
-                <input type="submit" class="enviar contacto-enviar" placeholder=" " value=" "
-                       id="btnEnviar"/>
-            </form>
-            <div class="linea-contactanos"></div>
-            <div class="alertaFormulario">
-                Los campos que se encuentran con * deben ser llenados obligatoriamente.
-            </div>
+	<div class="item active franja-contactanosd">
+	    <div class="carousel-caption" style="background-color: transparent;top:0px;">
+	        <div class="span6 columnaPersonaje informacionContactos">
+	            <h2>ESCRÍBENOS</h2>
+	            <div class="textoForma">
+	            	<?=$contenidos['11']->contenido?>
+	            </div>
+	        </div>
+	        <div class="columnaContactanos">
+	            <form id="contactoNormal">
+	                <input class="contacto-nombre" type="text" value="" placeholder="Nombre y Apellido*"
+	                       id="nombre" name="nombre"/>
+	                <input class="contacto-email" type="text" value="" placeholder="Correo electrónico*"
+	                       id="email" name="email"/>
+	                <input class="contacto-ciudad" type="text" value="" placeholder="Ciudad*" id="ciudad"
+	                       name="ciudad"/>
+	                <textarea class="textarea1 contacto-mensaje" type="text" value="" placeholder="Mensaje"
+	                          id="mensaje" name="mensaje"> </textarea>
+	                <input class="contacto-telefono" type="text" value="" placeholder="Teléfono*"
+	                       id="telefono" name="telefono" maxlength="10"/>
+	                <input class="contacto-sector" type="text" value="" placeholder="Sector de la ciudad"
+	                       id="sector" name="sector"/>
+	                <input type="submit" class="enviar contacto-enviar" placeholder=" " value=" "
+	                       id="btnEnviar"/>
+	            </form>
+	            <div class="linea-contactanos"></div>
+	            <div class="alertaFormulario">
+	                Los campos que se encuentran con * deben ser llenados obligatoriamente.
+	            </div>
+	
+	            <div class="procesoenvio">
+	                Su mensaje fue enviado correctamente
+	            </div>
+	        </div>
+	    </div>
+	</div>
 
-            <div class="procesoenvio">
-                Su mensaje fue enviado correctamente
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div class="item franja-contactanosi">
-    <div class="carousel-caption" style="background-color: transparent;top:0px;">
-        <div class="span6 columnaPersonaje">
-            <h2 class="tituloHoja">OFERTA LABORAL</h2>
-            <div class="departamento">
-                <div class="btn-group display-block alinearDropdown">
-                    <button id="option_depto" class="btn opcionDropdown" id="cargo" name="cargo"
-                            data-toggle="dropdown">Departamento
-                    </button>
-                    <button class="btn dropdown-toggle" data-toggle="dropdown">
-                        <span class="caret flecha-drop"></span>
-                    </button>
-                    <ul id="select_depto" class="dropdown-menu">
-                        <?php
-                        for ($x = 0; $x < count($departamentos); $x++) {
-                            ?>
-                            <li><a id="<?= $x ?>" tabindex="-1" href="#"><?= $departamentos[$x] ?></a>
-                            </li>
-                        <?php } ?>
-                    </ul>
-                </div>
-                <script>
-                    $('#select_depto li a').click(function (event) {
-                        event.preventDefault();
-                        var depto = $.trim($('#' + this.id).html());
-                        cargarDepartamentos(this.id, 'resultadosDepartamentos');
-                        $('#option_depto').html("" + depto);
-                    });
-                </script>
-            </div>
-            <div class="mensajeDepartamento"></div>
-        </div>
-
-        <div class="columnaInformacion columnaListaOferta">
-            <div class="span5 submenuNosotros subcontactanos">
-                <ul class="nav nav-tabs" id="opciones">
-                    <li class="active"><a href="#">Oferta Laboral </a></li>
-                    <li><span class="linea-division"></span></li>
-                    <li><a href="#" onclick="$('#btn-hoja').click();">Hoja de Vida </a></li>
-                </ul>
-            </div>
-            <div class="row tab-content">
-                <div class="tab-pane active">
-                    <div id="resultadosDepartamentos"></div>
-                    <div id="detalleOferta" class="modal hide fade" tabindex="-1" role="dialog"
-                         aria-labelledby="myModalLabel" aria-hidden="true">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="item franja-contactanosd">
-    <div class="carousel-caption" style="background-color: transparent;top:0px;">
-        <div class="span6 columnaHoja">
-            <div class="submenuNosotros">
-                <ul class="nav nav-tabs" id="opciones">
-                    <li onclick="$('#btn-oferta').click();"><a href="#">Oferta Laboral </a></li>
-                    <li><span class="linea-division"></span></li>
-                    <li class="active"><a href="#" onclick="$('#btn-hoja').click();">Hoja de Vida </a>
-                    </li>
-                </ul>
-            </div>
-            <h2 class="tituloHoja alinear-izquierda">HOJA DE VIDA</h2>
-
-            <div class="tab-content" style="width:100%;">
-                <div class="tab-pane active columnaContactanos">
-                    <form id="contactoHoja">
-                        <input type="text" class="hoja-nombre" style="margin-left: 20px;"
-                               placeholder="Nombres*" id="nombres" name="nombres"/>
-                        <input type="text" class="hoja-email" style="margin-left: 20px;"
-                               placeholder="Email*" id="email2" name="email2"/>
-                        <input type="text" class="hoja-celular" style="margin-left: 20px;"
-                               placeholder="Teléfono celular*" id="celular" name="celular"
-                               maxlength="10"/>
-                        <input type="hidden" style="margin-left: 20px;" placeholder="" id="campo_id"
-                               name="campo_id"/>
-
-                        <div class="btn-group display-block alinearDropdown1"
-                             style="margin-left:30px;margin-top: 0px;">
-                            <button id="option_campo" class="btn opcionDropdown" id="campo" name="campo"
-                                    data-toggle="dropdown">Área Profesional
-                            </button>
-                            <button class="btn dropdown-toggle" data-toggle="dropdown">
-                                <span class="caret flecha-drop"></span>
-                            </button>
-                            <ul id="select_campo" class="dropdown-menu">
-                                <?php
-                                for ($x = 1; $x < count($campos); $x++) {
-                                    ?>
-                                    <li><a id="campo_<?= $x ?>" tabindex="-1"
-                                           href="#"><?= $campos[$x] ?></a></li>
-                                <?php } ?>
-                            </ul>
-                        </div>
-                        <script>
-                            $('#select_campo li a').click(function (event) {
-                                event.preventDefault();
-                                var cargo = $.trim($('#' + this.id).html());
-                                $("#campo_id").val(this.id);
-                                $('#option_campo').html("" + cargo);
-                            });
-                        </script>
-                        
-                        <div class="linea-contactanos hoja1"></div>
-                        <input type="text" class="hoja-apellido" placeholder="Apellido*" id="apellido" name="apellido"/>
-                        <input type="text" class="hoja-ciudad" placeholder="Ciudad*" id="ciudad2" name="ciudad2"/>
-                        <input type="text" class="hoja-telefono" placeholder="Teléfono fijo*" id="telefono2" name="telefono2" maxlength="10"/>
-                        <input type="hidden" placeholder="" id="cargo_id" name="cargo_id"/>
-                        <div class="btn-group display-block alinearDropdown2"
-                             style="margin-left:30px;margin-top: 0px;">
-                            <button id="option_cargo" class="btn opcionDropdown" id="cargo" name="cargo" data-toggle="dropdown">Cargo Aplicar</button>
-                            <button class="btn dropdown-toggle" data-toggle="dropdown">
-                                <span class="caret flecha-drop"></span>
-                            </button>
-                            <ul id="select_cargo" class="dropdown-menu">
-                                <?php
-                                for ($x = 1; $x < count($cargos); $x++) {
-                                    ?>
-                                    <li><a id="cargo_<?= $x ?>" tabindex="-1"
-                                           href="#"><?= $cargos[$x] ?></a></li>
-                                <?php } ?>
-                            </ul>
-                        </div>
-                        <script>
-                            $('#select_cargo li a').click(function (event) {
-                                event.preventDefault();
-                                var cargo = $.trim($('#' + this.id).html());
-                                $("#cargo_id").val(this.id);
-                                $('#option_cargo').html("" + cargo);
-                            });
-                        </script>
-
-                        <div class="linea-contactanos hoja2"></div>
-                        <textarea class="textarea1 hoja-comentario" type="text" placeholder="Comentarios" id="mensaje2" name="mensaje2"
-                                  onclick="limpiarTexare('mensaje2')">Comentarios </textarea>
-                        <input type="text" class="hoja-archivo" placeholder=""
-                               style="width: 120px;margin-left: 20px;background-color: transparent;color:#ffffff;border:none;display:none;"
-                               id="foto" name="foto"/>
-
-                        <div class="hoja-adjuntar"
-                             style="cursor:pointer;margin-top:-1px;margin-left:140px;position: relative;">
-                            <iframe src="<?= base_url() . 'index.php/welcome/archivo' ?>"
-                                    frameborder=0 height=31px marginheight=0 marginwidth=0 width=145"
-                                    class="upload " scrolling="no"
-                                    style="overflow:hidden;color:#ffffff;">
-                            </iframe>
-                        </div>
-
-                        <input type="submit" class="enviar enviar-hoja" style="margin-top:-30px;"
-                               placeholder=" " value=" " id="btn-enviar-hoja"/>
-
-                    </form>
-                    <div class="textoHoja">
-                        Los campos que se encuentra con * deben ser llenados obligatoriamente.
-                    </div>
-                    <div class="procesoenvioHoja">
-                        Su hoja de vida se envió correctamente
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
+	<div class="item franja-contactanosi">
+	    <div class="carousel-caption" style="background-color: transparent;top:0px;">
+	        <div class="span6 columnaPersonaje">
+	            <h2 class="tituloHoja">OFERTA LABORAL</h2>
+	            <div class="departamento">
+	                <div class="btn-group display-block alinearDropdown">
+	                    <button id="option_depto" class="btn opcionDropdown" id="cargo" name="cargo"
+	                            data-toggle="dropdown">Departamento
+	                    </button>
+	                    <button class="btn dropdown-toggle" data-toggle="dropdown">
+	                        <span class="caret flecha-drop"></span>
+	                    </button>
+	                    <ul id="select_depto" class="dropdown-menu">
+	                        <?php
+	                        for ($x = 0; $x < count($departamentos); $x++) {
+	                            ?>
+	                            <li><a id="<?= $x ?>" tabindex="-1" href="#"><?= $departamentos[$x] ?></a>
+	                            </li>
+	                        <?php } ?>
+	                    </ul>
+	                </div>
+	                <script>
+	                    $('#select_depto li a').click(function (event) {
+	                        event.preventDefault();
+	                        var depto = $.trim($('#' + this.id).html());
+	                        cargarDepartamentos(this.id, 'resultadosDepartamentos');
+	                        $('#option_depto').html("" + depto);
+	                    });
+	                </script>
+	            </div>
+	            <div class="mensajeDepartamento"></div>
+	        </div>
+	
+	        <div class="columnaInformacion columnaListaOferta">
+	            <div class="span5 submenuNosotros subcontactanos">
+	                <ul class="nav nav-tabs" id="opciones">
+	                    <li class="active"><a href="#">Oferta Laboral </a></li>
+	                    <li><span class="linea-division"></span></li>
+	                    <li><a href="#" onclick="$('#btn-hoja').click();">Hoja de Vida </a></li>
+	                </ul>
+	            </div>
+	            <div class="row tab-content">
+	                <div class="tab-pane active">
+	                    <div id="resultadosDepartamentos"></div>
+	                    <div id="detalleOferta" class="modal hide fade" tabindex="-1" role="dialog"
+	                         aria-labelledby="myModalLabel" aria-hidden="true">
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div class="item franja-contactanosd">
+	    <div class="carousel-caption" style="background-color: transparent;top:0px;">
+	        <div class="span6 columnaHoja">
+	            <div class="submenuNosotros">
+	                <ul class="nav nav-tabs" id="opciones">
+	                    <li onclick="$('#btn-oferta').click();"><a href="#">Oferta Laboral </a></li>
+	                    <li><span class="linea-division"></span></li>
+	                    <li class="active"><a href="#" onclick="$('#btn-hoja').click();">Hoja de Vida </a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <h2 class="tituloHoja alinear-izquierda">HOJA DE VIDA</h2>
+	            <div class="tab-content" style="width:100%;">
+	                <div class="tab-pane active columnaContactanos">
+	                    <form id="contactoHoja">
+	                        <input type="text" class="hoja-nombre" style="margin-left: 20px;"
+	                               placeholder="Nombres*" id="nombres" name="nombres"/>
+	                        <input type="text" class="hoja-email" style="margin-left: 20px;"
+	                               placeholder="Email*" id="email2" name="email2"/>
+	                        <input type="text" class="hoja-celular" style="margin-left: 20px;"
+	                               placeholder="Teléfono celular*" id="celular" name="celular"
+	                               maxlength="10"/>
+	                        <input type="hidden" style="margin-left: 20px;" placeholder="" id="campo_id"
+	                               name="campo_id"/>
+	
+	                        <div class="btn-group display-block alinearDropdown1"
+	                             style="margin-left:30px;margin-top: 0px;">
+	                            <button id="option_campo" class="btn opcionDropdown" id="campo" name="campo"
+	                                    data-toggle="dropdown">Área Profesional
+	                            </button>
+	                            <button class="btn dropdown-toggle" data-toggle="dropdown">
+	                                <span class="caret flecha-drop"></span>
+	                            </button>
+	                            <ul id="select_campo" class="dropdown-menu">
+	                                <?php
+	                                for ($x = 1; $x < count($campos); $x++) {
+	                                    ?>
+	                                    <li><a id="campo_<?= $x ?>" tabindex="-1"
+	                                           href="#"><?= $campos[$x] ?></a></li>
+	                                <?php } ?>
+	                            </ul>
+	                        </div>
+	                        <script>
+	                            $('#select_campo li a').click(function (event) {
+	                                event.preventDefault();
+	                                var cargo = $.trim($('#' + this.id).html());
+	                                $("#campo_id").val(this.id);
+	                                $('#option_campo').html("" + cargo);
+	                            });
+	                        </script>
+	                        
+	                        <div class="linea-contactanos hoja1"></div>
+	                        <input type="text" class="hoja-apellido" placeholder="Apellido*" id="apellido" name="apellido"/>
+	                        <input type="text" class="hoja-ciudad" placeholder="Ciudad*" id="ciudad2" name="ciudad2"/>
+	                        <input type="text" class="hoja-telefono" placeholder="Teléfono fijo*" id="telefono2" name="telefono2" maxlength="10"/>
+	                        <input type="hidden" placeholder="" id="cargo_id" name="cargo_id"/>
+	                        <div class="btn-group display-block alinearDropdown2"
+	                             style="margin-left:30px;margin-top: 0px;">
+	                            <button id="option_cargo" class="btn opcionDropdown" id="cargo" name="cargo" data-toggle="dropdown">Cargo Aplicar</button>
+	                            <button class="btn dropdown-toggle" data-toggle="dropdown">
+	                                <span class="caret flecha-drop"></span>
+	                            </button>
+	                            <ul id="select_cargo" class="dropdown-menu">
+	                                <?php
+	                                for ($x = 1; $x < count($cargos); $x++) {
+	                                    ?>
+	                                    <li><a id="cargo_<?= $x ?>" tabindex="-1"
+	                                           href="#"><?= $cargos[$x] ?></a></li>
+	                                <?php } ?>
+	                            </ul>
+	                        </div>
+	                        <script>
+	                            $('#select_cargo li a').click(function (event) {
+	                                event.preventDefault();
+	                                var cargo = $.trim($('#' + this.id).html());
+	                                $("#cargo_id").val(this.id);
+	                                $('#option_cargo').html("" + cargo);
+	                            });
+	                        </script>
+	
+	                        <div class="linea-contactanos hoja2"></div>
+	                        <textarea class="textarea1 hoja-comentario" type="text" placeholder="Comentarios" id="mensaje2" name="mensaje2"
+	                                  onclick="limpiarTexare('mensaje2')">Comentarios </textarea>
+	                        <input type="text" class="hoja-archivo" placeholder=""
+	                               style="width: 120px;margin-left: 20px;background-color: transparent;color:#ffffff;border:none;display:none;"
+	                               id="foto" name="foto"/>
+	
+	                        <div class="hoja-adjuntar">
+	                            <iframe src="<?= base_url() . 'index.php/welcome/archivo' ?>"
+	                                    frameborder=0 height=31px marginheight=0 marginwidth=0 width=145"
+	                                    class="upload " scrolling="no"
+	                                    style="overflow:hidden;color:#ffffff;">
+	                            </iframe>
+	                        </div>
+	
+	                        <input type="submit" class="enviar enviar-hoja" style="margin-top:-30px;"
+	                               placeholder=" " value=" " id="btn-enviar-hoja"/>
+	
+	                    </form>
+	                    <div class="textoHoja">
+	                        Los campos que se encuentra con * deben ser llenados obligatoriamente.
+	                    </div>
+	                    <div class="procesoenvioHoja">
+	                        Su hoja de vida se envió correctamente
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<!-- PROVEEDORES -->
+	<div class="item franja-contactanosi">
+	    <div class="carousel-caption" style="background-color: transparent;top:0px;">
+	        <div class="span6 columnaPersonaje informacionContactos">
+	            <h2>PROVEEDORES</h2>
+	            <div class="textoForma texto-proveedor-contacto proveedor-normal">
+	            	¿Deseas convertirte en proveedor? Envíanos tu solicitud llenando estos campos 
+	            	y subiendo un archivo en PDF que contenga: Nombre de producto, Tipo de Producto 
+	            	y una imagen correspondiente al mismo para que un representante de PRIMAX se contacte contigo. 
+	            </div>	
+	            
+	            <div class="textoForma texto-proveedor-contacto proveedor-smart">
+	            ¿Deseas convertirte en proveedor? Llena la solicitud y adjunta un PDF con: 
+	            Nombre, tipo de producto y una imagen del mismo para que un representante 
+	            de PRIMAX se contacte contigo. 
+	            </div>            
+	        </div>
+	        <div class="columnaContactanos">
+	            <form id="contactoProveedores">
+	                <input class="contacto-nombre" type="text" value="" placeholder="Nombre y Apellido*"
+	                       id="nombre" name="nombre"/>
+	                <input class="contacto-email" type="text" value="" placeholder="Correo electrónico*"
+	                       id="email" name="email"/>
+	                <input class="contacto-ciudad" type="text" value="" placeholder="Ciudad*" id="ciudad"
+	                       name="ciudad"/>
+	                <textarea class="textarea1 contacto-mensaje"  placeholder="Mensaje"
+	                          id="mensaje" name="mensaje"> </textarea>
+	                <input class="contacto-telefono" type="text" value="" placeholder="Teléfono*"
+	                       id="telefono" name="telefono" maxlength="10"/>
+	                <input class="contacto-sector" type="text" value="" placeholder="Sector de la ciudad"
+	                       id="sector" name="sector"/>
+	                <div class="hoja-adjuntar doc-proveedor" >
+	                            <iframe src="<?= base_url() . 'index.php/welcome/archivoProveedores' ?>"
+	                                    frameborder=0 height=31px marginheight=0 marginwidth=0 width=145"
+	                                    class="upload " scrolling="no"
+	                                    style="overflow:hidden;color:#ffffff;">
+	                            </iframe>
+	                        </div>       
+	                <input type="hidden" value="" id="archivo_proveedor" name="archivo_proveedor" />
+	                <input type="submit" class="enviar contacto-enviar btn-env-proveedor" placeholder=" " value=" " id="btnEnviar"/>
+	            </form>
+	            <div class="linea-contactanos"></div>
+	            <div class="alertaFormulario">
+	                Los campos que se encuentran con * deben ser llenados obligatoriamente.
+	            </div>
+	
+	            <div class="procesoenvio">
+	                Su mensaje fue enviado correctamente
+	            </div>
+	            <div class="icono-pdf" onclick="window.open('<?php echo base_url().'archivo/Requisitos-Proveedor-ATIMASA.pdf'?>')">
+			            <div class="icono-flecha"></div>
+			            <div class="icono-documento"></div>
+			            <div class="texto-descarga">
+			            OBSERVA NUESTRAS POLÍTICAS PARA PROVEEDORES.
+			            </div>
+		            </div>
+	        </div>      
+	    </div>
+	</div>
+	<!-- FIN PROVEEDORES -->
 <!-- item 2   -->
 </div>
 	<a class="left carousel-control" href="#carruselContactanos" data-slide="prev"></a>
@@ -969,6 +1024,50 @@ die;*/
             });
         }
     });
+
+    
+    rulesProveedores = [
+             { name: 'nombre', display: 'Nombre', rules: 'required'},
+             { name: 'ciudad', display: 'Ciudad', rules: 'required'},
+             { name: 'telefono', display: 'Telefono', rules: 'required|numeric|max_length[10]'},
+             { name: 'email', display: 'E-mail', rules: 'required|valid_email'},
+             { name: 'sector', display: 'Sector de la ciudad', rules: 'required'},
+             { name: 'archivo_proveedor',  display: 'Archivo', rules: 'required'},
+             { name: 'mensaje', display: 'Mensaje', rules: 'required'}
+         ];
+
+         new FormValidator('contactoProveedores', rulesProveedores, function (errors, event) {
+             for (var i = 0 , rulesLength = rules.length; i < rulesLength; i++) {
+                 //$('#'+rules[i].name).css( { 'background-color': 'transparent', 'color': 'white' } );
+             }
+             if (errors.length > 0) {
+                 for (var i = 0 , errorLength = errors.length; i < errorLength; i++) {
+                     $('.alertaFormulario').html('Verifica que todos los campos con * estén ingresados.');
+                     $('#' + errors[i].id).css({ 'color': '#616161' });
+                 }
+             }
+             else {
+                 $('.btn-env-proveedor').hide();
+                 $('.procesoenvio').show();
+                 $.ajax({
+                     type: "POST",
+                     url: "<?=base_url('index.php/welcome/contactoFormaProveedores/')?>",
+                     data: $('#contactoProveedores').serialize(),
+                     success: function (response) {
+                         if (response == "1") {
+                             $('.procesoenvio').hide();
+                             $('.btn-env-proveedor').show();                             
+                             $('#contactoProveedores').each (function(){
+                            	   this.reset();
+                            	 }); 
+                         }
+                     }
+                 });
+             }
+         });
+
+
+    
 
     reglas = [
         { name: 'nombres', display: 'Nombre', rules: 'required'},
