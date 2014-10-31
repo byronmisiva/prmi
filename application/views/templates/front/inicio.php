@@ -871,12 +871,12 @@ die;*/
 	        </div>
 	        <div class="columnaContactanos">
 	            <form id="contactoProveedores">            
-	            <input type="text" class="input-proveedor" placeholder="Razón social*" id="razon" name="razon-proveedor"/>
-	            <input type="text" class="input-proveedor" placeholder="Correo electrónico*" id="mail" name="mail-proveedor"/>	            
+	            <input type="text" class="input-proveedor" placeholder="Razón social*" id="razon-proveedor" name="razon-proveedor"/>
+	            <input type="text" class="input-proveedor" placeholder="Correo electrónico*" id="mail-proveedor" name="mail-proveedor"/>	            
 	            <input type="text" class="input-proveedor" placeholder="RUC*" id="ruc" name="ruc"/>
 	            <input type="text" class="input-proveedor" placeholder="Registro sanitario*" id="resgitro-proveedor" name="resgitro-proveedor"/>	            
-	            <input type="text" class="input-proveedor" placeholder="Dirección*" id="direccion" name="direccion-proveedor"/>
-	            <input type="text" class="input-proveedor" placeholder="Teléfono*" id="telefono" name="telefono-proveedor"/>         	                
+	            <input type="text" class="input-proveedor" placeholder="Dirección*" id="direccion-proveedor" name="direccion-proveedor"/>
+	            <input type="text" class="input-proveedor" placeholder="Teléfono*" id="telefono-proveedor" name="telefono-proveedor"/>         	                
 	              
 	                <div class="hoja-adjuntar doc-proveedor" >
 	                            <iframe src="<?= base_url() . 'index.php/welcome/archivoProveedores' ?>"
@@ -1021,14 +1021,14 @@ die;*/
 
     
     rulesProveedores = [
-             { name: 'nombre', display: 'Nombre', rules: 'required'},
-             { name: 'ciudad', display: 'Ciudad', rules: 'required'},
-             { name: 'telefono', display: 'Telefono', rules: 'required|numeric|max_length[10]'},
-             { name: 'email', display: 'E-mail', rules: 'required|valid_email'},
-             { name: 'sector', display: 'Sector de la ciudad', rules: 'required'},
+             { name: 'razon-proveedor', display: 'Razon Social', rules: 'required'},
+             { name: 'ruc', display: 'Ruc', rules: 'required'},
+             { name: 'telefono-proveedor', display: 'Telefono', rules: 'required|numeric|max_length[10]'},
+             { name: 'mail-proveedor', display: 'E-mail', rules: 'required|valid_email'},
+             { name: 'resgitro-proveedor', display: 'Registro sanitario', rules: 'required'},
              { name: 'archivo_proveedor',  display: 'Archivo', rules: 'required'},
-             { name: 'mensaje', display: 'Mensaje', rules: 'required'}
-         ];
+             { name: 'direccion-proveedor', display: 'Direccion', rules: 'required'}
+         ];    
 
          new FormValidator('contactoProveedores', rulesProveedores, function (errors, event) {
              for (var i = 0 , rulesLength = rules.length; i < rulesLength; i++) {
