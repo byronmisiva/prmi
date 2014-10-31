@@ -22,11 +22,11 @@
 
     <link href="./css/estilo.css?frefresh=45646" rel="stylesheet"/>
     <link href="./css/beneficios.css?frefresh=4532321" rel="stylesheet"/>
-    <link href="./css/tiendas.css?frefresh=45398945" rel="stylesheet"/>
+    <link href="./css/tiendas.css?frefresh=455646546" rel="stylesheet"/>
 
     <link href="./css/servicios.css" rel="stylesheet"/>
     <link href="./css/encuentranos.css" rel="stylesheet"/>
-    <link href="./css/contactanos.css" rel="stylesheet"/>
+    <link href="./css/contactanos.css?frefresh=48798212" rel="stylesheet"/>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
@@ -81,8 +81,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
 </head>
-<!-- onload="$('#youvideo').click();" -->
-<body style="background:#EAEAEA;"  >
+<!--  -->
+<body style="background:#EAEAEA;"  onload="$('#youvideo').click();">
 <!--<body style="background:#EAEAEA;" onload="llamarBanner()" >-->
 <!-- NAVBAR
 ================================================== -->
