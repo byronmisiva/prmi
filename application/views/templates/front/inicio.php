@@ -112,7 +112,7 @@
                         <li id="estado4">
                             <a class="tiendas">Tiendas Listo!</a>
                         </li>
-                        <li id="estado5" style="display: none;">
+                        <li id="estado5">
                             <a class="lubricantes">Lubricantes</a>
                         </li>
                         <li id="estado6">

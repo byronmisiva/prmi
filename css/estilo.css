@@ -940,7 +940,7 @@ button.btn-fechas:hover {
 
 .navbar .nav > li > a {
     float: none;
-    padding: 7px 41px 7px 28px;
+    padding: 7px 24px 7px 28px;
     color: #777777;
     text-decoration: none;
     text-shadow: none;
@@ -1080,7 +1080,7 @@ img {
     }
 
     .navbar .nav > li > a {
-        padding: 7px 37px;
+        padding: 7px 30px 7px 28px;
         /* padding: 7px 28px 7px 28px;*/
         /* todo: espacio menu lubricantes */
         font-size: 13px;
@@ -1614,7 +1614,7 @@ img {
     }
 
     .navbar .nav > li > a {
-        padding: 7px 18px 7px 27px !important;
+        padding: 8px 5px 7px 28px !important;
         font-size: 13px;
     }
 
