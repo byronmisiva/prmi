@@ -8,6 +8,7 @@ class Oferta extends CI_Model{
 	 function getAll_id($id){
 	 	$this->db->select('id,cargo,ciudad,date(creado) as creado');		
 		$this->db->where('cargo',$id);
+         $this->db->where("activo","1");
 		$consulta=$this->db->get("oferta_labotal");
 		return $consulta->result();		
 	 }
