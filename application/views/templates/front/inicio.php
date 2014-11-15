@@ -23,6 +23,7 @@
     <link href="./css/estilo.css?frefresh=45646" rel="stylesheet"/>
     <link href="./css/beneficios.css?frefresh=4532321" rel="stylesheet"/>
     <link href="./css/tiendas.css?frefresh=455646546" rel="stylesheet"/>
+    <link href="./css/lubricantes.css?frefresh=455646546" rel="stylesheet"/>
 
     <link href="./css/servicios.css" rel="stylesheet"/>
     <link href="./css/encuentranos.css" rel="stylesheet"/>
@@ -137,21 +138,13 @@
 <!-- /.navbar-wrapper -->
 
 <div id="contenedor2">
-<?php
-/* 
-echo "<pre>";
-echo "</pre>";
-die;*/
-
-?>
-
-
 <div class="row_home" style="overflow: hidden;">
     <div id="alinearAbajo">
         <div id="imagenHome" style="background-image: url(<?=base_url($contenidos['0']->imagen)?>);"></div>
         <p><a href="http://youtu.be/vwQ06L3bfWU" data-toggle="lightbox" id="youvideo">Ver video</a></p>
     </div>
 </div>
+
 <div class="fondo-nosotros" style="overflow: hidden;">
 <div class="container">
 <div class="carousel slide" id="myCarousel">
@@ -175,6 +168,7 @@ die;*/
         </ul>
     </div>
 </div>
+
 <div class="carousel-inner">
 <!-- item 0 -->
 <div class="item active fondo-secciond">
@@ -302,8 +296,8 @@ die;*/
 </div>
 <!-- inicio-->
 
-<!-- SECCION Beneficios -->
 <!-- SECCION 3 -->
+<!-- Inicio SECCION Beneficios -->
 <div class="row fondoGprix" style="overflow: hidden;">
     <div class="container">
         <div class="carousel slide" id="carruselSuper">
@@ -362,12 +356,11 @@ die;*/
         </div>
     </div>
 </div>
-
-
 <!-- fin-->
-<!-- inicio-->
-<!-- SECCION Tiendas -->
 
+
+
+<!-- inicio  SECCION Tiendas -->
 <div class="row fondoTiendas" style="overflow: hidden;">
 <div class="container">
 <div class="carousel slide" id="carruselTiendas">
@@ -492,6 +485,158 @@ die;*/
 
 </div>
 </div>
+
+<!-- SECCION 5 -->
+<!-- Inicio SECCION Lubricantes -->
+
+<div class="fondoLubricantes" style="overflow: hidden;">
+    <div class="container">
+        <div class="carousel slide" id="carruselLubricantes">
+            <div class="tituloNosotros">
+                <h1><?=$contenidos['12']->titulo?></h1>
+
+                <div class="alinearmenuNosotros">
+                    <ul class="nav nav-tabs" id="menuNosotros">
+                        <li id="btn-empresa" data-target="#carruselLubricantes" data-slide-to="0" class="active"><a href="#"
+                                                                                                           data-toggle="tab"><?=$contenidos['13']->titulo?></a>
+                        </li>
+                        <li><span class="linea-division"></span></li>
+                        <li id="btn-mision" data-target="#carruselLubricantes" data-slide-to="1"><a
+                                                                                           href="#" data-toggle="tab"><?=$contenidos['14']->titulo?></a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-inner">
+                <!-- item 0 -->
+                <div class="item active franja-Gprixd">
+                    <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span6 columnaPersonaje">
+                            <div class="grupo-primax" style="background-image: url(<?=base_url($contenidos['1']->imagen)?>);"></div>
+                        </div>
+                        <div class="columnaInformacion">
+                            <div class="span5 submenuNosotros">
+                                <ul class="nav nav-tabs" id="opciones">
+                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li><span class="linea-division"></span></li>
+                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li><span class="linea-division"></span></li>
+                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li><span class="linea-division"></span></li>
+                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                </ul>
+                            </div>
+                            <div class="row tab-content">
+                                <div class="tab-pane active">
+                                    <div class="textoContenido nosotrosPrincipal">
+                                        <?=$contenidos['1']->contenido?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item fondo-seccioni nosotrosElementos">
+                    <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="nosotroscontrolI"></div>
+                        <div class="nosotroscontrolD"></div>
+                        <div class="span6 columnaPersonaje nosotrosPersonaje">
+                            <div class="personaje1" style="background-image: url(<?=base_url($contenidos['2']->imagen)?>);"></div>
+                        </div>
+                        <div class="columnaInformacion columnaNosotros">
+                            <div class="span5 submenuNosotros">
+                                <ul class="nav nav-tabs" id="opciones">
+                                    <li class="active" id="misionmenu"><a href="#">Misión </a></li>
+                                    <li><span class="linea-division"></span></li>
+                                    <li id="visionmenu"><a href="#">Visión </a></li>
+                                    <li><span class="linea-division"></span></li>
+                                    <li id="valoresmenu"><a href="#"> Valores </a></li>
+                                </ul>
+                            </div>
+
+
+                            <div class="tab-content">
+                                <div class="tab-pane active">
+                                    <div id="nosotros">
+                                        <div class="nosotros-content">
+                                            <div class="nosotrosItems " id="">
+                                                <div class="nosotrosItem " id="">
+                                                    <H2>MISIÓN</H2>
+                                                    <?=$contenidos['2']->contenido?>
+                                                </div>
+                                                <div class="nosotrosItem " id="">
+                                                    <h2>VISIÓN</h2>
+                                                    <?=$contenidos['3']->contenido?>
+                                                </div>
+                                                <div class="nosotrosItem " id="">
+                                                    <h2 class="textoValores">VALORES</h2>
+                                                    <?=$contenidos['4']->contenido?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  <div class="indicador2"></div>  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item 2   -->
+
+                <!-- item 3 -->
+
+                <div class="item fondo-secciond">
+                    <div class="carousel-caption">
+                        <div id="timelineHeader">
+
+                        </div>
+                        <div id="timeline">
+                            <div class="timeline-content">
+                                <div class="fechas fechas_fondo" id="TimeNormal2 historia_carrousel">
+                                    <?php
+                                    foreach($historia as $row){?>
+                                        <div>
+                                            <button class="btn-fechas fecha" title="<?=$row->titulo?>"
+                                                    data-placement="bottom" data-toggle="tooltip" type="button"><img
+                                                    class="encendido" src="<?=base_url($row->imagen)?>"/>
+                                            </button>
+                                        </div>
+                                    <?php }?>
+                                </div>
+                                <div class="controlI"></div>
+                                <div class="controlD"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin item 3 -->
+
+                <div class="item fondo-seccioni">
+                    <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span6 columnaPersonaje">
+                            <div class="presencia"></div>
+                        </div>
+                        <div class="columnaInformacion columnaPresencia">
+                            <div class="tab-content">
+                                <div class="tab-pane active">
+                                    <div class="textoContenido presenciaInternacional">
+                                        <h2 id="presenciaTexto"><?=strtoupper($contenidos['6']->titulo)?></h2>
+                                        <?=$contenidos['6']->contenido?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control nosotrosControl" href="#carruselLubricantes" data-slide="prev"></a>
+            <a class="right carousel-control nosotrosControl" href="#carruselLubricantes" data-slide="next"></a>
+        </div>
+    </div>
+</div>
+<!-- fin Lubircantes-->
 
 <!-- SECCION 5 -->
 <div class="row fondoServicios" style="overflow:hidden;">

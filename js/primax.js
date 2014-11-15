@@ -461,6 +461,11 @@ function eventosMenusPrincipal() {
         $('#btn-beneficios').click();
         clickMenuOpcion = 'fondoGprix';
     });
+    $(".lubricantes").click(function () {
+        movimiento('fondoLubricantes');
+        $('#btn-lubricantes').click();
+        clickMenuOpcion = 'fondoLubricantes';
+    });
     $(".tiendas").click(function () {
         movimiento('fondoTiendas');
         $('#btn-tiendas').click();
@@ -468,8 +473,8 @@ function eventosMenusPrincipal() {
     });
 
     $(".lubricantes").click(function () {
-        movimiento('fondo-seccion5');
-        clickMenuOpcion = 'fondo-seccion5';
+        movimiento('fondoLubricantes');
+        clickMenuOpcion = 'fondoLubricantes';
     });
     $(".servicios").click(function () {
         movimiento('fondoServicios');
@@ -599,7 +604,7 @@ function clickMenu() {
 
 function movimiento(pos) {
     var $a = $("#contenedor2");
-
+console.log (pos);
     $a.stop().scrollTo('div.' + pos, {duration: 1000}, setTimeout("callBackRisize()", 1600));
 }
 //fin  centrar imagen alta en home
