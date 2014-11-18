@@ -492,7 +492,7 @@
 <div class="fondoLubricantes" style="overflow: hidden;">
     <div class="container">
         <div class="carousel slide" id="carruselLubricantes">
-            <div class="tituloNosotros">
+            <div class="tituloLubricantes">
                 <h1><?=$contenidos['12']->titulo?></h1>
 
                 <div class="alinearmenuNosotros">

@@ -132,6 +132,13 @@ $(function () {
 
 
 
+    $("#btn-tellus").change(function(){
+        console.log ("tetsdddddddd")
+
+    });
+
+
+
 
     /*sincronizador botones con menu */
    $('.slide').carousel().on('slid', function (e) {
@@ -199,6 +206,7 @@ $(function () {
         var contador = 0
         $(this).children('.tituloNosotros').children(1).children(0).children().each(function (index) {
             if (typeof $(this).attr("data-slide-to") !== 'undefined') {
+
                 $(this).removeClass("active")
 
                 if (opcionActiva == contador) {
@@ -372,7 +380,7 @@ function sliderNosotros(contenedorSliderPrincipal, offsetSlider, maxPorPagina) {
     function enciendeOpcion(positionFecha) {
 
         $(".submenuNosotros li").removeClass("active");
-        console.log (positionFecha)
+
 
         switch (positionFecha) {
             case 1:
