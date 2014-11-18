@@ -114,11 +114,12 @@
 
    .textoContenidoLub,  .textoContenidoLub2 {
         width: inherit;
-       font-size: 12px;
+       font-size: 11px;
+       line-height: 14px;
     }
 
     .submenuLubricantes {
-        margin-top: -50px;
+        margin-top: -30px;
     }
 
     .tituloLubricantes {
@@ -126,7 +127,11 @@
     }
 
     #carruselLubricantes .carousel-inner {
-        margin-top: -30px;
+        margin-top: -50px;
+    }
+    .textoContenidoLub {
+        font-size: 11px;
+        line-height: 14px;
     }
 }
 
