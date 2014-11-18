@@ -517,6 +517,9 @@
                         <li id="btn-linea-industrial" data-target="#carruselLubricantes" data-slide-to="14"><a
                                                                                            href="#" data-toggle="tab">Línea Industrial</a>
                         </li>
+                        <li id="btn-gadus" data-target="#carruselLubricantes" data-slide-to="15" class="hide"><a
+                                                                                           href="#" data-toggle="tab">gadus</a>
+                        </li>
 
 
 
@@ -533,13 +536,13 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -560,13 +563,13 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -589,13 +592,13 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -616,13 +619,13 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -645,13 +648,13 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -672,13 +675,13 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -701,13 +704,13 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -728,13 +731,13 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -757,13 +760,13 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -784,13 +787,13 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -813,13 +816,13 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -840,13 +843,13 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -869,13 +872,13 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -896,13 +899,13 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
+                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
+                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -925,9 +928,9 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Tellus </a></li>
+                                    <li class="valoresmenu14"><a href="#"> Tellus </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Gadus </a></li>
+                                    <li class="valoresmenu15"><a href="#"> Gadus </a></li>
 
                                 </ul>
                             </div>
@@ -949,9 +952,9 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#">Tellus </a></li>
+                                    <li class="valoresmenu14"><a href="#">Tellus </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#">Gadus </a></li>
+                                    <li class="valoresmenu15"><a href="#">Gadus </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">

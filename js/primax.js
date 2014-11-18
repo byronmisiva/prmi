@@ -106,6 +106,32 @@ $(function () {
         $('#valoresmenu').click()
     });
 
+    $(".valoresmenu10").click(function () {
+        $('#btn-hellix').click()
+    });
+
+    $(".valoresmenu11").click(function () {
+        $('#btn-rimula').click()
+    });
+
+    $(".valoresmenu12").click(function () {
+        $('#btn-advance').click()
+    });
+
+    $(".valoresmenu13").click(function () {
+        $('#btn-pennzoil').click()
+    });
+
+    $(".valoresmenu14").click(function () {
+        $('#btn-linea-industrial').click()
+    });
+
+    $(".valoresmenu15").click(function () {
+        $('#btn-gadus').click()
+    });
+
+
+
 
     /*sincronizador botones con menu */
    $('.slide').carousel().on('slid', function (e) {
