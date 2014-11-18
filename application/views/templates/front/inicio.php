@@ -517,8 +517,8 @@
                         <li id="btn-linea-industrial" data-target="#carruselLubricantes" data-slide-to="14"><a
                                                                                            href="#" data-toggle="tab">Línea Industrial</a>
                         </li>
-                        <li id="btn-gadus" data-target="#carruselLubricantes" data-slide-to="15" class="hide"><a
-                                                                                           href="#" data-toggle="tab">gadus</a>
+                        <li id="btn-tellus" data-target="#carruselLubricantes" data-slide-to="15" class="hide"><a
+                                                                                           href="#" data-toggle="tab">tellus</a>
                         </li>
 
 
@@ -928,9 +928,9 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu14"><a href="#"> Tellus </a></li>
+                                    <li class="valoresmenu14"><a href="#"> Gadus </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu15"><a href="#"> Gadus </a></li>
+                                    <li class="valoresmenu15"><a href="#"> Tellus </a></li>
 
                                 </ul>
                             </div>
@@ -952,9 +952,9 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu14"><a href="#">Tellus </a></li>
+                                    <li class="valoresmenu14"><a href="#">Gadus </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu15"><a href="#">Gadus </a></li>
+                                    <li class="valoresmenu15"><a href="#">Tellus </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">

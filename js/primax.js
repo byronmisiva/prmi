@@ -127,7 +127,7 @@ $(function () {
     });
 
     $(".valoresmenu15").click(function () {
-        $('#btn-gadus').click()
+        $('#btn-tellus').click()
     });
 
 
