@@ -139,11 +139,11 @@ $(function () {
         $("li.valoresmenu10,li.valoresmenu11,li.valoresmenu12,li.valoresmenu13,li.valoresmenu14,li.valoresmenu15,li.valoresmenu16").removeClass("active")
         switch(opcionActiva) {
             case '0':
-                console.log (opcionActiva)
+
                 $("li.valoresmenu10").addClass("active")
                 break;
             case '1':
-                console.log (opcionActiva)
+
                 $("li.valoresmenu10").addClass("active")
                 break;
             case '5':
@@ -668,7 +668,6 @@ function clickMenu() {
 
 function movimiento(pos) {
     var $a = $("#contenedor2");
-console.log (pos);
     $a.stop().scrollTo('div.' + pos, {duration: 1000}, setTimeout("callBackRisize()", 1600));
 }
 //fin  centrar imagen alta en home

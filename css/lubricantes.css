@@ -99,10 +99,30 @@
 /*********SMALL TABLET*********/
 @media ( max-width: 767px) {
     .grupo-lubricantes {
-        width: 70%;
+        width: 140%;
+        margin-left: 50px;
+        height: 180px;
+        margin-top: -10px;
     }
     .fondoEncuentranos .tituloNosotros {
         height: 200px;
+    }
+
+    .columnaInformacionLub {
+        width: 90%;
+    }
+
+   .textoContenidoLub,  .textoContenidoLub2 {
+        width: inherit;
+       font-size: 12px;
+    }
+
+    .submenuNosotros {
+        margin-top: -49px;
+    }
+
+    .tituloLubricantes {
+        height: 120px;
     }
 }
 
@@ -110,6 +130,12 @@
     .fondoEncuentranos .tituloNosotros {
         height: 100px;
     }
+
+    .columnaLubricantes {
+        height: 140px;
+    }
+
+
 
 
 }

@@ -530,21 +530,24 @@
                 <!-- item 0 -->
                 <div opcion="0" class="item active franja-Gprixd" >
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu10"><a href="#"> Helix </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu11"><a href="#"> Rimula </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu12"><a href="#">Advance </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['12']->imagen)?>);"></div>
                         </div>
+
+
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
-                                </ul>
-                            </div>
+
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub2 nosotrosPrincipalLub">
@@ -557,21 +560,21 @@
                 </div>
                 <div opcion="1" class="item  franja-lubricantesi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu10"><a href="#"> Helix </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu11"><a href="#"> Rimula </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu12"><a href="#">Advance </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['13']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
-                                </ul>
-                            </div>
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
@@ -586,21 +589,23 @@
                 <!-- item   -->
                 <div opcion="1" class="item   franja-lubricantesd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu10"><a href="#"> Helix </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu11"><a href="#"> Rimula </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu12"><a href="#">Advance </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
+                            </ul>
+                        </div>
+
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['14']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
-                                </ul>
-                            </div>
+
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
@@ -613,21 +618,22 @@
                 </div>
                 <div opcion="1" class="item  franja-lubricantesi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu10"><a href="#"> Helix </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu11"><a href="#"> Rimula </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu12"><a href="#">Advance </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['15']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
-                                </ul>
-                            </div>
+
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
@@ -642,21 +648,22 @@
                 <!-- item   -->
                 <div opcion="1" class="item   franja-lubricantesd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu10"><a href="#"> Helix </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu11"><a href="#"> Rimula </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu12"><a href="#">Advance </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['16']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
-                                </ul>
-                            </div>
+
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
@@ -669,21 +676,22 @@
                 </div>
                 <div opcion="5" class="item  franja-Gprixi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu10"><a href="#"> Helix </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu11"><a href="#"> Rimula </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu12"><a href="#">Advance </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['17']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
-                                </ul>
-                            </div>
+
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
@@ -698,21 +706,22 @@
                 <!-- item   -->
                 <div opcion="5" class="item   franja-Gprixd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu10"><a href="#"> Helix </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu11"><a href="#"> Rimula </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu12"><a href="#">Advance </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['18']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
-                                </ul>
-                            </div>
+
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
@@ -725,21 +734,22 @@
                 </div>
                 <div opcion="5" class="item  franja-Gprixi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu10"><a href="#"> Helix </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu11"><a href="#"> Rimula </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu12"><a href="#">Advance </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['19']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
-                                </ul>
-                            </div>
+
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
@@ -754,21 +764,22 @@
                 <!-- item   -->
                 <div opcion="8" class="item   franja-Gprixd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu10"><a href="#"> Helix </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu11"><a href="#"> Rimula </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu12"><a href="#">Advance </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['20']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
-                                </ul>
-                            </div>
+
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub2 nosotrosPrincipalLub">
@@ -781,21 +792,22 @@
                 </div>
                 <div opcion="9" class="item  franja-Gprixi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu10"><a href="#"> Helix </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu11"><a href="#"> Rimula </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu12"><a href="#">Advance </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['21']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
-                                </ul>
-                            </div>
+
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
@@ -810,21 +822,22 @@
                 <!-- item   -->
                 <div opcion="9" class="item   franja-Gprixd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu10"><a href="#"> Helix </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu11"><a href="#"> Rimula </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu12"><a href="#">Advance </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['22']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
-                                </ul>
-                            </div>
+
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
@@ -837,21 +850,22 @@
                 </div>
                 <div opcion="9" class="item  franja-Gprixi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu10"><a href="#"> Helix </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu11"><a href="#"> Rimula </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu12"><a href="#">Advance </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['23']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
-                                </ul>
-                            </div>
+
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
@@ -866,21 +880,22 @@
                 <!-- item   -->
                 <div opcion="9" class="item   franja-Gprixd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu10"><a href="#"> Helix </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu11"><a href="#"> Rimula </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu12"><a href="#">Advance </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['24']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
-                                </ul>
-                            </div>
+
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
@@ -893,21 +908,22 @@
                 </div>
                 <div opcion="9" class="item  franja-Gprixi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu10"><a href="#"> Helix </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu11"><a href="#"> Rimula </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu12"><a href="#">Advance </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['25']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu10"><a href="#"> Helix </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu11"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu12"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu13"><a href="#">Pennzoil </a></li>
-                                </ul>
-                            </div>
+
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
@@ -922,18 +938,19 @@
                 <!-- item   -->
                 <div opcion="14" class="item   franja-Gprixd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu14"><a href="#"> Gadus </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu15"><a href="#"> Tellus </a></li>
+
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['27']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu14"><a href="#"> Gadus </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu15"><a href="#"> Tellus </a></li>
 
-                                </ul>
-                            </div>
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
@@ -946,17 +963,19 @@
                 </div>
                 <div opcion="15" class="item  franja-Gprixi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
+                        <div class="span5 submenuNosotros">
+                            <ul class="nav nav-tabs" id="opciones">
+                                <li class="valoresmenu14"><a href="#"> Gadus </a></li>
+                                <li><span class="linea-division"></span></li>
+                                <li class="valoresmenu15"><a href="#"> Tellus </a></li>
+
+                            </ul>
+                        </div>
                         <div class="span6 columnaLubricantes">
                             <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['26']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
-                            <div class="span5 submenuNosotros">
-                                <ul class="nav nav-tabs" id="opciones">
-                                    <li class="valoresmenu14"><a href="#">Gadus </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li class="valoresmenu15"><a href="#">Tellus </a></li>
-                                </ul>
-                            </div>
+
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
