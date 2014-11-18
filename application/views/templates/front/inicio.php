@@ -530,7 +530,7 @@
                 <!-- item 0 -->
                 <div opcion="0" class="item active franja-Gprixd" >
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -560,7 +560,7 @@
                 </div>
                 <div opcion="1" class="item  franja-lubricantesi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -589,7 +589,7 @@
                 <!-- item   -->
                 <div opcion="1" class="item   franja-lubricantesd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -618,7 +618,7 @@
                 </div>
                 <div opcion="1" class="item  franja-lubricantesi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -648,7 +648,7 @@
                 <!-- item   -->
                 <div opcion="1" class="item   franja-lubricantesd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -676,7 +676,7 @@
                 </div>
                 <div opcion="5" class="item  franja-Gprixi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -706,7 +706,7 @@
                 <!-- item   -->
                 <div opcion="5" class="item   franja-Gprixd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -734,7 +734,7 @@
                 </div>
                 <div opcion="5" class="item  franja-Gprixi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -764,7 +764,7 @@
                 <!-- item   -->
                 <div opcion="8" class="item   franja-Gprixd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -792,7 +792,7 @@
                 </div>
                 <div opcion="9" class="item  franja-Gprixi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -822,7 +822,7 @@
                 <!-- item   -->
                 <div opcion="9" class="item   franja-Gprixd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -850,7 +850,7 @@
                 </div>
                 <div opcion="9" class="item  franja-Gprixi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -880,7 +880,7 @@
                 <!-- item   -->
                 <div opcion="9" class="item   franja-Gprixd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -908,7 +908,7 @@
                 </div>
                 <div opcion="9" class="item  franja-Gprixi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu10"><a href="#"> Helix </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -938,7 +938,7 @@
                 <!-- item   -->
                 <div opcion="14" class="item   franja-Gprixd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu14"><a href="#"> Gadus </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -963,7 +963,7 @@
                 </div>
                 <div opcion="15" class="item  franja-Gprixi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
-                        <div class="span5 submenuNosotros">
+                        <div class="span5 submenuNosotros submenuLubricantes">
                             <ul class="nav nav-tabs" id="opciones">
                                 <li class="valoresmenu14"><a href="#"> Gadus </a></li>
                                 <li><span class="linea-division"></span></li>
@@ -1227,7 +1227,7 @@
 	        </div>
 	
 	        <div class="columnaInformacion columnaListaOferta">
-	            <div class="span5 submenuNosotros subcontactanos">
+	            <div class="span5 submenuNosotros submenuLubricantes subcontactanos">
 	                <ul class="nav nav-tabs" id="opciones">
 	                    <li class="active"><a href="#">Oferta Laboral </a></li>
 	                    <li><span class="linea-division"></span></li>

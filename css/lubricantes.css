@@ -117,12 +117,16 @@
        font-size: 12px;
     }
 
-    .submenuNosotros {
-        margin-top: -49px;
+    .submenuLubricantes {
+        margin-top: -50px;
     }
 
     .tituloLubricantes {
         height: 120px;
+    }
+
+    #carruselLubricantes .carousel-inner {
+        margin-top: -30px;
     }
 }
 
