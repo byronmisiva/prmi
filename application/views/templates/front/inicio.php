@@ -923,7 +923,7 @@
                 <div class="item   franja-Gprixd">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
                         <div class="span6 columnaLubricantes">
-                            <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['26']->imagen)?>);"></div>
+                            <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['27']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
@@ -937,7 +937,7 @@
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
-                                        <?=$contenidos['26']->contenido?>
+                                        <?=$contenidos['27']->contenido?>
                                     </div>
                                 </div>
                             </div>
@@ -947,7 +947,7 @@
                 <div class="item  franja-Gprixi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
                         <div class="span6 columnaLubricantes">
-                            <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['27']->imagen)?>);"></div>
+                            <div class="grupo-lubricantes" style="background-image: url(<?=base_url($contenidos['26']->imagen)?>);"></div>
                         </div>
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
@@ -960,7 +960,7 @@
                             <div class="row tab-content">
                                 <div class="tab-pane active">
                                     <div class="textoContenidoLub nosotrosPrincipalLub">
-                                        <?=$contenidos['27']->contenido?>
+                                        <?=$contenidos['26']->contenido?>
                                     </div>
                                 </div>
                             </div>

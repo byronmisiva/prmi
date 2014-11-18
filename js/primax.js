@@ -372,6 +372,7 @@ function sliderNosotros(contenedorSliderPrincipal, offsetSlider, maxPorPagina) {
     function enciendeOpcion(positionFecha) {
 
         $(".submenuNosotros li").removeClass("active");
+        console.log (positionFecha)
 
         switch (positionFecha) {
             case 1:
