@@ -131,10 +131,39 @@ $(function () {
     });
 
 
+    $('#carruselLubricantes').on('slid.bs.carousel', function (event) {
 
-    $("#btn-tellus").change(function(){
-        console.log ("tetsdddddddd")
+        var active = $(event.target).find('.carousel-inner > .item.active');
+        var opcionActiva = active.attr( "opcion" );
 
+        $("li.valoresmenu10,li.valoresmenu11,li.valoresmenu12,li.valoresmenu13,li.valoresmenu14,li.valoresmenu15,li.valoresmenu16").removeClass("active")
+        switch(opcionActiva) {
+            case '0':
+                console.log (opcionActiva)
+                $("li.valoresmenu10").addClass("active")
+                break;
+            case '1':
+                console.log (opcionActiva)
+                $("li.valoresmenu10").addClass("active")
+                break;
+            case '5':
+                $("li.valoresmenu11").addClass("active")
+                break;
+            case '8':
+                $("li.valoresmenu12").addClass("active")
+                break;
+            case '9':
+                $("li.valoresmenu13").addClass("active")
+                break;
+            case '14':
+                $("li.valoresmenu14").addClass("active")
+                break;
+            case '15':
+                $("li.valoresmenu15").addClass("active")
+//                $(""code block
+                break;
+
+        }
     });
 
 
