@@ -497,13 +497,27 @@
 
                 <div class="alinearmenuNosotros">
                     <ul class="nav nav-tabs" id="menuNosotros">
-                        <li id="btn-empresa" data-target="#carruselLubricantes" data-slide-to="0" class="active"><a href="#"
+                        <li id="btn-linea-automotriz" data-target="#carruselLubricantes" data-slide-to="0" class="active"><a href="#"
                                                                                                            data-toggle="tab">Línea Automotriz</a>
                         </li>
                         <li><span class="linea-division"></span></li>
-                        <li id="btn-mision" data-target="#carruselLubricantes" data-slide-to="1"><a
+                        <li id="btn-hellix" data-target="#carruselLubricantes" data-slide-to="1" class="hide"><a href="#"
+                                                                                                                    data-toggle="tab">Hellix</a>
+                        </li>
+                        <li id="btn-rimula" data-target="#carruselLubricantes" data-slide-to="5" class="hide"><a
+                                href="#" data-toggle="tab">Rimula</a>
+                        </li>
+                        <li id="btn-advance" data-target="#carruselLubricantes" data-slide-to="8" class="hide"><a
+                                href="#" data-toggle="tab">Advance</a>
+                        </li>
+                        <li id="btn-pennzoil" data-target="#carruselLubricantes" data-slide-to="9" class="hide"><a
+                                href="#" data-toggle="tab">Pennzoil</a>
+                        </li>
+
+                        <li id="btn-linea-industrial" data-target="#carruselLubricantes" data-slide-to="14"><a
                                                                                            href="#" data-toggle="tab">Línea Industrial</a>
                         </li>
+
 
 
                     </ul>
@@ -530,7 +544,7 @@
                             </div>
                             <div class="row tab-content">
                                 <div class="tab-pane active">
-                                    <div class="textoContenidoLub nosotrosPrincipalLub">
+                                    <div class="textoContenidoLub2 nosotrosPrincipalLub">
                                         <?=$contenidos['12']->contenido?>
                                     </div>
                                 </div>
@@ -538,7 +552,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="item  franja-lubricantesi">
                     <div class="carousel-caption" style="background-color: transparent;top:0px;">
                         <div class="span6 columnaLubricantes">
@@ -912,13 +925,10 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li id="valoresmenu1"><a href="#"> Tellus </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li id="valoresmenu1"><a href="#"> Gadus </a></li>
+
                                 </ul>
                             </div>
                             <div class="row tab-content">
@@ -939,13 +949,9 @@
                         <div class="columnaInformacionLub">
                             <div class="span5 submenuNosotros">
                                 <ul class="nav nav-tabs" id="opciones">
-                                    <li id="valoresmenu1"><a href="#"> Helix </a></li>
+                                    <li id="valoresmenu1"><a href="#">Tellus </a></li>
                                     <li><span class="linea-division"></span></li>
-                                    <li id="valoresmenu1"><a href="#"> Rimula </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li id="misionmenu1"><a href="#">Advance </a></li>
-                                    <li><span class="linea-division"></span></li>
-                                    <li id="visionmenu1"><a href="#">Pennzoil </a></li>
+                                    <li id="valoresmenu1"><a href="#">Gadus </a></li>
                                 </ul>
                             </div>
                             <div class="row tab-content">
