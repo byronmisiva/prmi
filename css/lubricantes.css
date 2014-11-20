@@ -99,9 +99,9 @@
 /*********SMALL TABLET*********/
 @media ( max-width: 767px) {
     .grupo-lubricantes {
-        width: 140%;
-        margin-left: 50px;
-        height: 180px;
+        width: 110%;
+        margin-left: 70px;
+        height: 120px;
         margin-top: -10px;
     }
     .fondoEncuentranos .tituloNosotros {
@@ -141,7 +141,7 @@
     }
 
     .columnaLubricantes {
-        height: 140px;
+        height: 115px;
     }
 
 
@@ -159,3 +159,4 @@
 @media ( max-width: 219px) {
 
 }
+.tes:h
