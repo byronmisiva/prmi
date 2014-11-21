@@ -93,11 +93,25 @@
         height: 200px;
     }
 
+    .grupo-lubricantes {
+        width: initial;
+    }
+
+    .textoContenidoLub ,.textoContenidoLub2 {
+        margin-left: 10px;
+        margin-top: 0px;
+        width: 94%;
+    }
 
 }
 
 /*********SMALL TABLET*********/
 @media ( max-width: 767px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
     .grupo-lubricantes {
         width: 100%;
         margin-left: 70px;
@@ -127,7 +141,7 @@
     }
 
     .tituloLubricantes {
-        height: 120px;
+        height: 140px;
     }
 
     #carruselLubricantes .carousel-inner {
@@ -137,6 +151,11 @@
         font-size: 11px;
         line-height: 14px;
     }
+
+    .columnaLubricantes {
+        height: 105px;
+    }
+
 }
 
 @media ( max-width: 360px) {
@@ -144,9 +163,13 @@
         height: 100px;
     }
 
+
+
     .columnaLubricantes {
-        height: 105px;
+        height: 125px;
     }
+
+
 
 
 
@@ -155,7 +178,9 @@
 
 @media ( max-width: 320px) {
 
-
+    .tituloLubricantes {
+        height: 120px;
+    }
 
 
 }
@@ -163,4 +188,3 @@
 @media ( max-width: 219px) {
 
 }
-.tes:h
