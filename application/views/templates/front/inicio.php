@@ -141,7 +141,9 @@
 <div class="row_home" style="overflow: hidden;">
     <div id="alinearAbajo">
         <div id="imagenHome" style="background-image: url(<?=base_url($contenidos['0']->imagen)?>);"></div>
-        <p><a href="http://youtu.be/vwQ06L3bfWU" data-toggle="lightbox" id="youvideo">Ver video</a></p>
+<!--        <p><a href="http://youtu.be/vwQ06L3bfWU" data-toggle="lightbox" id="youvideo">Ver video</a></p>-->
+        <p><a href="<?=base_url('imagenes/ganadores-tanquea-mas-2014.png')?>" data-toggle="lightbox" id="youvideo">Ver ganadores</a></p>
+
     </div>
 </div>
 
